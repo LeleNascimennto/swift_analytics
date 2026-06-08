@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+venv/
+
+# Local Dataframes
+df_*.csv
+df_*.parquet
+
+.claude/CLAUDE.local.md
+local/
