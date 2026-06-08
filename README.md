@@ -13,15 +13,17 @@ Análise de NPS e processamento de linguagem natural para a rede de lojas **Swif
 ## Estrutura do Projeto
 ```
 swift_analytics/
-├── analise_nps_swift_final.ipynb     ← notebook principal (pré-processamento)
+├── pre_processamento_swift.ipynb     ← notebook de pré-processamento
+├── EDA_NPS_Swift.ipynb               ← notebook de análise exploratória
 |
 ├── df_avaliacoes_tratado.parquet     ← base principal limpa
 ├── df_nps_loja_mes.parquet           ← NPS por loja × mês
 ├── df_comentarios_nlp.parquet        ← comentários prontos para NLP
 |
 ├── data/
-|   ├── Dados para o Grillo.xlsx      ← avaliações NPS brutas
-|   └── Transacoes Lojas.xlsx         ← transações por loja
+|   ├── dados_nps_swift.xlsx          ← avaliações NPS brutas
+|   ├── dados_transacoes_lojas.xlsx   ← transações por loja
+|   └── base_final.csv                ← base processada consolidada
 └── .backlog/
     ├── ProjetoSwift.md               ← briefing do cliente
     └── Planejamento.md               ← cronograma e fases
@@ -35,7 +37,7 @@ swift_analytics/
 ```
 Dados brutos (Excel)
             ▼
-[ Pré-processamento ]  analise_nps_swift_final.ipynb
+[ Pré-processamento ]  pre_processamento_swift.ipynb
 limpeza · datas · merge · NPS · outliers · EDA
             ▼
 df_comentarios_nlp.parquet <- entrada comum para NLP
@@ -77,8 +79,8 @@ NPS = (Promotores − Detratores) / total_avaliações × 100
 ### 1. Variáveis de ambiente
 Defina antes de executar qualquer notebook:
 ```powershell
-$env:EXCEL_CAMINHO_DADOS      = "data\Dados para o Grillo.xlsx"
-$env:EXCEL_CAMINHO_TRANSACOES = "data\Transacoes Lojas.xlsx"
+$env:EXCEL_CAMINHO_DADOS      = "data\dados_nps_swift.xlsx"
+$env:EXCEL_CAMINHO_TRANSACOES = "data\dados_transacoes_lojas.xlsx"
 ```
 
 ### 2. Instalar dependências
@@ -88,7 +90,7 @@ pip install -r requirements.txt
 
 ### 3. Executar o notebook
 ```powershell
-jupyter notebook analise_nps_swift_final.ipynb
+jupyter notebook pre_processamento_swift.ipynb
 ```
 
 
