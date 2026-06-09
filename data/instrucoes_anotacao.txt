@@ -1,0 +1,26 @@
+INSTRUÇÕES DE ANOTAÇÃO — TÓPICO 2 SWIFT
+======================================================================
+
+ARQUIVO: data/amostra_para_anotacao.csv
+Abra no Excel ou Google Sheets.
+
+COMO PREENCHER:
+  - Anotador 1 preenche a coluna CATEGORIA_ANOTADOR_1
+  - Anotador 2 preenche a coluna CATEGORIA_ANOTADOR_2
+  - Os dois fazem isso de forma INDEPENDENTE (sem ver a resposta do outro)
+  - Use OBSERVACOES para comentários ambíguos
+
+CATEGORIAS DISPONÍVEIS:
+  abastecimento
+  atendimento
+  entrega_logistica
+  loja_fisica
+  outros
+  produto
+  promocoes_fidelidade
+
+APÓS PREENCHER:
+  Salve o arquivo com o mesmo nome (amostra_para_anotacao.csv)
+  e execute a célula do Kappa de Cohen abaixo.
+
+======================================================================
