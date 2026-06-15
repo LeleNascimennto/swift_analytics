@@ -8,3 +8,5 @@ df_*.parquet
 
 .claude/CLAUDE.local.md
 local/
+
+.matplotlib-cache
