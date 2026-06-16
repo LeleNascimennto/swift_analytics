@@ -10,3 +10,5 @@ df_*.parquet
 local/
 
 .matplotlib-cache
+
+.env 
