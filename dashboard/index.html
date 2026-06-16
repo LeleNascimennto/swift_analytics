@@ -24,19 +24,19 @@
         </div>
         <div class="navbar-right">
             <div class="filter-group">
-                <select id="filter-gerente" class="filter-select">
+                <select id="filter-gerente" class="filter-select" aria-label="Filtrar por tipo de gestão">
                     <option value="todos">Todos os Gerentes</option>
                     <option value="regular">Externo (Regular)</option>
                     <option value="tocadora">Germinare (Tocadora)</option>
                 </select>
             </div>
             <div class="filter-group">
-                <select id="filter-uf" class="filter-select">
+                <select id="filter-uf" class="filter-select" aria-label="Filtrar por UF">
                     <option value="todas">Todas as UFs</option>
                 </select>
             </div>
             <div class="filter-group">
-                <select id="filter-loja" class="filter-select">
+                <select id="filter-loja" class="filter-select" aria-label="Filtrar por loja">
                     <option value="todas">Todas as Lojas</option>
                 </select>
             </div>
@@ -274,8 +274,8 @@
             <p class="section-subtitle">NPS, sentimento, problemas e elogios — loja a loja</p>
 
             <div class="table-controls">
-                <input type="text" id="search-loja" class="search-input" placeholder="Buscar loja...">
-                <select id="filter-alerta" class="filter-select">
+                <input type="text" id="search-loja" class="search-input" placeholder="Buscar loja..." aria-label="Buscar loja pelo nome">
+                <select id="filter-alerta" class="filter-select" aria-label="Filtrar por status de alerta">
                     <option value="todos">Todos os Alertas</option>
                     <option value="ALERTA_QUEDA">Alertas de Queda</option>
                     <option value="ALERTA_MELHORA">Alertas de Melhora</option>
@@ -380,7 +380,7 @@
                 </div>
                 <div class="insight-box">
                     <h3>Predição de Risco</h3>
-                    <p id="predicao-risco">Lojas com queda consistente de sentimento nos últimos 3 meses têm 73% de probabilidade de queda no NPS do próximo trimestre.</p>
+                    <p id="predicao-risco">Carregando...</p>
                 </div>
             </div>
 
@@ -410,7 +410,7 @@
                 </div>
                 <div class="insight-box">
                     <h3>Diferenças de Linguagem</h3>
-                    <p id="linguagem-insight">Lojas externas concentram menções a "fila", "demora" e "funcionário" (foco operacional). Lojas Germinare têm mais menções a "qualidade", "variedade" e "preço" (foco no produto). Isso sugere que o modelo de gestão Germinare resolve melhor os problemas operacionais básicos.</p>
+                    <p id="linguagem-insight">Carregando...</p>
                 </div>
             </div>
         </section>
