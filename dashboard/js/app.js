@@ -214,12 +214,12 @@ function renderOverview() {
         options: { responsive: true, scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } } }, plugins: { legend: { position: 'bottom' } } }
     });
 
-    // Donut
-    const donutVals = [parseFloat(kpis.pct_positivo), parseFloat(kpis.pct_neutro), parseFloat(kpis.pct_negativo)];
+    // Distribuição de sentimento (barras)
+    const distVals = [parseFloat(kpis.pct_positivo), parseFloat(kpis.pct_neutro), parseFloat(kpis.pct_negativo)];
     createChart('chart-sentimento-donut', {
-        type: 'doughnut',
-        data: { labels: ['Positivo', 'Neutro', 'Negativo'], datasets: [{ data: donutVals, backgroundColor: ['#27ae60', '#f39c12', '#c0392b'], borderWidth: 0 }] },
-        options: { cutout: '65%', plugins: { legend: { position: 'bottom', labels: { padding: 14, font: { size: 11 } } } } }
+        type: 'bar',
+        data: { labels: ['Positivo', 'Neutro', 'Negativo'], datasets: [{ data: distVals, backgroundColor: ['#27ae60', '#f39c12', '#c0392b'], borderRadius: 4 }] },
+        options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } } } }
     });
 }
 
