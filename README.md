@@ -2,7 +2,7 @@
 
 Análise de NPS e processamento de linguagem natural para a rede de lojas **Swift**, desenvolvida para o **Germinare**.
 
-- **228 lojas · 58 gerentes · Jan/2025 – Jan/2026**
+- **227 lojas · 58 gerentes · Jan/2025 – Mai/2026** · 116.605 comentários · 4 UFs
 - Comparativo entre perfis **REGULAR** e **TOCADORA** (business)
 - Pipeline completa: pré-processamento → NLP → dashboard
 

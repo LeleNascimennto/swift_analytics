@@ -4,6 +4,19 @@
 
 let charts = {};
 
+// ═══ SEGURANÇA ═══
+// Texto livre de cliente (comentários, exemplos) é injetado via innerHTML.
+// escapeHtml() neutraliza qualquer HTML embutido no comentário antes de renderizar.
+function escapeHtml(value) {
+    if (value === null || value === undefined) return '';
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initSubTabs();
@@ -182,9 +195,9 @@ function renderOverview() {
     // Compilado
     const compilado = (breakdown && f.uf === 'todas') ? breakdown.compilado : DATA.compilado;
     document.getElementById('fortalezas-list').innerHTML = compilado.fortalezas.map((ft, i) => `
-        <div class="compilado-item"><span class="rank">${i+1}.</span><span class="cat-name">${ft.cat}</span><span class="cat-pct">(${ft.pct}% dos elogios)</span><div class="cat-example">${ft.exemplo}</div></div>`).join('');
+        <div class="compilado-item"><span class="rank">${i+1}.</span><span class="cat-name">${escapeHtml(ft.cat)}</span><span class="cat-pct">(${ft.pct}% dos elogios)</span><div class="cat-example">${escapeHtml(ft.exemplo)}</div></div>`).join('');
     document.getElementById('atencao-list').innerHTML = compilado.atencao.map((at, i) => `
-        <div class="compilado-item"><span class="rank">${i+1}.</span><span class="cat-name">${at.cat}</span><span class="cat-pct">(${at.pct}% das reclamações)</span><div class="cat-example">${at.exemplo}</div></div>`).join('');
+        <div class="compilado-item"><span class="rank">${i+1}.</span><span class="cat-name">${escapeHtml(at.cat)}</span><span class="cat-pct">(${at.pct}% das reclamações)</span><div class="cat-example">${escapeHtml(at.exemplo)}</div></div>`).join('');
 
     const regioes = DATA.compilado.regioes || [];
     document.getElementById('destaques-regiao').innerHTML = regioes.map(r => `<div class="region-card region-${r.tipo}"><div class="region-name">${r.nome}</div><div class="region-stat">${r.stat}</div></div>`).join('');
@@ -292,11 +305,10 @@ function renderGestao() {
     document.getElementById('gestao-conclusao').innerHTML = `
         <h4>Conclusão — Existe diferença significativa?</h4>
         <p><strong>${g.significativo ? 'Sim' : 'Não'}.</strong> Mann-Whitney p=${g.p_value}. ${g.significativo ? 'A diferença entre os dois tipos de gestão é estatisticamente significativa.' : 'Diferença não significativa.'}</p>
-        <p style="margin-top:8px"><strong>${melhorNps}</strong> tem NPS ${Math.abs(diffNps).toFixed(1)} pontos maior. 
+        <p style="margin-top:8px"><strong>${melhorNps}</strong> tem NPS ${Math.abs(diffNps).toFixed(1)} pontos maior.
         <strong>${melhorSent}</strong> tem menor % de sentimento negativo (diferença de ${Math.abs(diffNeg).toFixed(1)}pp).</p>
-        <p style="margin-top:8px">Lojas Germinare apresentam mais menções negativas a abastecimento e atendimento; 
-        lojas externas concentram feedback sobre fidelidade/promoções. A gestão externa obtém NPS superior e menor negatividade nos textos — 
-        indicando melhor percepção geral do cliente nessas unidades.</p>`;
+        <p style="margin-top:8px">Principais reclamações — <strong>Externo:</strong> ${g.regular.top_problemas.slice(0, 3).map(escapeHtml).join(', ')}.
+        <strong>Germinare:</strong> ${g.tocadora.top_problemas.slice(0, 3).map(escapeHtml).join(', ')}.</p>`;
 }
 
 // ═══ TEMAS (3.2) ═══
@@ -343,7 +355,7 @@ function renderTemas() {
     let divHtml = '';
     for (const [tipo, exemplos] of Object.entries(d.exemplos)) {
         divHtml += `<div class="example-category"><h4>${tipo}</h4>`;
-        exemplos.forEach(ex => { divHtml += `<div class="example-item"><strong>${ex.nota}:</strong> ${ex.texto}</div>`; });
+        exemplos.forEach(ex => { divHtml += `<div class="example-item"><strong>${escapeHtml(ex.nota)}:</strong> ${escapeHtml(ex.texto)}</div>`; });
         divHtml += '</div>';
     }
     document.getElementById('exemplos-divergencias').innerHTML = divHtml;
@@ -373,8 +385,8 @@ function renderTemas() {
 function renderExamples(containerId, data) {
     let html = '';
     for (const [cat, exemplos] of Object.entries(data)) {
-        html += `<div class="example-category"><h4>${cat}</h4>`;
-        exemplos.forEach(ex => { html += `<div class="example-item">${ex}</div>`; });
+        html += `<div class="example-category"><h4>${escapeHtml(cat)}</h4>`;
+        exemplos.forEach(ex => { html += `<div class="example-item">${escapeHtml(ex)}</div>`; });
         html += '</div>';
     }
     document.getElementById(containerId).innerHTML = html;
@@ -398,7 +410,7 @@ function renderLojas() {
         const negColor = l.pct_neg > 12 ? '#c0392b' : l.pct_neg > 8 ? '#e67e22' : '#666';
         const alertaBadge = l.alerta === 'ALERTA_QUEDA' ? 'queda' : l.alerta === 'ALERTA_MELHORA' ? 'melhora' : 'estavel';
         const alertaLabel = l.alerta === 'ALERTA_QUEDA' ? '▼ Queda' : l.alerta === 'ALERTA_MELHORA' ? '▲ Melhora' : 'Estável';
-        return `<tr data-loja="${l.nome}">
+        return `<tr data-loja="${l.nome}" tabindex="0" role="button" aria-label="Ver detalhes da loja ${l.nome}">
             <td><strong>${l.nome}</strong></td>
             <td><span class="badge badge-${l.flag}">${l.flag === 'tocadora' ? 'Germinare' : 'Externo'}</span></td>
             <td>${l.nps_trad}</td>
@@ -415,6 +427,9 @@ function renderLojas() {
 
     tbody.querySelectorAll('tr').forEach(row => {
         row.addEventListener('click', () => showLojaDetail(row.dataset.loja));
+        row.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showLojaDetail(row.dataset.loja); }
+        });
     });
 }
 
@@ -438,7 +453,7 @@ function showLojaDetail(nomeLoja) {
 
     document.getElementById('loja-detail-problemas').innerHTML = loja.top3_problemas.map((c, i) => `<div class="cat-item">${i+1}. ${c}</div>`).join('') || '<div class="cat-item">Sem dados</div>';
     document.getElementById('loja-detail-elogios').innerHTML = loja.top3_elogios.map((c, i) => `<div class="cat-item">${i+1}. ${c}</div>`).join('') || '<div class="cat-item">Sem dados</div>';
-    document.getElementById('loja-detail-comentarios').innerHTML = (loja.comentarios || []).map(c => `<div class="example-item">${c}</div>`).join('') || '<div class="example-item">Sem comentários</div>';
+    document.getElementById('loja-detail-comentarios').innerHTML = (loja.comentarios || []).map(c => `<div class="example-item">${escapeHtml(c)}</div>`).join('') || '<div class="example-item">Sem comentários</div>';
 
     // Evolução mensal da loja (se disponível)
     if (loja.temporal && loja.temporal.length > 3) {
@@ -501,10 +516,30 @@ function renderAvancadas() {
         document.getElementById('coocorrencia-insights').innerHTML = av.coocorrencia.map(c => `<div class="cooc-card"><div class="pair">${c.par} (${c.freq}x)</div><div class="desc">${c.desc}</div></div>`).join('');
     }
 
+    // Predição de risco — descritivo, derivado dos dados (sem estatística fabricada)
+    const predEl = document.getElementById('predicao-risco');
+    if (predEl) {
+        const nDet = av.deterioracao.lojas.length;
+        predEl.textContent = nDet > 0
+            ? `${nDet} loja(s) apresentam tendência consistente de aumento no % de sentimento negativo nos últimos meses (${av.deterioracao.lojas.join(', ')}). São candidatas naturais a monitoramento prioritário — o histórico recente sugere risco de queda no NPS, mas não há modelo preditivo treinado para quantificar essa probabilidade.`
+            : 'Nenhuma loja apresentou tendência consistente de deterioração no período analisado.';
+    }
+
     // Wordclouds from breakdowns
     const bd = DATA.breakdowns;
     if (bd.regular?.wordcloud) renderWordCloud('wordcloud-regular', bd.regular.wordcloud);
     if (bd.tocadora?.wordcloud) renderWordCloud('wordcloud-tocadora', bd.tocadora.wordcloud);
+
+    // Diferenças de linguagem — derivado dos termos reais de cada wordcloud (descritivo)
+    const langEl = document.getElementById('linguagem-insight');
+    if (langEl && bd.regular?.wordcloud && bd.tocadora?.wordcloud) {
+        const topWords = (wc) => wc.slice().sort((a, b) => b.size - a.size).slice(0, 5).map(w => w.word);
+        const reg = topWords(bd.regular.wordcloud);
+        const toc = topWords(bd.tocadora.wordcloud);
+        langEl.innerHTML = `Termos mais frequentes — <strong>Externo:</strong> ${reg.map(escapeHtml).join(', ')}. `
+            + `<strong>Germinare:</strong> ${toc.map(escapeHtml).join(', ')}. `
+            + `A comparação é descritiva (frequência de palavras), não uma medida de causa: indica sobre o que cada grupo de clientes mais comenta, não que um modelo de gestão resolva melhor que o outro.`;
+    }
 }
 
 function renderNpsTema() {
