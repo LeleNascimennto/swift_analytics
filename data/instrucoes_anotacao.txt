@@ -13,6 +13,7 @@ COMO PREENCHER:
 CATEGORIAS DISPONÍVEIS:
   abastecimento
   atendimento
+  entrega_logistica
   loja_fisica
   outros
   produto
