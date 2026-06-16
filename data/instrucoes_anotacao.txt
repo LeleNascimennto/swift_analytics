@@ -16,7 +16,6 @@ CATEGORIAS DISPONÍVEIS:
   entrega_logistica
   loja_fisica
   outros
-  produto
   promocoes_fidelidade
 
 APÓS PREENCHER:
