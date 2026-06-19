@@ -1,5 +1,5 @@
 // ═══ SWIFT ANALYTICS — Dados (NPS Ajustado: metodologia do notebook) ═══
-// Base completa ponderada por nº de clientes | 227 lojas | 4 UFs | Período: 2025-01 a 2026-05
+// Base oficial atual | 227 lojas (169 REGULAR, 58 TOCADORA) | 116.605 comentários | 4 UFs | Período: 2025-01 a 2026-05
 // NPS Ajustado = reclassificação conservadora (Promotor+TextoNeg→Neutro | Detrator+TextoPos→Neutro); demais mantêm a nota
 
 const DATA = {

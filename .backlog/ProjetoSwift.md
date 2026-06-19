@@ -2,8 +2,9 @@
 > Data de entrega do projeto: 08/06/2026
 
 ## Informações gerais
-Base de janeiro de 2025 até janeiro de 2026
-228 lojas -> 58 gerentes germinare
+Base de janeiro de 2025 até maio de 2026
+227 lojas no total -> 169 REGULAR e 58 TOCADORA/Germinare
+116.605 comentários analisados
 
 ## NPS
 Indicador de satisfação do cliente

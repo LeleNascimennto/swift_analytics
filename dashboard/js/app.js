@@ -482,6 +482,7 @@ function showLojaDetail(nomeLoja) {
 
 // ═══ ANÁLISES AVANÇADAS ═══
 function renderAvancadas() {
+    renderQualitativo();
     renderNpsTema();
     const av = DATA.avancadas;
 
@@ -540,6 +541,136 @@ function renderAvancadas() {
             + `<strong>Germinare:</strong> ${toc.map(escapeHtml).join(', ')}. `
             + `A comparação é descritiva (frequência de palavras), não uma medida de causa: indica sobre o que cada grupo de clientes mais comenta, não que um modelo de gestão resolva melhor que o outro.`;
     }
+}
+
+function renderQualitativo() {
+    if (!DATA.qualitativo) return;
+
+    const q = DATA.qualitativo;
+    const resumo = q.resumo;
+
+    const setText = (id, value) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = value;
+    };
+
+    setText('qual-nps-trad', Number(resumo.nps_tradicional_comentarios).toFixed(0));
+    setText('qual-nps-textual', Number(resumo.nps_textual).toFixed(0));
+    setText('qual-nps-hibrido', Number(resumo.nps_hibrido).toFixed(0));
+
+    const metodo = document.getElementById('qual-metodologia');
+    if (metodo) {
+        const corr = resumo.correlacao_transacoes;
+        metodo.innerHTML = `
+            O <strong>NPS tradicional</strong> preserva a nota original. O <strong>NPS textual</strong> vem do sentimento do comentário.
+            O <strong>NPS híbrido</strong> só altera a leitura quando a confiança do modelo é suficiente; previsões de baixa confiança mantêm a classificação pela nota.
+            A correlação entre transações e NPS híbrido é <strong>${corr.nps_hibrido}</strong>, indicando que volume operacional sozinho não explica satisfação.
+        `;
+    }
+
+    const pontos = q.scatter_transacoes || [];
+    const regular = pontos.filter(p => p.flag === 'REGULAR');
+    const tocadora = pontos.filter(p => p.flag === 'TOCADORA');
+    const toBubble = p => ({
+        x: p.transacoes,
+        y: p.nps_hibrido,
+        r: Math.max(4, Math.min(14, Math.sqrt(p.avaliacoes_ponderadas || 1) / 4)),
+        loja: p.centro_nv2,
+        prioridade: p.indice_prioridade,
+        pctNeg: p.pct_negativo
+    });
+
+    createChart('chart-nps-transacoes', {
+        type: 'bubble',
+        data: {
+            datasets: [
+                { label: 'REGULAR', data: regular.map(toBubble), backgroundColor: 'rgba(0,133,230,0.55)' },
+                { label: 'TOCADORA', data: tocadora.map(toBubble), backgroundColor: 'rgba(233,90,26,0.58)' }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'bottom' },
+                tooltip: {
+                    callbacks: {
+                        label: ctx => {
+                            const p = ctx.raw;
+                            return `${p.loja}: NPS híbrido ${p.y}, transações ${Math.round(p.x).toLocaleString('pt-BR')}, negativo ${p.pctNeg}%`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: { title: { display: true, text: 'Transações' } },
+                y: { title: { display: true, text: 'NPS híbrido' }, min: 0, max: 100 }
+            }
+        }
+    });
+
+    const quadrantes = ['alta_performance', 'atencao_leve', 'risco_oculto', 'critico'];
+    const cores = {
+        alta_performance: 'rgba(39,174,96,0.55)',
+        atencao_leve: 'rgba(243,156,18,0.55)',
+        risco_oculto: 'rgba(142,68,173,0.55)',
+        critico: 'rgba(192,57,43,0.55)'
+    };
+    createChart('chart-matriz-risco', {
+        type: 'scatter',
+        data: {
+            datasets: quadrantes.map(qd => ({
+                label: qd.replaceAll('_', ' '),
+                data: pontos.filter(p => p.quadrante_risco === qd).map(p => ({
+                    x: p.nps_tradicional,
+                    y: p.pct_negativo,
+                    loja: p.centro_nv2,
+                    sev: p.severidade_media
+                })),
+                backgroundColor: cores[qd],
+                pointRadius: 5
+            }))
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'bottom' },
+                tooltip: {
+                    callbacks: {
+                        label: ctx => {
+                            const p = ctx.raw;
+                            return `${p.loja}: NPS ${p.x}, negativo ${p.y}%, severidade ${p.sev}`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: { title: { display: true, text: 'NPS tradicional' }, min: 0, max: 100 },
+                y: { title: { display: true, text: '% negativo' }, min: 0 }
+            }
+        }
+    });
+
+    const renderRows = (id, rows, cols) => {
+        const tbody = document.getElementById(id);
+        if (!tbody) return;
+        tbody.innerHTML = rows.length
+            ? rows.map(row => `<tr>${cols.map(col => `<td>${escapeHtml(col(row))}</td>`).join('')}</tr>`).join('')
+            : '<tr><td colspan="4">Sem lojas neste critério</td></tr>';
+    };
+
+    renderRows('qual-top-prioridade', q.top_prioridade || [], [
+        row => row.centro_nv2,
+        row => Number(row.indice_prioridade).toFixed(1),
+        row => Number(row.nps_hibrido).toFixed(1),
+        row => `${Number(row.pct_negativo).toFixed(1)}%`
+    ]);
+
+    renderRows('qual-risco-oculto', q.risco_oculto || [], [
+        row => row.centro_nv2,
+        row => Number(row.nps_tradicional).toFixed(1),
+        row => `${Number(row.pct_negativo).toFixed(1)}%`,
+        row => Number(row.severidade_media).toFixed(1)
+    ]);
 }
 
 function renderNpsTema() {
