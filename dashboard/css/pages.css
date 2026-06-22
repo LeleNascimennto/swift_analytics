@@ -155,6 +155,34 @@
 
 #btn-theme:hover { background: var(--bg-hover); color: var(--tx-primary); border-color: var(--clr-brand); }
 
+/* ── Export PDF button ── */
+#btn-export-pdf {
+  display: flex; align-items: center; gap: var(--sp-2); width: 100%;
+  padding: 7px var(--sp-3); margin-bottom: var(--sp-2);
+  border: 1px solid var(--clr-brand); border-radius: var(--r-sm);
+  background: var(--clr-brand); color: var(--tx-inverse, #fff);
+  font-size: var(--fs-sm); font-weight: 600; cursor: pointer;
+  font-family: var(--font-sans); transition: all var(--t-fast);
+}
+#btn-export-pdf:hover { background: var(--clr-brand-hover, var(--clr-brand)); filter: brightness(0.96); }
+
+/* ── Comparativo ── */
+.cmp-controls { display: flex; align-items: center; gap: var(--sp-3); flex-wrap: wrap; margin-bottom: var(--sp-5); }
+.cmp-mode-btn { padding: 7px 16px; border: 1px solid var(--bd-color); background: var(--bg-card); color: var(--tx-secondary); cursor: pointer; font-family: var(--font-sans); font-size: var(--fs-sm); }
+.cmp-mode-btn:first-child { border-radius: var(--r-sm) 0 0 var(--r-sm); }
+.cmp-mode-btn:last-child { border-radius: 0 var(--r-sm) var(--r-sm) 0; border-left: 0; }
+.cmp-mode-btn.active { background: var(--clr-brand); color: var(--tx-inverse, #fff); border-color: var(--clr-brand); }
+.cmp-vs { font-weight: 700; color: var(--tx-muted); }
+.cmp-headers { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); margin-bottom: var(--sp-5); }
+.cmp-head-card { background: var(--bg-card); border: 1px solid var(--bd-color); border-radius: var(--r-md); padding: var(--sp-4); }
+.cmp-head-name { font-weight: 700; font-size: var(--fs-lg); color: var(--tx-primary); margin-bottom: 6px; }
+.cmp-head-meta { font-size: var(--fs-sm); color: var(--tx-secondary); }
+.cmp-cats { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); }
+.cmp-cat-head { font-weight: 700; font-size: var(--fs-sm); margin-bottom: 8px; }
+.cmp-cat-item { display: flex; justify-content: space-between; gap: var(--sp-2); padding: 6px 0; border-bottom: 1px solid var(--bd-color); font-size: var(--fs-sm); color: var(--tx-secondary); }
+.cmp-cat-pct { font-weight: 600; color: var(--tx-primary); }
+@media (max-width: 768px) { .cmp-headers, .cmp-cats { grid-template-columns: 1fr; } }
+
 /* ══ PAGE CONTENT ══ */
 .page-content {
   margin-left:var(--sidebar-w);
