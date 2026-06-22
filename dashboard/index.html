@@ -115,26 +115,11 @@
           <div class="kpi-card kpi-positive"><span class="kpi-label">% Positivo</span><span class="kpi-value" id="kpi-positivo">--</span></div>
           <div class="kpi-card kpi-neutral"><span class="kpi-label">% Neutro</span><span class="kpi-value" id="kpi-neutro">--</span></div>
           <div class="kpi-card kpi-negative"><span class="kpi-label">% Negativo</span><span class="kpi-value" id="kpi-negativo">--</span></div>
-          <div class="kpi-card"><span class="kpi-label">Lojas em Alerta</span><span class="kpi-value" id="kpi-alertas">--</span></div>
           <div class="kpi-card kpi-info"><span class="kpi-label">Total Comentários</span><span class="kpi-value" id="kpi-total-com">--</span></div>
         </div>
 
-        <!-- Compilado Executivo -->
+        <!-- Destaques por Região -->
         <div class="compilado-section">
-          <h2 class="section-title">Compilado Executivo</h2>
-          <p class="section-subtitle">Resumo baseado em <span id="total-comentarios">--</span> comentários analisados</p>
-
-          <div class="compilado-grid">
-            <div class="compilado-card compilado-positive">
-              <h3>3 Maiores Fortalezas da Rede</h3>
-              <div id="fortalezas-list"></div>
-            </div>
-            <div class="compilado-card compilado-negative">
-              <h3>3 Maiores Pontos de Atenção</h3>
-              <div id="atencao-list"></div>
-            </div>
-          </div>
-
           <div class="compilado-card compilado-region">
             <h3>Destaques por Região</h3>
             <div id="destaques-regiao" class="region-grid" style="margin-top:16px"></div>
@@ -158,11 +143,6 @@
           <canvas id="chart-regiao-nps"></canvas>
         </div>
 
-        <div class="insight-box">
-          <h3>Insight Não Óbvio</h3>
-          <p id="insight-text">Carregando...</p>
-        </div>
-
       </section>
 
       <!-- ══════════════════════════════
@@ -183,7 +163,6 @@
         <div class="sub-tabs">
           <button class="sub-tab active" data-subtab="nps-evolucao">Evolução Temporal</button>
           <button class="sub-tab" data-subtab="nps-variantes">Variantes</button>
-          <button class="sub-tab" data-subtab="nps-impacto">Impacto do Ajuste</button>
           <button class="sub-tab" data-subtab="nps-sazonalidade">Sazonalidade</button>
         </div>
 
@@ -205,45 +184,12 @@
           </div>
         </div>
 
-        <!-- Sub-tab: Impacto do Ajuste -->
-        <div class="subtab-content" id="subtab-nps-impacto">
-          <div class="kpi-grid kpi-grid-3">
-            <div class="kpi-card"><span class="kpi-label">Delta Global (Trad → Ajust)</span><span class="kpi-value" id="nps-delta-global">--</span></div>
-            <div class="kpi-card kpi-negative"><span class="kpi-label">Lojas que Mudaram de Faixa</span><span class="kpi-value" id="nps-mudaram-faixa">--</span></div>
-            <div class="kpi-card"><span class="kpi-label">% Divergentes na Base</span><span class="kpi-value" id="nps-div-pct">--</span></div>
-          </div>
-          <div class="impacto-formula-box" id="nps-impacto-formula" style="margin-bottom:20px"></div>
-          <div class="table-container">
-            <table class="data-table" aria-label="Casos extremos de impacto NPS">
-              <thead>
-                <tr>
-                  <th scope="col">Loja</th>
-                  <th scope="col">NPS Trad</th>
-                  <th scope="col">Faixa Antes</th>
-                  <th scope="col">NPS Ajust</th>
-                  <th scope="col">Faixa Depois</th>
-                  <th scope="col">Delta</th>
-                </tr>
-              </thead>
-              <tbody id="nps-tbody-impacto"></tbody>
-            </table>
-          </div>
-          <div class="insight-box" style="margin-top:16px">
-            <h3>Análise Crítica</h3>
-            <p id="nps-analise-critica">Carregando...</p>
-          </div>
-        </div>
-
         <!-- Sub-tab: Sazonalidade -->
         <div class="subtab-content" id="subtab-nps-sazonalidade">
           <div class="chart-card chart-card-full">
             <h3 class="chart-title">Sazonalidade — NPS por Mês do Ano</h3>
             <p class="chart-desc">Média do NPS agrupado por mês do calendário (Jan–Dez). Linha azul = volume de avaliações (eixo direito).</p>
             <canvas id="chart-nps-sazonalidade"></canvas>
-          </div>
-          <div class="insight-box">
-            <h3>Nota Metodológica</h3>
-            <p id="saz-nota">Carregando...</p>
           </div>
         </div>
 
@@ -291,8 +237,6 @@
           <canvas id="chart-gestao-scatter"></canvas>
         </div>
 
-        <div class="conclusion-box" id="gestao-conclusao"></div>
-
       </section>
 
       <!-- ══════════════════════════════
@@ -323,8 +267,6 @@
               <canvas id="chart-evolucao-problemas"></canvas>
             </div>
           </div>
-          <h3 class="examples-title">Exemplos Representativos</h3>
-          <div class="examples-section" id="exemplos-problemas"></div>
         </div>
 
         <!-- Elogios -->
@@ -333,8 +275,6 @@
             <h3 class="chart-title">Top 5 Categorias de Elogios</h3>
             <canvas id="chart-ranking-elogios"></canvas>
           </div>
-          <h3 class="examples-title">Exemplos Representativos</h3>
-          <div class="examples-section" id="exemplos-elogios"></div>
         </div>
 
         <!-- Divergências -->
@@ -347,8 +287,6 @@
           <div class="divergencia-explain">
             <strong>O que é uma divergência?</strong> Quando a nota NPS e o texto do comentário contradizem a mesma experiência. Ex: nota 9 (promotor) com texto negativo.
           </div>
-          <h3 class="examples-title">Exemplos de Divergências</h3>
-          <div class="examples-section" id="exemplos-divergencias"></div>
         </div>
 
         <!-- NPS por Tema -->
@@ -375,29 +313,30 @@
 
         <!-- Análise de Linguagem -->
         <div class="subtab-content" id="subtab-linguagem">
+          <div class="chart-card chart-card-full" style="margin-bottom:24px">
+            <h3 class="chart-title">Comprimento do Comentário por Sentimento</h3>
+            <p class="chart-desc">Média de palavras por comentário. Comentários negativos tendem a ser mais longos.</p>
+            <canvas id="chart-comment-length"></canvas>
+          </div>
+          <p class="section-subtitle" style="margin-bottom:12px">Palavras mais frequentes por gestão e sentimento (stopwords removidas)</p>
           <div class="charts-row">
             <div class="chart-card">
-              <h3 class="chart-title">Comprimento do Comentário por Sentimento</h3>
-              <p class="chart-desc">Comentários negativos tendem a ser mais longos?</p>
-              <canvas id="chart-comment-length"></canvas>
+              <h3 class="chart-title">Externo · Comentários Positivos</h3>
+              <div class="word-cloud" id="wc-regular-positivo"></div>
             </div>
             <div class="chart-card">
-              <div class="insight-box" style="margin-top:0">
-                <h3>Diferenças de Linguagem</h3>
-                <p id="linguagem-insight">Carregando...</p>
-              </div>
+              <h3 class="chart-title">Externo · Comentários Negativos</h3>
+              <div class="word-cloud" id="wc-regular-negativo"></div>
             </div>
           </div>
           <div class="charts-row">
             <div class="chart-card">
-              <h3 class="chart-title">Palavras Mais Frequentes — Externo</h3>
-              <p class="chart-desc">Termos dominantes em lojas com gestão externa</p>
-              <div class="word-cloud" id="wordcloud-regular"></div>
+              <h3 class="chart-title">Germinare · Comentários Positivos</h3>
+              <div class="word-cloud" id="wc-tocadora-positivo"></div>
             </div>
             <div class="chart-card">
-              <h3 class="chart-title">Palavras Mais Frequentes — Germinare</h3>
-              <p class="chart-desc">Termos dominantes em lojas Germinare</p>
-              <div class="word-cloud" id="wordcloud-tocadora"></div>
+              <h3 class="chart-title">Germinare · Comentários Negativos</h3>
+              <div class="word-cloud" id="wc-tocadora-negativo"></div>
             </div>
           </div>
         </div>
@@ -419,13 +358,6 @@
           </div>
 
           <input type="text" id="search-loja" class="search-input" placeholder="Buscar loja..." aria-label="Buscar loja pelo nome">
-
-          <select id="filter-alerta" class="filter-select" aria-label="Filtrar por status de alerta">
-            <option value="todos">Todos os Alertas</option>
-            <option value="ALERTA_QUEDA">Alertas de Queda</option>
-            <option value="ALERTA_MELHORA">Alertas de Melhora</option>
-            <option value="ESTAVEL">Estável</option>
-          </select>
         </div>
 
         <!-- Table view -->
@@ -437,14 +369,14 @@
                   <th scope="col" data-sort="nome">Loja</th>
                   <th scope="col" data-sort="flag">Gestão</th>
                   <th scope="col" data-sort="uf">UF</th>
+                  <th scope="col" data-sort="regiao">Região</th>
                   <th scope="col" data-sort="nps_trad">NPS Trad</th>
-                  <th scope="col" data-sort="nps_ajust">NPS Ajust</th>
-                  <th scope="col">NPS Híb</th>
-                  <th scope="col" data-sort="delta">Delta</th>
+                  <th scope="col" data-sort="nps_textual">NPS Textual</th>
+                  <th scope="col" data-sort="nps_hibrido">NPS Híbrido</th>
+                  <th scope="col" data-sort="delta_hibrido">Δ Híbrido</th>
                   <th scope="col" data-sort="pct_pos">% Pos</th>
                   <th scope="col" data-sort="pct_neg">% Neg</th>
                   <th scope="col">Top Problemas</th>
-                  <th scope="col" data-sort="alerta">Alerta</th>
                 </tr>
               </thead>
               <tbody id="tbody-lojas"></tbody>
@@ -475,8 +407,6 @@
           <button class="sub-tab active" data-subtab="qualidade">Qualidade dos Dados</button>
           <button class="sub-tab" data-subtab="modelo">Modelo Qualitativo</button>
           <button class="sub-tab" data-subtab="tendencias">Tendências</button>
-          <button class="sub-tab" data-subtab="coocorrencia">Co-ocorrência</button>
-          <button class="sub-tab" data-subtab="hipoteses">Hipóteses</button>
         </div>
 
         <!-- Qualidade -->
@@ -558,23 +488,6 @@
           </div>
         </div>
 
-        <!-- Co-ocorrência -->
-        <div class="subtab-content" id="subtab-coocorrencia">
-          <div class="chart-card chart-card-full">
-            <h3 class="chart-title">Co-ocorrência de Categorias</h3>
-            <p class="chart-desc">Quais problemas tendem a aparecer juntos? Comentários que mencionam mais de um tema.</p>
-            <canvas id="chart-coocorrencia"></canvas>
-          </div>
-          <div class="coocorrencia-insights" id="coocorrencia-insights"></div>
-        </div>
-
-        <!-- Hipóteses -->
-        <div class="subtab-content" id="subtab-hipoteses">
-          <h3 class="section-title" style="margin-bottom:16px">Hipóteses Investigadas</h3>
-          <p class="section-subtitle">Perguntas levantadas pela equipe e respondidas pelos dados</p>
-          <div class="hipoteses-grid" id="hipoteses-grid"></div>
-        </div>
-
       </section>
 
     </div><!-- /main-area -->
@@ -610,11 +523,6 @@
     <div class="drawer-section">
       <h4>Top 3 Elogios</h4>
       <div id="drawer-elogios"></div>
-    </div>
-
-    <div class="drawer-section">
-      <h4>Comentários Representativos</h4>
-      <div id="drawer-comentarios"></div>
     </div>
 
     <div class="drawer-model-badge" id="drawer-model-info"></div>

@@ -25,6 +25,12 @@ Swift.Filter = (function () {
       dynamic:     true
     },
     {
+      key:         'regiao',
+      label:       'Região',
+      placeholder: 'Todas as Regiões',
+      dynamic:     true
+    },
+    {
       key:         'loja',
       label:       'Loja',
       placeholder: 'Todas as Lojas',
@@ -161,12 +167,15 @@ Swift.Filter = (function () {
     let lojas = DATA.lojas || [];
     if (f.gestao.length) lojas = lojas.filter(l => f.gestao.includes(l.flag));
 
-    const ufs    = [...new Set(lojas.map(l => l.uf).filter(Boolean))].sort();
+    const ufs = [...new Set(lojas.map(l => l.uf).filter(Boolean))].sort();
     if (f.uf.length) lojas = lojas.filter(l => f.uf.includes(l.uf));
+    const regioes = [...new Set(lojas.map(l => l.regiao).filter(Boolean))].sort();
+    if (f.regiao.length) lojas = lojas.filter(l => f.regiao.includes(l.regiao));
     const lojaNames = [...new Set(lojas.map(l => l.nome).filter(Boolean))].sort();
 
-    populateOptions('uf',   ufs.map(u => ({ value: u, label: u })),           'Todas as UFs');
-    populateOptions('loja', lojaNames.map(n => ({ value: n, label: n })),     'Todas as Lojas');
+    populateOptions('uf',     ufs.map(u => ({ value: u, label: u })),       'Todas as UFs');
+    populateOptions('regiao', regioes.map(r => ({ value: r, label: r })),   'Todas as Regiões');
+    populateOptions('loja',   lojaNames.map(n => ({ value: n, label: n })), 'Todas as Lojas');
   }
 
   function cascadeBelow(changedKey) {
@@ -177,6 +186,9 @@ Swift.Filter = (function () {
       refreshDynamicOptions();
     } else if (changedKey === 'uf') {
       Swift.State.clearFilter('regiao');
+      Swift.State.clearFilter('loja');
+      refreshDynamicOptions();
+    } else if (changedKey === 'regiao') {
       Swift.State.clearFilter('loja');
       refreshDynamicOptions();
     }

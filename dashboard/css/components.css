@@ -104,8 +104,8 @@ body {
 .badge-queda    { background: var(--clr-negative-bg); color: var(--clr-negative); border: 1px solid var(--clr-negative-bd); }
 .badge-melhora  { background: var(--clr-positive-bg); color: var(--clr-positive); border: 1px solid var(--clr-positive-bd); }
 .badge-estavel  { background: var(--bg-card-alt);     color: var(--tx-muted);     border: 1px solid var(--bd-color); }
-.badge-regular  { background: var(--clr-info-bg);    color: var(--clr-info); }
-.badge-tocadora { background: var(--clr-purple-bg);  color: var(--clr-purple); }
+.badge-regular  { background: rgba(37,99,235,0.12);  color: #2563EB; }
+.badge-tocadora { background: rgba(236,72,153,0.12); color: #EC4899; }
 .badge-critico  { background: var(--clr-negative-bg); color: var(--clr-negative); }
 .badge-alta_performance { background: var(--clr-positive-bg); color: var(--clr-positive); }
 .badge-atencao_leve { background: var(--clr-neutral-bg); color: var(--clr-neutral); }
