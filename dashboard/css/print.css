@@ -1,0 +1,75 @@
+/* ═══════════════════════════════════════════════════════════════════
+   SWIFT ANALYTICS — Relatório / Impressão (A4)
+   .report-mode  → layout de relatório na tela (renderiza todas as telas)
+   @media print  → tamanho A4, quebras de página e chrome oculto
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Cabeçalho e títulos de página só aparecem no relatório */
+#print-report-header { display: none; }
+.print-page-title { display: none; }
+
+/* ── Modo relatório (tela, durante a preparação da impressão) ── */
+.report-mode .sidebar,
+.report-mode .filter-bar,
+.report-mode #btn-export-pdf,
+.report-mode #btn-theme,
+.report-mode .loja-drawer,
+.report-mode .drawer-overlay,
+.report-mode .lojas-controls,
+.report-mode .cmp-controls,
+.report-mode .view-toggle { display: none !important; }
+
+.report-mode .app-shell { display: block; }
+.report-mode .page-content { margin: 0; }
+.report-mode .main-area { max-width: 760px; margin: 0 auto; padding: 0; }
+
+/* mostra TODAS as páginas empilhadas */
+.report-mode .page { display: block !important; }
+.report-mode .subtab-content { display: block !important; }   /* todas as sub-abas */
+.report-mode .sub-tabs { display: none !important; }
+
+.report-mode #print-report-header {
+  display: block; padding: 0 0 12px; margin-bottom: 16px;
+  border-bottom: 2px solid var(--clr-brand);
+}
+.report-mode .prh-top { display: flex; justify-content: space-between; font-size: 11px; color: #555; }
+.report-mode .prh-logo { font-weight: 700; color: var(--clr-brand); }
+.report-mode .prh-title { font-size: 20px; margin: 6px 0 4px; color: #111; }
+.report-mode .prh-filtros, .report-mode .prh-base { font-size: 11px; color: #444; }
+.report-mode .print-page-title {
+  display: block; font-size: 16px; font-weight: 700; color: #111;
+  border-left: 4px solid var(--clr-brand); padding-left: 10px; margin: 0 0 14px;
+}
+
+/* ── Impressão real ── */
+@media print {
+  @page { size: A4 portrait; margin: 12mm; }
+
+  html, body { background: #fff !important; }
+  .sidebar, .filter-bar, #btn-export-pdf, #btn-theme,
+  .loja-drawer, .drawer-overlay, .sub-tabs, .lojas-controls, .cmp-controls, .view-toggle { display: none !important; }
+
+  .app-shell { display: block; }
+  .page-content, .main-area { margin: 0; padding: 0; max-width: 100%; }
+
+  .page { display: block !important; break-after: page; }
+  .page:last-child { break-after: auto; }
+  .subtab-content { display: block !important; }
+
+  #print-report-header { display: block; }
+  .print-page-title { display: block; }
+
+  /* não quebrar cartões/gráficos no meio */
+  .chart-card, .kpi-card, .kpi-card-large, .cmp-head-card,
+  .table-container, .nps-tema-card, .insight-box, .conclusion-box,
+  .gestao-metrics, .charts-row { break-inside: avoid; }
+
+  /* gráficos cabem na largura da página */
+  canvas { max-width: 100% !important; height: auto !important; }
+  .chart-card { box-shadow: none !important; border: 1px solid #ddd; }
+
+  /* grids mais compactos no papel */
+  .kpi-grid, .kpi-grid-8 { grid-template-columns: repeat(4, 1fr) !important; }
+  .charts-row { grid-template-columns: 1fr 1fr !important; gap: 10px; }
+  body { font-size: 11px; }
+}
