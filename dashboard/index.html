@@ -75,6 +75,7 @@
                     <span class="kpi-value" id="kpi-alertas">--</span>
                 </div>
             </div>
+            <p class="section-subtitle">Base oficial: 227 lojas (169 REGULAR e 58 TOCADORA) · 116.605 comentários · Jan/2025 a Mai/2026 · 4 UFs</p>
 
             <!-- Compilado Executivo -->
             <div class="compilado-section">
@@ -122,21 +123,21 @@
 
         <!-- ════════════ PÁGINA: GESTÃO (3.1) ════════════ -->
         <section class="page" id="page-gestao">
-            <h2 class="section-title">Comparativo: Externo vs Germinare</h2>
+            <h2 class="section-title">Comparativo: Tocadora vs Regular</h2>
             <p class="section-subtitle">Comparação em 4 dimensões: NPS, sentimento, categorias de problemas e conclusão estatística</p>
 
             <!-- Dimensão 1 e 2: NPS -->
             <div class="kpi-grid kpi-grid-2">
                 <div class="kpi-card-large">
                     <div class="gestao-header">
-                        <span class="badge badge-regular">Externo</span>
+                        <span class="badge badge-regular">Regular</span>
                         <span class="gestao-lojas" id="n-lojas-regular">-- lojas</span>
                     </div>
                     <div class="gestao-metrics" id="metrics-regular"></div>
                 </div>
                 <div class="kpi-card-large">
                     <div class="gestao-header">
-                        <span class="badge badge-tocadora">Germinare</span>
+                        <span class="badge badge-tocadora">Tocadora</span>
                         <span class="gestao-lojas" id="n-lojas-tocadora">-- lojas</span>
                     </div>
                     <div class="gestao-metrics" id="metrics-tocadora"></div>
@@ -336,14 +337,86 @@
             <p class="section-subtitle">Contribuições que vão além do pedido — tendências, co-ocorrência e segmentação</p>
 
             <div class="sub-tabs">
-                <button class="sub-tab active" data-subtab="nps-tema">NPS por Tema</button>
+                <button class="sub-tab active" data-subtab="qualitativo">NPS Qualitativo</button>
+                <button class="sub-tab" data-subtab="nps-tema">NPS por Tema</button>
                 <button class="sub-tab" data-subtab="tendencias">Tendências por Loja</button>
                 <button class="sub-tab" data-subtab="coocorrencia">Co-ocorrência</button>
                 <button class="sub-tab" data-subtab="linguagem">Análise de Linguagem</button>
             </div>
 
+            <!-- NPS Qualitativo Corrigido -->
+            <div class="subtab-content active" id="subtab-qualitativo">
+                <div class="kpi-grid kpi-grid-3">
+                    <div class="kpi-card">
+                        <span class="kpi-label">NPS Tradicional</span>
+                        <span class="kpi-value" id="qual-nps-trad">--</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-label">NPS Textual</span>
+                        <span class="kpi-value" id="qual-nps-textual">--</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-label">NPS Híbrido</span>
+                        <span class="kpi-value" id="qual-nps-hibrido">--</span>
+                    </div>
+                </div>
+
+                <div class="insight-box">
+                    <h3>Metodologia Corrigida</h3>
+                    <p id="qual-metodologia">Carregando...</p>
+                </div>
+
+                <div class="charts-row">
+                    <div class="chart-card">
+                        <h3 class="chart-title">NPS Híbrido × Transações</h3>
+                        <p class="chart-desc">Cada ponto representa uma loja. A leitura é descritiva: volume sozinho não explica satisfação.</p>
+                        <canvas id="chart-nps-transacoes"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Matriz de Risco</h3>
+                        <p class="chart-desc">Eixo X = NPS tradicional. Eixo Y = % de comentários negativos.</p>
+                        <canvas id="chart-matriz-risco"></canvas>
+                    </div>
+                </div>
+
+                <div class="charts-row">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Ranking de Prioridade</h3>
+                        <div class="table-container">
+                            <table class="lojas-table">
+                                <thead>
+                                    <tr>
+                                        <th>Loja</th>
+                                        <th>Prioridade</th>
+                                        <th>NPS Híbrido</th>
+                                        <th>% Negativo</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="qual-top-prioridade"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Risco Oculto</h3>
+                        <div class="table-container">
+                            <table class="lojas-table">
+                                <thead>
+                                    <tr>
+                                        <th>Loja</th>
+                                        <th>NPS Trad</th>
+                                        <th>% Negativo</th>
+                                        <th>Severidade</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="qual-risco-oculto"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- NPS por Tema -->
-            <div class="subtab-content active" id="subtab-nps-tema">
+            <div class="subtab-content" id="subtab-nps-tema">
                 <div class="charts-row">
                     <div class="chart-card">
                         <h3 class="chart-title">NPS por Tema — Visão Geral</h3>
@@ -418,6 +491,7 @@
     </main>
 
     <script src="js/data.js"></script>
+    <script src="js/qualitativo.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
