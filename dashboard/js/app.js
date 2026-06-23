@@ -543,6 +543,14 @@ function renderAvancadas() {
     }
 }
 
+<<<<<<< HEAD
+document.addEventListener('DOMContentLoaded', () => {
+  Swift.Nav.init();
+  Swift.Filter.init();
+  if (Swift.Export) Swift.Export.init();
+  Swift.Pages[Swift.State.page].render(Swift.State.filters);
+});
+=======
 function renderQualitativo() {
     if (!DATA.qualitativo) return;
 
@@ -734,3 +742,4 @@ function renderWordCloud(containerId, words) {
     if (!el || !words) return;
     el.innerHTML = words.map(w => `<span class="word size-${w.size}">${w.word}</span>`).join('');
 }
+>>>>>>> origin/main

@@ -1,0 +1,152 @@
+/* ═══════════════════════════════════════════════════════════════════
+   SWIFT ANALYTICS — Design Tokens
+   All color, spacing, typography, and shadow variables live here.
+   Never use hardcoded hex values outside this file.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand ── */
+  --clr-brand:       #E30613;
+  --clr-brand-dim:   rgba(227, 6, 19, 0.12);
+  --clr-brand-dark:  #b30010;
+  --clr-brand-hover: rgba(227, 6, 19, 0.08);
+
+  /* ── Semantic ── */
+  --clr-positive:    #10B981;
+  --clr-positive-bg: rgba(16, 185, 129, 0.10);
+  --clr-positive-bd: rgba(16, 185, 129, 0.30);
+
+  --clr-neutral:     #F59E0B;
+  --clr-neutral-bg:  rgba(245, 158, 11, 0.10);
+  --clr-neutral-bd:  rgba(245, 158, 11, 0.30);
+
+  --clr-negative:    #EF4444;
+  --clr-negative-bg: rgba(239, 68, 68, 0.10);
+  --clr-negative-bd: rgba(239, 68, 68, 0.30);
+
+  --clr-info:        #3B82F6;
+  --clr-info-bg:     rgba(59, 130, 246, 0.10);
+
+  --clr-purple:      #8B5CF6;
+  --clr-purple-bg:   rgba(139, 92, 246, 0.10);
+
+  /* ── Surfaces — Light Mode ── */
+  --bg-canvas:       #F8FAFC;
+  --bg-sidebar:      #FFFFFF;
+  --bg-card:         #FFFFFF;
+  --bg-card-alt:     #F1F5F9;
+  --bg-hover:        #F8FAFC;
+  --bg-active:       #FFF1F2;
+  --bg-input:        #FFFFFF;
+  --bg-table-head:   #0F172A;
+  --bg-table-head-tx:#F0F6FC;
+
+  /* ── Text — Light Mode ── */
+  --tx-primary:      #0F172A;
+  --tx-secondary:    #475569;
+  --tx-muted:        #94A3B8;
+  --tx-inverse:      #FFFFFF;
+  --tx-brand:        #E30613;
+
+  /* ── Borders — Light Mode ── */
+  --bd-color:        #E2E8F0;
+  --bd-focus:        #E30613;
+
+  /* ── Shadows — Light Mode ── */
+  --sh-xs:  0 1px 2px rgba(0, 0, 0, 0.05);
+  --sh-sm:  0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --sh-md:  0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --sh-lg:  0 8px 32px rgba(0, 0, 0, 0.10), 0 4px 12px rgba(0, 0, 0, 0.06);
+  --sh-xl:  0 20px 60px rgba(0, 0, 0, 0.12);
+
+  /* ── Typography ── */
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:  'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  --fs-xs:   11px;
+  --fs-sm:   12px;
+  --fs-base: 13px;
+  --fs-md:   14px;
+  --fs-lg:   16px;
+  --fs-xl:   20px;
+  --fs-2xl:  24px;
+  --fs-3xl:  30px;
+
+  --fw-normal:  400;
+  --fw-medium:  500;
+  --fw-semi:    600;
+  --fw-bold:    700;
+  --fw-black:   800;
+
+  /* ── Spacing ── */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+
+  /* ── Border Radius ── */
+  --r-xs:   4px;
+  --r-sm:   6px;
+  --r-md:   10px;
+  --r-lg:   14px;
+  --r-xl:   20px;
+  --r-full: 9999px;
+
+  /* ── Layout ── */
+  --sidebar-w:           220px;
+  --sidebar-collapsed-w: 60px;
+  --content-max-w:       1440px;
+
+  /* ── Transitions ── */
+  --t-fast:   0.15s ease;
+  --t-base:   0.20s ease;
+  --t-slow:   0.30s ease;
+}
+
+/* ══════════════════════════════════════════
+   DARK MODE — activated by data-theme="dark"
+   ══════════════════════════════════════════ */
+[data-theme="dark"] {
+  /* Surfaces — warm Swift dark (carvão quente, sem azul) */
+  --bg-canvas:       #16100E;
+  --bg-sidebar:      #1F1613;
+  --bg-card:         #271C17;
+  --bg-card-alt:     #31241E;
+  --bg-hover:        #3B2C24;
+  --bg-active:       rgba(227, 6, 19, 0.22);
+  --bg-input:        #2A1F1A;
+  --bg-table-head:   #120C0A;
+  --bg-table-head-tx:#F7ECE5;
+
+  /* Text — quente e com contraste alto (cinza não contrasta com preto) */
+  --tx-primary:      #FBF1EB;
+  --tx-secondary:    #D6C3B8;
+  --tx-muted:        #A89186;
+  --tx-inverse:      #16100E;
+  --tx-brand:        #FF6A4D;
+
+  /* Borders */
+  --bd-color:        #44342B;
+  --bd-focus:        #FF6A4D;
+
+  /* Shadows (deeper in dark) */
+  --sh-xs:  0 1px 2px rgba(0, 0, 0, 0.25);
+  --sh-sm:  0 1px 3px rgba(0, 0, 0, 0.30), 0 1px 2px rgba(0, 0, 0, 0.20);
+  --sh-md:  0 4px 16px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.20);
+  --sh-lg:  0 8px 32px rgba(0, 0, 0, 0.45), 0 4px 12px rgba(0, 0, 0, 0.25);
+  --sh-xl:  0 20px 60px rgba(0, 0, 0, 0.60);
+
+  /* Adjust semantic colors for dark */
+  --clr-positive-bg: rgba(16, 185, 129, 0.15);
+  --clr-neutral-bg:  rgba(245, 158, 11, 0.15);
+  --clr-negative-bg: rgba(239, 68, 68, 0.15);
+  --clr-info-bg:     rgba(59, 130, 246, 0.15);
+  --clr-purple-bg:   rgba(139, 92, 246, 0.15);
+  --clr-brand-dim:   rgba(227, 6, 19, 0.20);
+  --clr-brand-hover: rgba(227, 6, 19, 0.15);
+}
