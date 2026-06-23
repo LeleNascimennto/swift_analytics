@@ -7,31 +7,16 @@ Swift.Pages = Swift.Pages || {};
 
 Swift.Pages.lojas = (function () {
   const U = Swift.Utils, C = Swift.Charts;
-  let sortCol = 'nps_hibrido', sortAsc = false, viewMode = 'tabela', wired = false;
-
-  const QUAD = {
-    alta_performance: { c: 'rgba(16,185,129,0.6)', l: 'Alta Performance' },
-    atencao_leve:     { c: 'rgba(245,158,11,0.6)', l: 'Atenção Leve' },
-    risco_oculto:     { c: 'rgba(139,92,246,0.6)', l: 'Risco Oculto' },
-    critico:          { c: 'rgba(239,68,68,0.6)',  l: 'Crítico' }
-  };
+  let sortCol = 'nps_hibrido', sortAsc = false, wired = false;
 
   function render() {
     if (!wired) wire();
-    renderCurrent();
+    renderTable(getRows());
   }
 
   function wire() {
-    document.querySelectorAll('.view-toggle-btn').forEach(btn => btn.addEventListener('click', () => {
-      document.querySelectorAll('.view-toggle-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
-      btn.classList.add('active'); btn.setAttribute('aria-pressed', 'true');
-      viewMode = btn.dataset.view;
-      document.getElementById('lojas-table-view').style.display = viewMode === 'tabela' ? '' : 'none';
-      document.getElementById('lojas-map-view').style.display = viewMode === 'mapa' ? '' : 'none';
-      renderCurrent();
-    }));
     const s = document.getElementById('search-loja');
-    if (s) s.addEventListener('input', renderCurrent);
+    if (s) s.addEventListener('input', () => renderTable(getRows()));
     document.querySelectorAll('#tabela-lojas th[data-sort]').forEach(th => th.addEventListener('click', () => {
       const col = th.dataset.sort;
       if (sortCol === col) sortAsc = !sortAsc; else { sortCol = col; sortAsc = false; }
@@ -49,11 +34,6 @@ Swift.Pages.lojas = (function () {
       if (typeof va === 'string') va = va.toLowerCase(); if (typeof vb === 'string') vb = vb.toLowerCase();
       if (va < vb) return sortAsc ? -1 : 1; if (va > vb) return sortAsc ? 1 : -1; return 0;
     });
-  }
-
-  function renderCurrent() {
-    const rows = getRows();
-    if (viewMode === 'tabela') renderTable(rows); else renderMatrix(rows);
   }
 
   function renderTable(rows) {
@@ -74,26 +54,6 @@ Swift.Pages.lojas = (function () {
     tbody.querySelectorAll('tr[data-loja]').forEach(r => {
       r.addEventListener('click', () => drawer(r.dataset.loja));
       r.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); drawer(r.dataset.loja); } });
-    });
-  }
-
-  function renderMatrix(rows) {
-    const tc = C.getThemeColors();
-    C.create('chart-risk-matrix', {
-      type: 'scatter',
-      data: { datasets: Object.keys(QUAD).map(q => ({
-        label: QUAD[q].l,
-        data: rows.filter(l => l.quadrante === q).map(l => ({ x: l.nps_trad, y: l.pct_neg, loja: l.nome, sev: l.severidade })),
-        backgroundColor: QUAD[q].c, pointRadius: 6
-      })) },
-      options: {
-        responsive: true,
-        plugins: { legend: { position: 'bottom', labels: { color: tc.labelColor, font: { size: 11 } } }, tooltip: { ...C.defaultOptions().plugins.tooltip, callbacks: { label: ctx => [`${ctx.raw.loja}`, `NPS ${U.fmt(ctx.raw.x, 1)} · ${U.fmt(ctx.raw.y, 1)}% neg`, `Severidade ${U.fmt(ctx.raw.sev, 2)}`] } } },
-        scales: {
-          x: { min: 0, max: 100, title: { display: true, text: 'NPS Tradicional', color: tc.labelColor, font: { size: 11 } }, grid: { color: tc.gridColor }, ticks: { color: tc.tickColor, font: { size: 11 } } },
-          y: { title: { display: true, text: '% Comentários Negativos', color: tc.labelColor, font: { size: 11 } }, grid: { color: tc.gridColor }, ticks: { color: tc.tickColor, callback: v => v + '%', font: { size: 11 } } }
-        }
-      }
     });
   }
 

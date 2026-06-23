@@ -9,7 +9,7 @@ Swift.Export = (function () {
   const PAGES = ['overview', 'nps', 'gestao', 'temas', 'lojas', 'comparativo', 'dados'];
   const TITULOS = {
     overview: 'Visão Geral', nps: 'NPS Analytics', gestao: 'Gestão',
-    temas: 'Temas & Sentimentos', lojas: 'Lojas', comparativo: 'Comparativo', dados: 'Dados e Modelo'
+    temas: 'Temas & Sentimentos', lojas: 'Lojas', comparativo: 'Comparativo', dados: 'Tendências'
   };
   let busy = false;
 

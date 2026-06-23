@@ -14,17 +14,16 @@ Swift.Pages.temas = (function () {
     const lojas = U.getFilteredLojas();
     renderProblemas(tc, lojas);
     renderElogios(tc, lojas);
-    renderDivergencias();
     renderNpsTema(tc, lojas);
     renderLinguagem(tc);
   }
 
   function renderProblemas(tc, lojas) {
-    const rk = U.aggRanking(lojas, 'top_problemas');
+    const rk = U.aggCounts(lojas, 'prob_counts');
     C.create('chart-ranking-problemas', {
       type: 'bar',
-      data: { labels: rk.categorias, datasets: [{ data: rk.pcts, backgroundColor: C.PROBLEM_COLORS, borderRadius: 6, borderSkipped: false }] },
-      options: hbarOpts(tc, '%')
+      data: { labels: rk.categorias, datasets: [{ data: rk.contagens, backgroundColor: C.PROBLEM_COLORS, borderRadius: 6, borderSkipped: false }] },
+      options: { ...hbarOpts(tc), plugins: { legend: { display: false }, tooltip: { ...C.defaultOptions().plugins.tooltip, callbacks: { label: ctx => U.fmtInt(ctx.parsed.x) + ' comentários' } } } }
     });
     // Evolução temporal dos problemas (visão global do período)
     const ev = DATA.evolucao_problemas;
@@ -37,56 +36,46 @@ Swift.Pages.temas = (function () {
   }
 
   function renderElogios(tc, lojas) {
-    const rk = U.aggRanking(lojas, 'top_elogios');
+    const rk = U.aggCounts(lojas, 'elog_counts');
     C.create('chart-ranking-elogios', {
       type: 'bar',
-      data: { labels: rk.categorias, datasets: [{ data: rk.pcts, backgroundColor: C.PRAISE_COLORS, borderRadius: 6, borderSkipped: false }] },
-      options: hbarOpts(tc, '%')
+      data: { labels: rk.categorias, datasets: [{ data: rk.contagens, backgroundColor: C.PRAISE_COLORS, borderRadius: 6, borderSkipped: false }] },
+      options: { ...hbarOpts(tc), plugins: { legend: { display: false }, tooltip: { ...C.defaultOptions().plugins.tooltip, callbacks: { label: ctx => U.fmtInt(ctx.parsed.x) + ' comentários' } } } }
     });
-  }
-
-  function renderDivergencias() {
-    const d = DATA.divergencias; if (!d) return;
-    setEl('kpi-divergentes', d.total_pct + '%');
-    setEl('kpi-prom-neg', U.fmtInt(d.promotor_negativo));
-    setEl('kpi-det-pos', U.fmtInt(d.detrator_positivo));
   }
 
   function renderNpsTema(tc, lojas) {
     const reg = lojas.filter(l => l.flag === 'regular');
     const toc = lojas.filter(l => l.flag === 'tocadora');
-    const global = U.aggNpsTema(lojas);
+    const global = U.aggTemaNeg(lojas);
     if (!global.length) return;
+    const corNeg = v => v >= 25 ? '#EF4444' : v >= 12 ? '#F59E0B' : '#10B981';
 
     C.create('chart-nps-tema-global', {
       type: 'bar',
-      data: { labels: global.map(t => t.tema), datasets: [{ data: global.map(t => t.nps), backgroundColor: global.map(t => t.nps < 50 ? '#EF4444' : t.nps < 75 ? '#F59E0B' : '#10B981'), borderRadius: 6, borderSkipped: false }] },
-      options: { ...hbarOpts(tc), scales: { x: { min: 0, max: 100, grid: { color: tc.gridColor }, ticks: { color: tc.tickColor, font: { size: 11 } } }, y: { grid: { display: false }, ticks: { color: tc.tickColor, font: { size: 11, weight: '500' } } } } }
+      data: { labels: global.map(t => t.tema), datasets: [{ data: global.map(t => t.neg), backgroundColor: global.map(t => corNeg(t.neg)), borderRadius: 6, borderSkipped: false }] },
+      options: { indexAxis: 'y', responsive: true, plugins: { legend: { display: false }, tooltip: { ...C.defaultOptions().plugins.tooltip, callbacks: { label: ctx => `${U.fmt(ctx.parsed.x, 1)}% negativo` } } }, scales: { x: { min: 0, max: 100, grid: { color: tc.gridColor }, ticks: { color: tc.tickColor, callback: v => v + '%', font: { size: 11 } } }, y: { grid: { display: false }, ticks: { color: tc.tickColor, font: { size: 11, weight: '500' } } } } }
     });
 
-    const rTema = U.aggNpsTema(reg), tTema = U.aggNpsTema(toc);
-    const tmap = {}; tTema.forEach(t => tmap[t.tema] = t.nps);
+    const rTema = U.aggTemaNeg(reg), tTema = U.aggTemaNeg(toc);
+    const tmap = {}; tTema.forEach(t => tmap[t.tema] = t.neg);
     C.create('chart-nps-tema-gestao', {
       type: 'bar',
       data: { labels: rTema.map(t => t.tema), datasets: [
-        { label: 'Externo', data: rTema.map(t => t.nps), backgroundColor: COR_EXT, borderRadius: 4, borderSkipped: false },
+        { label: 'Externo', data: rTema.map(t => t.neg), backgroundColor: COR_EXT, borderRadius: 4, borderSkipped: false },
         { label: 'Germinare', data: rTema.map(t => tmap[t.tema] ?? null), backgroundColor: COR_GER, borderRadius: 4, borderSkipped: false }
       ] },
-      options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { color: tc.labelColor, font: { size: 11 } } }, tooltip: C.defaultOptions().plugins.tooltip }, scales: { x: { grid: { display: false }, ticks: { color: tc.tickColor, font: { size: 11 } } }, y: { min: 0, max: 100, grid: { color: tc.gridColor }, ticks: { color: tc.tickColor, font: { size: 11 } } } } }
+      options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { color: tc.labelColor, font: { size: 11 } } }, tooltip: { ...C.defaultOptions().plugins.tooltip, callbacks: { label: ctx => `${ctx.dataset.label}: ${U.fmt(ctx.parsed.y, 1)}% negativo` } } }, scales: { x: { grid: { display: false }, ticks: { color: tc.tickColor, font: { size: 11 } } }, y: { min: 0, max: 100, grid: { color: tc.gridColor }, ticks: { color: tc.tickColor, callback: v => v + '%', font: { size: 11 } } } } }
     });
 
-    const worst = global[0];
-    setEl('nps-tema-insight', `<strong>${U.escapeHtml(worst.tema)}</strong> é o tema mais crítico (NPS textual ${U.fmt(worst.nps, 1)}, n=${worst.n}). O NPS por tema usa o <strong>sentimento do texto</strong> dos comentários daquela categoria — quanto menor, mais negativo o discurso sobre o tema.`);
-
-    // Piores lojas por tema (das lojas filtradas)
+    // Piores lojas por tema = maior % negativo (das lojas filtradas)
     let html = '';
     global.forEach(t => {
       const piores = U.pioresPorTema(lojas, t.tema);
       if (!piores.length) return;
       html += `<div class="nps-tema-card"><h4>${U.escapeHtml(t.tema)}</h4><div class="nps-tema-list">`;
       piores.forEach((l, i) => {
-        const color = l.nps < 50 ? 'var(--clr-negative)' : l.nps < 70 ? 'var(--clr-neutral)' : 'var(--clr-positive)';
-        html += `<div class="nps-tema-item"><span class="rank">${i + 1}.</span><span class="loja-name">${U.escapeHtml(l.loja)}</span><span class="nps-value" style="color:${color}">NPS ${U.fmt(l.nps, 0)}</span><span class="n-count">(n=${l.n})</span></div>`;
+        html += `<div class="nps-tema-item"><span class="rank">${i + 1}.</span><span class="loja-name">${U.escapeHtml(l.loja)}</span><span class="nps-value" style="color:${corNeg(l.neg)}">${U.fmt(l.neg, 0)}% neg</span><span class="n-count">(n=${l.n})</span></div>`;
       });
       html += '</div></div>';
     });
