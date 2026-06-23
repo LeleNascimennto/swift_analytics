@@ -39,11 +39,13 @@ Swift.Pages.gestao = (function () {
       }
     });
 
-    // Top 5 problemas por gestão
-    const rkReg = U.aggRanking(reg, 'top_problemas', 8);
-    const rkToc = U.aggRanking(toc, 'top_problemas', 8);
-    const mapReg = {}; rkReg.categorias.forEach((c, i) => mapReg[c] = rkReg.pcts[i]);
-    const mapToc = {}; rkToc.categorias.forEach((c, i) => mapToc[c] = rkToc.pcts[i]);
+    // Top 5 problemas por gestão — share (%) dos comentários de problema de cada gestão
+    // (comparável entre Externo e Germinare apesar dos volumes diferentes)
+    const rkReg = U.aggCounts(reg, 'prob_counts', 8), rkToc = U.aggCounts(toc, 'prob_counts', 8);
+    const totReg = rkReg.contagens.reduce((s, v) => s + v, 0) || 1;
+    const totToc = rkToc.contagens.reduce((s, v) => s + v, 0) || 1;
+    const mapReg = {}; rkReg.categorias.forEach((c, i) => mapReg[c] = Math.round(100 * rkReg.contagens[i] / totReg));
+    const mapToc = {}; rkToc.categorias.forEach((c, i) => mapToc[c] = Math.round(100 * rkToc.contagens[i] / totToc));
     const cats = [...new Set([...rkReg.categorias.slice(0, 5), ...rkToc.categorias.slice(0, 5)])].slice(0, 6);
     C.create('chart-gestao-problemas', {
       type: 'bar',

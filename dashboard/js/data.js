@@ -95,19 +95,23 @@ const DATA = {
       "avaliacoes_ponderadas": 1383.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Atendimento",
+          "pct": 7
         },
         {
-          "cat": "Abastecimento",
-          "pct": 26
+          "cat": "Promoções & Fidelidade",
+          "pct": 36
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 17
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Outros",
+          "pct": 13
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 34
@@ -115,10 +119,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 14
         }
       ],
       "temporal": [
@@ -233,6 +233,22 @@ const DATA = {
           "nps": 31.0,
           "n": 126
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 62,
+        "Abastecimento": 37,
+        "Loja Física": 23,
+        "Atendimento": 9,
+        "Entrega & Logística": 7,
+        "Outros": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 64,
+        "Entrega & Logística": 42,
+        "Loja Física": 26,
+        "Outros": 24,
+        "Atendimento": 21,
+        "Abastecimento": 12
       }
     },
     {
@@ -256,30 +272,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1700.0,
       "top_problemas": [
         {
+          "cat": "Loja Física",
+          "pct": 25
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "pct": 36
         },
         {
           "cat": "Abastecimento",
-          "pct": 26
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 25
+          "pct": 34
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 33
-        },
         {
           "cat": "Atendimento",
           "pct": 20
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 15
         }
       ],
       "temporal": [
@@ -394,6 +410,22 @@ const DATA = {
           "nps": 39.1,
           "n": 169
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 69,
+        "Abastecimento": 46,
+        "Loja Física": 44,
+        "Atendimento": 7,
+        "Entrega & Logística": 4,
+        "Outros": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 100,
+        "Atendimento": 61,
+        "Entrega & Logística": 57,
+        "Loja Física": 45,
+        "Outros": 21,
+        "Abastecimento": 20
       }
     },
     {
@@ -417,22 +449,22 @@ const DATA = {
       "avaliacoes_ponderadas": 1383.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 27
+          "cat": "Outros",
+          "pct": 5
         },
         {
           "cat": "Loja Física",
-          "pct": 27
+          "pct": 33
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 7
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 14
         },
         {
           "cat": "Atendimento",
@@ -555,6 +587,22 @@ const DATA = {
           "nps": 35.3,
           "n": 102
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 45,
+        "Abastecimento": 40,
+        "Loja Física": 39,
+        "Outros": 11,
+        "Atendimento": 8,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 57,
+        "Atendimento": 54,
+        "Entrega & Logística": 50,
+        "Outros": 33,
+        "Loja Física": 28,
+        "Abastecimento": 20
       }
     },
     {
@@ -578,30 +626,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1907.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 28
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 16
-        }
-      ],
-      "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Outros",
+          "pct": 4
         },
         {
           "cat": "Loja Física",
           "pct": 19
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 37
+        }
+      ],
+      "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 19
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 12
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -716,6 +764,22 @@ const DATA = {
           "nps": 29.7,
           "n": 145
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 71,
+        "Abastecimento": 45,
+        "Loja Física": 25,
+        "Atendimento": 8,
+        "Outros": 8,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 74,
+        "Entrega & Logística": 62,
+        "Loja Física": 55,
+        "Abastecimento": 35,
+        "Outros": 34,
+        "Atendimento": 30
       }
     },
     {
@@ -739,23 +803,19 @@ const DATA = {
       "avaliacoes_ponderadas": 1742.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 28
-        },
-        {
           "cat": "Loja Física",
+          "pct": 43
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 5
+        },
+        {
+          "cat": "Promoções & Fidelidade",
           "pct": 27
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 25
@@ -763,6 +823,10 @@ const DATA = {
         {
           "cat": "Atendimento",
           "pct": 17
+        },
+        {
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -877,6 +941,22 @@ const DATA = {
           "nps": 39.1,
           "n": 161
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 71,
+        "Abastecimento": 55,
+        "Loja Física": 53,
+        "Atendimento": 9,
+        "Outros": 6,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 90,
+        "Entrega & Logística": 83,
+        "Atendimento": 58,
+        "Loja Física": 40,
+        "Outros": 33,
+        "Abastecimento": 28
       }
     },
     {
@@ -900,16 +980,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1331.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Loja Física",
-          "pct": 22
+          "pct": 23
         },
         {
-          "cat": "Abastecimento",
-          "pct": 21
+          "cat": "Promoções & Fidelidade",
+          "pct": 39
         }
       ],
       "top_elogios": [
@@ -918,12 +998,12 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
+          "cat": "Loja Física",
+          "pct": 14
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 15
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -1038,6 +1118,22 @@ const DATA = {
           "nps": 26.0,
           "n": 154
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 77,
+        "Loja Física": 38,
+        "Abastecimento": 36,
+        "Atendimento": 15,
+        "Outros": 5,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Atendimento": 90,
+        "Promoções & Fidelidade": 77,
+        "Entrega & Logística": 46,
+        "Loja Física": 44,
+        "Outros": 31,
+        "Abastecimento": 26
       }
     },
     {
@@ -1061,19 +1157,23 @@ const DATA = {
       "avaliacoes_ponderadas": 2815.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
+          "cat": "Outros",
+          "pct": 2
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 47
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 28
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
+          "pct": 37
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 18
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 33
@@ -1081,10 +1181,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 23
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 18
         }
       ],
       "temporal": [
@@ -1199,6 +1295,22 @@ const DATA = {
           "nps": 37.8,
           "n": 249
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 110,
+        "Abastecimento": 66,
+        "Loja Física": 35,
+        "Atendimento": 13,
+        "Outros": 9,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 139,
+        "Entrega & Logística": 97,
+        "Loja Física": 75,
+        "Atendimento": 47,
+        "Outros": 35,
+        "Abastecimento": 31
       }
     },
     {
@@ -1222,30 +1334,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3369.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 27
+          "cat": "Outros",
+          "pct": 3
         },
         {
           "cat": "Loja Física",
-          "pct": 21
+          "pct": 28
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 8
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Atendimento",
-          "pct": 17
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -1360,6 +1472,22 @@ const DATA = {
           "nps": 47.0,
           "n": 330
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 125,
+        "Abastecimento": 95,
+        "Loja Física": 74,
+        "Atendimento": 23,
+        "Outros": 19,
+        "Entrega & Logística": 12
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 205,
+        "Entrega & Logística": 127,
+        "Atendimento": 115,
+        "Loja Física": 93,
+        "Outros": 73,
+        "Abastecimento": 66
       }
     },
     {
@@ -1383,26 +1511,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1423.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 5
         },
         {
           "cat": "Loja Física",
-          "pct": 23
+          "pct": 32
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 33
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         },
         {
           "cat": "Loja Física",
@@ -1521,6 +1649,22 @@ const DATA = {
           "nps": 43.4,
           "n": 136
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 53,
+        "Abastecimento": 34,
+        "Loja Física": 33,
+        "Outros": 11,
+        "Atendimento": 9,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 83,
+        "Entrega & Logística": 47,
+        "Loja Física": 36,
+        "Atendimento": 33,
+        "Abastecimento": 30,
+        "Outros": 21
       }
     },
     {
@@ -1544,15 +1688,15 @@ const DATA = {
       "avaliacoes_ponderadas": 1486.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 35
-        },
-        {
-          "cat": "Abastecimento",
+          "cat": "Loja Física",
           "pct": 32
         },
         {
-          "cat": "Loja Física",
+          "cat": "Abastecimento",
+          "pct": 39
+        },
+        {
+          "cat": "Promoções & Fidelidade",
           "pct": 23
         }
       ],
@@ -1562,12 +1706,12 @@ const DATA = {
           "pct": 27
         },
         {
-          "cat": "Promoções & Fidelidade",
+          "cat": "Entrega & Logística",
           "pct": 23
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -1682,6 +1826,22 @@ const DATA = {
           "nps": 38.8,
           "n": 134
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 61,
+        "Abastecimento": 56,
+        "Loja Física": 41,
+        "Outros": 6,
+        "Atendimento": 6,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Atendimento": 84,
+        "Promoções & Fidelidade": 73,
+        "Entrega & Logística": 70,
+        "Loja Física": 32,
+        "Outros": 31,
+        "Abastecimento": 21
       }
     },
     {
@@ -1705,16 +1865,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1030.0,
       "top_problemas": [
         {
-          "cat": "Abastecimento",
-          "pct": 35
-        },
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 33
-        },
-        {
           "cat": "Loja Física",
-          "pct": 20
+          "pct": 23
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 41
         }
       ],
       "top_elogios": [
@@ -1723,12 +1883,12 @@ const DATA = {
           "pct": 34
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Loja Física",
-          "pct": 13
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -1843,6 +2003,21 @@ const DATA = {
           "nps": 50.5,
           "n": 93
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 34,
+        "Promoções & Fidelidade": 32,
+        "Loja Física": 19,
+        "Atendimento": 6,
+        "Outros": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 61,
+        "Entrega & Logística": 35,
+        "Loja Física": 24,
+        "Atendimento": 24,
+        "Outros": 19,
+        "Abastecimento": 16
       }
     },
     {
@@ -1866,30 +2041,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1802.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
+          "cat": "Loja Física",
+          "pct": 33
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 6
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 26
+          "pct": 32
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 22
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
           "cat": "Loja Física",
           "pct": 17
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -2004,6 +2179,22 @@ const DATA = {
           "nps": 38.2,
           "n": 131
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 56,
+        "Abastecimento": 42,
+        "Loja Física": 39,
+        "Atendimento": 9,
+        "Outros": 4,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 75,
+        "Entrega & Logística": 63,
+        "Loja Física": 51,
+        "Abastecimento": 36,
+        "Atendimento": 35,
+        "Outros": 33
       }
     },
     {
@@ -2027,16 +2218,16 @@ const DATA = {
       "avaliacoes_ponderadas": 897.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 35
-        },
-        {
           "cat": "Loja Física",
-          "pct": 33
+          "pct": 39
         },
         {
           "cat": "Abastecimento",
-          "pct": 24
+          "pct": 32
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 25
         }
       ],
       "top_elogios": [
@@ -2045,8 +2236,8 @@ const DATA = {
           "pct": 28
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Atendimento",
@@ -2165,6 +2356,22 @@ const DATA = {
           "nps": 38.2,
           "n": 68
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 31,
+        "Loja Física": 29,
+        "Abastecimento": 21,
+        "Atendimento": 4,
+        "Outros": 3,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Entrega & Logística": 41,
+        "Promoções & Fidelidade": 37,
+        "Atendimento": 26,
+        "Loja Física": 15,
+        "Abastecimento": 15,
+        "Outros": 11
       }
     },
     {
@@ -2188,30 +2395,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1353.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 9
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 50
+          "pct": 42
         },
         {
           "cat": "Abastecimento",
-          "pct": 24
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 30
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 33
-        },
         {
           "cat": "Atendimento",
           "pct": 22
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         }
       ],
       "temporal": [
@@ -2326,6 +2533,22 @@ const DATA = {
           "nps": 31.9,
           "n": 144
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 70,
+        "Abastecimento": 34,
+        "Loja Física": 16,
+        "Atendimento": 11,
+        "Outros": 6,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 74,
+        "Atendimento": 50,
+        "Entrega & Logística": 42,
+        "Outros": 28,
+        "Loja Física": 19,
+        "Abastecimento": 13
       }
     },
     {
@@ -2349,30 +2572,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1368.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 29
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Loja Física",
-          "pct": 22
+          "pct": 29
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
         {
           "cat": "Atendimento",
           "pct": 25
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
+          "cat": "Outros",
+          "pct": 10
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 28
         }
       ],
       "temporal": [
@@ -2487,6 +2710,22 @@ const DATA = {
           "nps": 40.9,
           "n": 127
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 53,
+        "Abastecimento": 41,
+        "Loja Física": 31,
+        "Atendimento": 8,
+        "Outros": 6,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 74,
+        "Atendimento": 68,
+        "Entrega & Logística": 46,
+        "Loja Física": 31,
+        "Outros": 28,
+        "Abastecimento": 22
       }
     },
     {
@@ -2510,29 +2749,29 @@ const DATA = {
       "avaliacoes_ponderadas": 1837.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 23
-        },
-        {
           "cat": "Loja Física",
-          "pct": 19
+          "pct": 31
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 6
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Atendimento",
+          "pct": 21
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 30
         },
         {
           "cat": "Entrega & Logística",
-          "pct": 21
-        },
-        {
-          "cat": "Atendimento",
           "pct": 21
         }
       ],
@@ -2648,6 +2887,22 @@ const DATA = {
           "nps": 39.8,
           "n": 166
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 75,
+        "Abastecimento": 38,
+        "Loja Física": 31,
+        "Atendimento": 9,
+        "Outros": 7,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 91,
+        "Entrega & Logística": 63,
+        "Atendimento": 62,
+        "Loja Física": 39,
+        "Outros": 24,
+        "Abastecimento": 22
       }
     },
     {
@@ -2671,16 +2926,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1565.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
-        {
           "cat": "Loja Física",
-          "pct": 30
+          "pct": 35
         },
         {
-          "cat": "Abastecimento",
-          "pct": 25
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 5
         }
       ],
       "top_elogios": [
@@ -2689,12 +2944,12 @@ const DATA = {
           "pct": 36
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 21
-        },
-        {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Outros",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -2809,6 +3064,22 @@ const DATA = {
           "nps": 34.5,
           "n": 142
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 62,
+        "Loja Física": 51,
+        "Abastecimento": 42,
+        "Entrega & Logística": 7,
+        "Atendimento": 7,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Atendimento": 135,
+        "Promoções & Fidelidade": 80,
+        "Loja Física": 56,
+        "Entrega & Logística": 52,
+        "Outros": 35,
+        "Abastecimento": 21
       }
     },
     {
@@ -2832,16 +3103,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1438.0,
       "top_problemas": [
         {
-          "cat": "Abastecimento",
-          "pct": 35
+          "cat": "Atendimento",
+          "pct": 11
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 34
+          "pct": 38
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Abastecimento",
+          "pct": 37
         }
       ],
       "top_elogios": [
@@ -2850,12 +3121,12 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 23
-        },
-        {
           "cat": "Entrega & Logística",
           "pct": 21
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -2970,6 +3241,22 @@ const DATA = {
           "nps": 33.6,
           "n": 128
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 56,
+        "Promoções & Fidelidade": 54,
+        "Atendimento": 23,
+        "Loja Física": 17,
+        "Outros": 6,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Atendimento": 91,
+        "Promoções & Fidelidade": 74,
+        "Entrega & Logística": 68,
+        "Loja Física": 35,
+        "Outros": 25,
+        "Abastecimento": 24
       }
     },
     {
@@ -2993,30 +3280,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1960.0,
       "top_problemas": [
         {
+          "cat": "Entrega & Logística",
+          "pct": 3
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "pct": 41
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 37
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Outros",
+          "pct": 13
         },
         {
           "cat": "Entrega & Logística",
           "pct": 22
         },
         {
-          "cat": "Atendimento",
-          "pct": 17
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -3131,6 +3418,22 @@ const DATA = {
           "nps": 34.9,
           "n": 175
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 77,
+        "Abastecimento": 54,
+        "Loja Física": 19,
+        "Atendimento": 11,
+        "Outros": 6,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 98,
+        "Entrega & Logística": 78,
+        "Atendimento": 62,
+        "Outros": 48,
+        "Loja Física": 48,
+        "Abastecimento": 24
       }
     },
     {
@@ -3154,30 +3457,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2391.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 28
+          "cat": "Entrega & Logística",
+          "pct": 4
         },
         {
           "cat": "Loja Física",
-          "pct": 21
+          "pct": 28
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
+          "cat": "Outros",
+          "pct": 11
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         },
         {
           "cat": "Entrega & Logística",
           "pct": 21
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 17
         }
       ],
       "temporal": [
@@ -3292,6 +3595,22 @@ const DATA = {
           "nps": 42.7,
           "n": 199
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 80,
+        "Abastecimento": 55,
+        "Loja Física": 41,
+        "Atendimento": 11,
+        "Outros": 6,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 119,
+        "Entrega & Logística": 90,
+        "Atendimento": 70,
+        "Loja Física": 56,
+        "Outros": 45,
+        "Abastecimento": 39
       }
     },
     {
@@ -3315,30 +3634,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2002.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 10
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "pct": 49
         },
         {
           "cat": "Abastecimento",
-          "pct": 32
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 9
+          "pct": 28
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Loja Física",
+          "pct": 15
         },
         {
           "cat": "Atendimento",
           "pct": 18
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 21
         }
       ],
       "temporal": [
@@ -3453,6 +3772,22 @@ const DATA = {
           "nps": 34.0,
           "n": 162
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 68,
+        "Abastecimento": 47,
+        "Loja Física": 14,
+        "Atendimento": 11,
+        "Outros": 5,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 94,
+        "Entrega & Logística": 69,
+        "Atendimento": 60,
+        "Loja Física": 48,
+        "Outros": 29,
+        "Abastecimento": 26
       }
     },
     {
@@ -3476,30 +3811,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2261.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "cat": "Entrega & Logística",
+          "pct": 4
+        },
+        {
+          "cat": "Outros",
+          "pct": 4
         },
         {
           "cat": "Loja Física",
-          "pct": 21
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 19
+          "pct": 27
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
-        },
         {
           "cat": "Atendimento",
           "pct": 25
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Loja Física",
+          "pct": 14
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -3614,6 +3949,22 @@ const DATA = {
           "nps": 33.3,
           "n": 213
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 97,
+        "Loja Física": 44,
+        "Abastecimento": 41,
+        "Outros": 18,
+        "Entrega & Logística": 6,
+        "Atendimento": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 116,
+        "Atendimento": 115,
+        "Entrega & Logística": 90,
+        "Loja Física": 65,
+        "Outros": 42,
+        "Abastecimento": 38
       }
     },
     {
@@ -3637,30 +3988,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3521.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 42
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 26
+          "cat": "Outros",
+          "pct": 5
         },
         {
           "cat": "Loja Física",
-          "pct": 21
+          "pct": 22
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 36
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Entrega & Logística",
           "pct": 25
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
         }
       ],
       "temporal": [
@@ -3775,6 +4126,22 @@ const DATA = {
           "nps": 40.1,
           "n": 262
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 111,
+        "Abastecimento": 68,
+        "Loja Física": 55,
+        "Atendimento": 13,
+        "Outros": 12,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 151,
+        "Entrega & Logística": 136,
+        "Loja Física": 83,
+        "Outros": 67,
+        "Atendimento": 60,
+        "Abastecimento": 58
       }
     },
     {
@@ -3798,30 +4165,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2866.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Abastecimento",
+          "pct": 41
         },
         {
-          "cat": "Abastecimento",
-          "pct": 33
+          "cat": "Promoções & Fidelidade",
+          "pct": 38
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 17
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
         {
           "cat": "Loja Física",
           "pct": 18
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
+          "cat": "Outros",
+          "pct": 11
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         }
       ],
       "temporal": [
@@ -3936,6 +4303,22 @@ const DATA = {
           "nps": 42.5,
           "n": 219
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 87,
+        "Abastecimento": 66,
+        "Loja Física": 30,
+        "Atendimento": 6,
+        "Outros": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 132,
+        "Loja Física": 76,
+        "Entrega & Logística": 74,
+        "Atendimento": 61,
+        "Outros": 46,
+        "Abastecimento": 34
       }
     },
     {
@@ -3959,16 +4342,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1861.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 28
+          "cat": "Atendimento",
+          "pct": 8
         },
         {
           "cat": "Loja Física",
           "pct": 20
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 38
         }
       ],
       "top_elogios": [
@@ -3977,12 +4360,12 @@ const DATA = {
           "pct": 28
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 15
+          "cat": "Loja Física",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -4097,6 +4480,22 @@ const DATA = {
           "nps": 38.5,
           "n": 169
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 79,
+        "Abastecimento": 55,
+        "Loja Física": 39,
+        "Atendimento": 12,
+        "Entrega & Logística": 7,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Atendimento": 95,
+        "Promoções & Fidelidade": 90,
+        "Entrega & Logística": 51,
+        "Loja Física": 43,
+        "Outros": 38,
+        "Abastecimento": 27
       }
     },
     {
@@ -4120,16 +4519,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2150.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 12
+        },
+        {
+          "cat": "Outros",
+          "pct": 4
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 52
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 26
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 10
+          "pct": 40
         }
       ],
       "top_elogios": [
@@ -4138,12 +4537,12 @@ const DATA = {
           "pct": 37
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Outros",
+          "pct": 13
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -4258,6 +4657,22 @@ const DATA = {
           "nps": 40.2,
           "n": 204
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 91,
+        "Abastecimento": 45,
+        "Loja Física": 17,
+        "Atendimento": 16,
+        "Outros": 3,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 113,
+        "Entrega & Logística": 56,
+        "Atendimento": 42,
+        "Outros": 39,
+        "Loja Física": 34,
+        "Abastecimento": 24
       }
     },
     {
@@ -4281,30 +4696,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3159.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 29
+          "cat": "Outros",
+          "pct": 3
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 21
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 36
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 13
         },
         {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -4419,6 +4834,22 @@ const DATA = {
           "nps": 37.6,
           "n": 234
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 107,
+        "Abastecimento": 72,
+        "Loja Física": 39,
+        "Atendimento": 15,
+        "Outros": 13,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 127,
+        "Entrega & Logística": 94,
+        "Loja Física": 78,
+        "Atendimento": 73,
+        "Abastecimento": 60,
+        "Outros": 47
       }
     },
     {
@@ -4442,30 +4873,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1186.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Abastecimento",
-          "pct": 33
+          "pct": 44
         },
         {
           "cat": "Loja Física",
-          "pct": 17
+          "pct": 20
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 34
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
-        },
-        {
           "cat": "Outros",
           "pct": 13
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "temporal": [
@@ -4580,6 +5011,22 @@ const DATA = {
           "nps": 48.3,
           "n": 116
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 46,
+        "Abastecimento": 38,
+        "Loja Física": 20,
+        "Atendimento": 8,
+        "Entrega & Logística": 3,
+        "Outros": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 70,
+        "Entrega & Logística": 43,
+        "Outros": 27,
+        "Loja Física": 25,
+        "Abastecimento": 23,
+        "Atendimento": 18
       }
     },
     {
@@ -4604,29 +5051,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "pct": 38
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
+          "pct": 38
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 17
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 15
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 32
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 15
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -4741,6 +5188,22 @@ const DATA = {
           "nps": 38.4,
           "n": 112
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 47,
+        "Abastecimento": 29,
+        "Loja Física": 16,
+        "Atendimento": 5,
+        "Entrega & Logística": 4,
+        "Outros": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 65,
+        "Entrega & Logística": 34,
+        "Abastecimento": 30,
+        "Atendimento": 30,
+        "Loja Física": 27,
+        "Outros": 17
       }
     },
     {
@@ -4764,16 +5227,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1884.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "cat": "Entrega & Logística",
+          "pct": 3
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
+          "pct": 39
         },
         {
           "cat": "Loja Física",
-          "pct": 11
+          "pct": 19
         }
       ],
       "top_elogios": [
@@ -4782,12 +5245,12 @@ const DATA = {
           "pct": 37
         },
         {
-          "cat": "Atendimento",
-          "pct": 17
+          "cat": "Loja Física",
+          "pct": 13
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 16
+          "cat": "Atendimento",
+          "pct": 17
         }
       ],
       "temporal": [
@@ -4902,6 +5365,22 @@ const DATA = {
           "nps": 48.0,
           "n": 227
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 91,
+        "Abastecimento": 56,
+        "Loja Física": 23,
+        "Atendimento": 15,
+        "Outros": 14,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 136,
+        "Atendimento": 62,
+        "Entrega & Logística": 61,
+        "Loja Física": 48,
+        "Outros": 33,
+        "Abastecimento": 30
       }
     },
     {
@@ -4925,30 +5404,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1393.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 39
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 31
+          "cat": "Outros",
+          "pct": 5
         },
         {
           "cat": "Loja Física",
-          "pct": 19
+          "pct": 30
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 36
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
-        },
-        {
           "cat": "Abastecimento",
           "pct": 16
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 13
+        },
+        {
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -5063,6 +5542,22 @@ const DATA = {
           "nps": 38.5,
           "n": 122
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 53,
+        "Abastecimento": 42,
+        "Loja Física": 25,
+        "Atendimento": 6,
+        "Outros": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 69,
+        "Entrega & Logística": 48,
+        "Abastecimento": 39,
+        "Loja Física": 33,
+        "Atendimento": 33,
+        "Outros": 24
       }
     },
     {
@@ -5086,30 +5581,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1629.0,
       "top_problemas": [
         {
-          "cat": "Abastecimento",
-          "pct": 40
+          "cat": "Loja Física",
+          "pct": 33
         },
         {
-          "cat": "Loja Física",
-          "pct": 30
+          "cat": "Abastecimento",
+          "pct": 46
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 24
+          "pct": 14
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
+          "cat": "Abastecimento",
+          "pct": 13
         },
         {
           "cat": "Loja Física",
           "pct": 17
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Outros",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -5224,6 +5719,22 @@ const DATA = {
           "nps": 59.0,
           "n": 105
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 56,
+        "Loja Física": 42,
+        "Promoções & Fidelidade": 33,
+        "Outros": 4,
+        "Atendimento": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 72,
+        "Loja Física": 49,
+        "Atendimento": 45,
+        "Entrega & Logística": 42,
+        "Outros": 37,
+        "Abastecimento": 36
       }
     },
     {
@@ -5247,30 +5758,30 @@ const DATA = {
       "avaliacoes_ponderadas": 4929.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 25
+          "cat": "Entrega & Logística",
+          "pct": 3
         },
         {
           "cat": "Loja Física",
-          "pct": 20
+          "pct": 26
+        },
+        {
+          "cat": "Outros",
+          "pct": 2
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
-        },
         {
           "cat": "Loja Física",
           "pct": 18
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 16
+          "cat": "Promoções & Fidelidade",
+          "pct": 37
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -5385,6 +5896,22 @@ const DATA = {
           "nps": 52.4,
           "n": 490
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 184,
+        "Abastecimento": 107,
+        "Loja Física": 82,
+        "Atendimento": 19,
+        "Outros": 15,
+        "Entrega & Logística": 13
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 306,
+        "Loja Física": 148,
+        "Entrega & Logística": 138,
+        "Outros": 96,
+        "Atendimento": 92,
+        "Abastecimento": 58
       }
     },
     {
@@ -5408,30 +5935,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3108.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 47
+          "cat": "Outros",
+          "pct": 4
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 8
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 38
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 33
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         }
       ],
       "temporal": [
@@ -5546,6 +6073,22 @@ const DATA = {
           "nps": 44.6,
           "n": 260
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 109,
+        "Abastecimento": 63,
+        "Loja Física": 25,
+        "Atendimento": 20,
+        "Outros": 9,
+        "Entrega & Logística": 8
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 151,
+        "Entrega & Logística": 91,
+        "Loja Física": 73,
+        "Outros": 54,
+        "Atendimento": 47,
+        "Abastecimento": 35
       }
     },
     {
@@ -5569,16 +6112,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2266.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
+          "cat": "Atendimento",
+          "pct": 11
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 3
         },
         {
           "cat": "Abastecimento",
-          "pct": 32
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 14
+          "pct": 40
         }
       ],
       "top_elogios": [
@@ -5591,8 +6134,8 @@ const DATA = {
           "pct": 22
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -5707,6 +6250,22 @@ const DATA = {
           "nps": 50.4,
           "n": 226
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 80,
+        "Abastecimento": 62,
+        "Atendimento": 27,
+        "Loja Física": 14,
+        "Entrega & Logística": 7,
+        "Outros": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 146,
+        "Entrega & Logística": 86,
+        "Atendimento": 65,
+        "Loja Física": 45,
+        "Abastecimento": 33,
+        "Outros": 25
       }
     },
     {
@@ -5730,19 +6289,23 @@ const DATA = {
       "avaliacoes_ponderadas": 1056.0,
       "top_problemas": [
         {
-          "cat": "Abastecimento",
-          "pct": 40
+          "cat": "Atendimento",
+          "pct": 15
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 36
+          "cat": "Abastecimento",
+          "pct": 51
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 17
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 34
@@ -5750,10 +6313,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 21
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 14
         }
       ],
       "temporal": [
@@ -5868,6 +6427,22 @@ const DATA = {
           "nps": 58.5,
           "n": 82
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 30,
+        "Promoções & Fidelidade": 27,
+        "Loja Física": 9,
+        "Atendimento": 7,
+        "Outros": 1,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 55,
+        "Entrega & Logística": 34,
+        "Atendimento": 22,
+        "Loja Física": 20,
+        "Abastecimento": 17,
+        "Outros": 13
       }
     },
     {
@@ -5891,30 +6466,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2166.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
-        },
-        {
-          "cat": "Abastecimento",
+          "cat": "Loja Física",
           "pct": 28
         },
         {
-          "cat": "Loja Física",
-          "pct": 23
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 34
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "temporal": [
@@ -6029,6 +6604,22 @@ const DATA = {
           "nps": 55.1,
           "n": 196
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 65,
+        "Abastecimento": 48,
+        "Loja Física": 39,
+        "Atendimento": 8,
+        "Outros": 8,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 131,
+        "Entrega & Logística": 80,
+        "Loja Física": 61,
+        "Abastecimento": 42,
+        "Atendimento": 36,
+        "Outros": 35
       }
     },
     {
@@ -6052,16 +6643,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1481.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 27
-        },
-        {
           "cat": "Loja Física",
-          "pct": 22
+          "pct": 30
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 5
         }
       ],
       "top_elogios": [
@@ -6070,11 +6661,11 @@ const DATA = {
           "pct": 32
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 20
+          "cat": "Loja Física",
+          "pct": 17
         },
         {
-          "cat": "Loja Física",
+          "cat": "Entrega & Logística",
           "pct": 17
         }
       ],
@@ -6190,6 +6781,22 @@ const DATA = {
           "nps": 31.9,
           "n": 119
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 56,
+        "Abastecimento": 40,
+        "Loja Física": 32,
+        "Atendimento": 11,
+        "Entrega & Logística": 4,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Atendimento": 104,
+        "Promoções & Fidelidade": 63,
+        "Loja Física": 55,
+        "Entrega & Logística": 54,
+        "Outros": 24,
+        "Abastecimento": 21
       }
     },
     {
@@ -6213,16 +6820,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2086.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 39
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 35
+          "pct": 45
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 21
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 5
         }
       ],
       "top_elogios": [
@@ -6231,12 +6838,12 @@ const DATA = {
           "pct": 34
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Loja Física",
+          "pct": 15
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 16
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -6351,6 +6958,22 @@ const DATA = {
           "nps": 54.9,
           "n": 195
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 65,
+        "Abastecimento": 57,
+        "Loja Física": 27,
+        "Atendimento": 9,
+        "Outros": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 130,
+        "Atendimento": 61,
+        "Entrega & Logística": 59,
+        "Loja Física": 55,
+        "Outros": 39,
+        "Abastecimento": 34
       }
     },
     {
@@ -6374,30 +6997,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2304.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "cat": "Atendimento",
+          "pct": 10
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
+          "pct": 40
         },
         {
-          "cat": "Loja Física",
-          "pct": 11
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
+          "cat": "Loja Física",
+          "pct": 16
         },
         {
           "cat": "Entrega & Logística",
           "pct": 23
         },
         {
-          "cat": "Loja Física",
-          "pct": 16
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -6512,6 +7135,22 @@ const DATA = {
           "nps": 44.9,
           "n": 185
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 74,
+        "Abastecimento": 49,
+        "Loja Física": 18,
+        "Atendimento": 13,
+        "Outros": 3,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 111,
+        "Entrega & Logística": 83,
+        "Loja Física": 57,
+        "Atendimento": 43,
+        "Outros": 36,
+        "Abastecimento": 34
       }
     },
     {
@@ -6535,30 +7174,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1381.0,
       "top_problemas": [
         {
+          "cat": "Loja Física",
+          "pct": 23
+        },
+        {
           "cat": "Abastecimento",
-          "pct": 33
+          "pct": 35
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 23
+          "pct": 32
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
-        },
         {
           "cat": "Atendimento",
           "pct": 22
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Abastecimento",
+          "pct": 10
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -6673,6 +7312,22 @@ const DATA = {
           "nps": 47.6,
           "n": 124
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 44,
+        "Promoções & Fidelidade": 41,
+        "Loja Física": 31,
+        "Atendimento": 9,
+        "Outros": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 83,
+        "Atendimento": 69,
+        "Entrega & Logística": 56,
+        "Loja Física": 40,
+        "Outros": 33,
+        "Abastecimento": 30
       }
     },
     {
@@ -6696,30 +7351,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2332.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 27
+          "cat": "Entrega & Logística",
+          "pct": 3
         },
         {
           "cat": "Loja Física",
-          "pct": 21
+          "pct": 28
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 37
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -6834,6 +7489,22 @@ const DATA = {
           "nps": 46.0,
           "n": 213
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 90,
+        "Abastecimento": 61,
+        "Loja Física": 48,
+        "Atendimento": 10,
+        "Outros": 9,
+        "Entrega & Logística": 8
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 123,
+        "Entrega & Logística": 71,
+        "Loja Física": 63,
+        "Atendimento": 44,
+        "Outros": 44,
+        "Abastecimento": 37
       }
     },
     {
@@ -6857,30 +7528,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2459.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
+          "cat": "Entrega & Logística",
+          "pct": 4
         },
         {
           "cat": "Abastecimento",
-          "pct": 33
+          "pct": 44
         },
         {
-          "cat": "Loja Física",
-          "pct": 15
+          "cat": "Atendimento",
+          "pct": 6
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 13
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 16
         },
         {
           "cat": "Entrega & Logística",
           "pct": 23
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 18
         }
       ],
       "temporal": [
@@ -6995,6 +7666,22 @@ const DATA = {
           "nps": 45.9,
           "n": 196
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 80,
+        "Abastecimento": 72,
+        "Loja Física": 32,
+        "Atendimento": 20,
+        "Entrega & Logística": 9,
+        "Outros": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 116,
+        "Entrega & Logística": 110,
+        "Atendimento": 84,
+        "Loja Física": 75,
+        "Outros": 62,
+        "Abastecimento": 30
       }
     },
     {
@@ -7018,30 +7705,30 @@ const DATA = {
       "avaliacoes_ponderadas": 5830.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 32
+          "cat": "Entrega & Logística",
+          "pct": 3
         },
         {
           "cat": "Loja Física",
-          "pct": 19
+          "pct": 26
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 6
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Atendimento",
+          "pct": 20
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 20
         }
       ],
       "temporal": [
@@ -7156,6 +7843,22 @@ const DATA = {
           "nps": 52.5,
           "n": 419
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 147,
+        "Abastecimento": 131,
+        "Loja Física": 78,
+        "Atendimento": 25,
+        "Entrega & Logística": 13,
+        "Outros": 11
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 272,
+        "Entrega & Logística": 221,
+        "Atendimento": 208,
+        "Loja Física": 118,
+        "Outros": 103,
+        "Abastecimento": 101
       }
     },
     {
@@ -7179,29 +7882,29 @@ const DATA = {
       "avaliacoes_ponderadas": 5855.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 6
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 20
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 37
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 35
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
-        },
-        {
-          "cat": "Atendimento",
+          "cat": "Loja Física",
           "pct": 14
         }
       ],
@@ -7317,6 +8020,22 @@ const DATA = {
           "nps": 51.1,
           "n": 665
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 246,
+        "Abastecimento": 124,
+        "Loja Física": 86,
+        "Outros": 33,
+        "Atendimento": 28,
+        "Entrega & Logística": 17
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 419,
+        "Entrega & Logística": 213,
+        "Atendimento": 171,
+        "Loja Física": 164,
+        "Abastecimento": 132,
+        "Outros": 114
       }
     },
     {
@@ -7341,29 +8060,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "pct": 45
+        },
+        {
+          "cat": "Outros",
+          "pct": 2
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 10
+          "pct": 32
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Atendimento",
           "pct": 19
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "temporal": [
@@ -7478,6 +8197,22 @@ const DATA = {
           "nps": 40.4,
           "n": 366
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 155,
+        "Abastecimento": 85,
+        "Loja Física": 29,
+        "Atendimento": 11,
+        "Outros": 7,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 211,
+        "Entrega & Logística": 141,
+        "Atendimento": 130,
+        "Loja Física": 89,
+        "Abastecimento": 71,
+        "Outros": 53
       }
     },
     {
@@ -7501,30 +8236,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2151.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 47
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 34
+          "pct": 48
         },
         {
-          "cat": "Loja Física",
-          "pct": 8
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 36
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Outros",
+          "pct": 14
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 35
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Loja Física",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -7639,6 +8374,22 @@ const DATA = {
           "nps": 47.4,
           "n": 192
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 74,
+        "Abastecimento": 53,
+        "Loja Física": 12,
+        "Atendimento": 11,
+        "Outros": 7,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 118,
+        "Entrega & Logística": 61,
+        "Atendimento": 48,
+        "Outros": 46,
+        "Loja Física": 39,
+        "Abastecimento": 25
       }
     },
     {
@@ -7663,29 +8414,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 51
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 34
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
-        }
-      ],
-      "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 33
+          "pct": 47
         },
         {
           "cat": "Loja Física",
           "pct": 18
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
+          "cat": "Abastecimento",
+          "pct": 35
+        }
+      ],
+      "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 18
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -7800,6 +8551,21 @@ const DATA = {
           "nps": 38.1,
           "n": 126
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 52,
+        "Abastecimento": 34,
+        "Loja Física": 11,
+        "Entrega & Logística": 3,
+        "Atendimento": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 74,
+        "Loja Física": 40,
+        "Entrega & Logística": 39,
+        "Atendimento": 28,
+        "Outros": 25,
+        "Abastecimento": 17
       }
     },
     {
@@ -7823,12 +8589,12 @@ const DATA = {
       "avaliacoes_ponderadas": 1373.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 39
+          "cat": "Outros",
+          "pct": 7
         },
         {
           "cat": "Abastecimento",
-          "pct": 34
+          "pct": 41
         },
         {
           "cat": "Loja Física",
@@ -7837,16 +8603,16 @@ const DATA = {
       ],
       "top_elogios": [
         {
+          "cat": "Abastecimento",
+          "pct": 10
+        },
+        {
           "cat": "Promoções & Fidelidade",
           "pct": 32
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 21
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 15
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -7961,6 +8727,22 @@ const DATA = {
           "nps": 50.0,
           "n": 112
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 39,
+        "Abastecimento": 34,
+        "Loja Física": 17,
+        "Outros": 6,
+        "Atendimento": 3,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 73,
+        "Entrega & Logística": 47,
+        "Atendimento": 35,
+        "Outros": 25,
+        "Loja Física": 24,
+        "Abastecimento": 22
       }
     },
     {
@@ -7984,30 +8766,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3824.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Entrega & Logística",
+          "pct": 3
         },
         {
-          "cat": "Abastecimento",
-          "pct": 25
+          "cat": "Outros",
+          "pct": 3
         },
         {
           "cat": "Loja Física",
-          "pct": 20
+          "pct": 24
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
           "cat": "Atendimento",
           "pct": 19
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -8122,6 +8904,22 @@ const DATA = {
           "nps": 47.0,
           "n": 345
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 134,
+        "Abastecimento": 78,
+        "Loja Física": 62,
+        "Outros": 18,
+        "Atendimento": 15,
+        "Entrega & Logística": 7
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 211,
+        "Atendimento": 136,
+        "Entrega & Logística": 123,
+        "Loja Física": 100,
+        "Abastecimento": 77,
+        "Outros": 70
       }
     },
     {
@@ -8145,30 +8943,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2892.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 48
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 24
-        },
-        {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 21
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
+          "cat": "Outros",
+          "pct": 2
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
-        },
         {
           "cat": "Atendimento",
           "pct": 27
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Outros",
+          "pct": 10
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 27
         }
       ],
       "temporal": [
@@ -8283,6 +9081,22 @@ const DATA = {
           "nps": 40.5,
           "n": 301
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 132,
+        "Abastecimento": 67,
+        "Loja Física": 45,
+        "Atendimento": 18,
+        "Entrega & Logística": 9,
+        "Outros": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 169,
+        "Atendimento": 168,
+        "Entrega & Logística": 113,
+        "Loja Física": 72,
+        "Outros": 62,
+        "Abastecimento": 42
       }
     },
     {
@@ -8306,30 +9120,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1733.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 28
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 23
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 40
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 15
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 33
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 21
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
+          "cat": "Abastecimento",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -8444,6 +9258,22 @@ const DATA = {
           "nps": 43.5,
           "n": 154
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 61,
+        "Abastecimento": 38,
+        "Loja Física": 21,
+        "Atendimento": 9,
+        "Outros": 5,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 93,
+        "Entrega & Logística": 61,
+        "Loja Física": 44,
+        "Atendimento": 36,
+        "Abastecimento": 28,
+        "Outros": 23
       }
     },
     {
@@ -8467,30 +9297,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1661.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 52
+          "cat": "Outros",
+          "pct": 5
         },
         {
-          "cat": "Abastecimento",
-          "pct": 22
+          "cat": "Promoções & Fidelidade",
+          "pct": 55
         },
         {
           "cat": "Loja Física",
-          "pct": 13
+          "pct": 17
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 35
-        },
         {
           "cat": "Loja Física",
           "pct": 19
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 16
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -8605,6 +9435,22 @@ const DATA = {
           "nps": 37.9,
           "n": 161
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 67,
+        "Abastecimento": 29,
+        "Loja Física": 17,
+        "Outros": 9,
+        "Atendimento": 4,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 94,
+        "Loja Física": 52,
+        "Entrega & Logística": 43,
+        "Atendimento": 36,
+        "Abastecimento": 23,
+        "Outros": 23
       }
     },
     {
@@ -8628,30 +9474,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1621.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "cat": "Loja Física",
+          "pct": 21
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
+          "pct": 38
         },
         {
-          "cat": "Loja Física",
-          "pct": 17
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 14
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 38
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 15
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 14
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -8766,6 +9612,22 @@ const DATA = {
           "nps": 53.1,
           "n": 145
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 47,
+        "Abastecimento": 29,
+        "Loja Física": 17,
+        "Outros": 6,
+        "Atendimento": 2,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 98,
+        "Entrega & Logística": 39,
+        "Abastecimento": 36,
+        "Loja Física": 34,
+        "Atendimento": 25,
+        "Outros": 23
       }
     },
     {
@@ -8789,16 +9651,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1734.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 49
+          "pct": 40
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 9
+          "pct": 37
         }
       ],
       "top_elogios": [
@@ -8811,8 +9673,8 @@ const DATA = {
           "pct": 17
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 14
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -8927,6 +9789,22 @@ const DATA = {
           "nps": 45.6,
           "n": 182
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 72,
+        "Abastecimento": 44,
+        "Loja Física": 13,
+        "Atendimento": 10,
+        "Entrega & Logística": 4,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 110,
+        "Loja Física": 48,
+        "Entrega & Logística": 39,
+        "Atendimento": 30,
+        "Abastecimento": 26,
+        "Outros": 26
       }
     },
     {
@@ -8950,16 +9828,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2729.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 39
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 35
+          "pct": 47
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 16
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         }
       ],
       "top_elogios": [
@@ -8968,12 +9846,12 @@ const DATA = {
           "pct": 39
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
           "cat": "Loja Física",
           "pct": 14
+        },
+        {
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -9088,6 +9966,22 @@ const DATA = {
           "nps": 57.0,
           "n": 237
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 76,
+        "Abastecimento": 68,
+        "Loja Física": 24,
+        "Atendimento": 10,
+        "Outros": 10,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 161,
+        "Entrega & Logística": 78,
+        "Loja Física": 59,
+        "Atendimento": 41,
+        "Outros": 40,
+        "Abastecimento": 33
       }
     },
     {
@@ -9112,29 +10006,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 50
+          "pct": 40
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
+          "pct": 40
         },
         {
-          "cat": "Loja Física",
-          "pct": 11
+          "cat": "Atendimento",
+          "pct": 5
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 32
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -9249,6 +10143,22 @@ const DATA = {
           "nps": 41.9,
           "n": 229
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 100,
+        "Abastecimento": 56,
+        "Loja Física": 22,
+        "Atendimento": 11,
+        "Outros": 8,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 129,
+        "Entrega & Logística": 77,
+        "Atendimento": 58,
+        "Loja Física": 52,
+        "Outros": 43,
+        "Abastecimento": 43
       }
     },
     {
@@ -9272,30 +10182,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3326.0,
       "top_problemas": [
         {
+          "cat": "Entrega & Logística",
+          "pct": 5
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 48
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 30
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 8
+          "pct": 40
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
+          "cat": "Abastecimento",
+          "pct": 10
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Entrega & Logística",
           "pct": 23
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 16
         }
       ],
       "temporal": [
@@ -9410,6 +10320,22 @@ const DATA = {
           "nps": 42.0,
           "n": 314
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 133,
+        "Abastecimento": 84,
+        "Loja Física": 21,
+        "Atendimento": 20,
+        "Outros": 11,
+        "Entrega & Logística": 10
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 181,
+        "Entrega & Logística": 142,
+        "Atendimento": 100,
+        "Outros": 73,
+        "Loja Física": 71,
+        "Abastecimento": 64
       }
     },
     {
@@ -9434,15 +10360,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "pct": 56
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 5
         },
         {
           "cat": "Abastecimento",
-          "pct": 23
-        },
-        {
-          "cat": "Outros",
-          "pct": 9
+          "pct": 31
         }
       ],
       "top_elogios": [
@@ -9455,8 +10381,8 @@ const DATA = {
           "pct": 23
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -9571,6 +10497,22 @@ const DATA = {
           "nps": 38.2,
           "n": 170
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 72,
+        "Abastecimento": 31,
+        "Outros": 13,
+        "Loja Física": 9,
+        "Atendimento": 7,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 98,
+        "Entrega & Logística": 64,
+        "Atendimento": 38,
+        "Loja Física": 25,
+        "Outros": 25,
+        "Abastecimento": 24
       }
     },
     {
@@ -9594,26 +10536,26 @@ const DATA = {
       "avaliacoes_ponderadas": 3227.0,
       "top_problemas": [
         {
+          "cat": "Loja Física",
+          "pct": 32
+        },
+        {
           "cat": "Abastecimento",
-          "pct": 37
+          "pct": 36
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 34
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 24
+          "pct": 27
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 33
+          "cat": "Abastecimento",
+          "pct": 13
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         },
         {
           "cat": "Loja Física",
@@ -9732,6 +10674,22 @@ const DATA = {
           "nps": 58.7,
           "n": 252
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 82,
+        "Promoções & Fidelidade": 75,
+        "Loja Física": 52,
+        "Atendimento": 5,
+        "Outros": 4,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 177,
+        "Entrega & Logística": 105,
+        "Loja Física": 73,
+        "Abastecimento": 70,
+        "Atendimento": 67,
+        "Outros": 49
       }
     },
     {
@@ -9755,23 +10713,19 @@ const DATA = {
       "avaliacoes_ponderadas": 2197.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
+          "cat": "Outros",
+          "pct": 6
         },
         {
           "cat": "Abastecimento",
-          "pct": 33
+          "pct": 39
         },
         {
-          "cat": "Loja Física",
-          "pct": 13
+          "cat": "Promoções & Fidelidade",
+          "pct": 38
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
         {
           "cat": "Atendimento",
           "pct": 21
@@ -9779,6 +10733,10 @@ const DATA = {
         {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -9893,6 +10851,22 @@ const DATA = {
           "nps": 41.9,
           "n": 203
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 86,
+        "Abastecimento": 69,
+        "Loja Física": 27,
+        "Atendimento": 15,
+        "Outros": 8,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 117,
+        "Atendimento": 83,
+        "Loja Física": 60,
+        "Entrega & Logística": 57,
+        "Outros": 41,
+        "Abastecimento": 36
       }
     },
     {
@@ -9916,16 +10890,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1883.0,
       "top_problemas": [
         {
+          "cat": "Outros",
+          "pct": 4
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 47
+          "pct": 52
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 10
+          "pct": 26
         }
       ],
       "top_elogios": [
@@ -9934,12 +10908,12 @@ const DATA = {
           "pct": 26
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 13
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -10054,6 +11028,22 @@ const DATA = {
           "nps": 27.8,
           "n": 158
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 76,
+        "Abastecimento": 46,
+        "Loja Física": 16,
+        "Atendimento": 12,
+        "Outros": 10,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Atendimento": 87,
+        "Promoções & Fidelidade": 82,
+        "Entrega & Logística": 60,
+        "Outros": 44,
+        "Loja Física": 36,
+        "Abastecimento": 32
       }
     },
     {
@@ -10077,30 +11067,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2129.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 30
+          "cat": "Outros",
+          "pct": 4
         },
         {
           "cat": "Loja Física",
-          "pct": 13
+          "pct": 21
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 37
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 17
+          "cat": "Outros",
+          "pct": 11
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -10215,6 +11205,22 @@ const DATA = {
           "nps": 46.5,
           "n": 187
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 72,
+        "Abastecimento": 45,
+        "Loja Física": 19,
+        "Outros": 5,
+        "Atendimento": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 115,
+        "Entrega & Logística": 86,
+        "Atendimento": 60,
+        "Outros": 40,
+        "Abastecimento": 34,
+        "Loja Física": 27
       }
     },
     {
@@ -10238,26 +11244,26 @@ const DATA = {
       "avaliacoes_ponderadas": 2825.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Entrega & Logística",
+          "pct": 5
+        },
+        {
+          "cat": "Outros",
+          "pct": 4
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 12
+          "pct": 37
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
+          "cat": "Outros",
+          "pct": 13
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
           "cat": "Loja Física",
@@ -10376,6 +11382,22 @@ const DATA = {
           "nps": 47.5,
           "n": 202
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 78,
+        "Abastecimento": 52,
+        "Loja Física": 21,
+        "Outros": 11,
+        "Entrega & Logística": 8,
+        "Atendimento": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 124,
+        "Entrega & Logística": 80,
+        "Loja Física": 61,
+        "Outros": 52,
+        "Atendimento": 49,
+        "Abastecimento": 43
       }
     },
     {
@@ -10399,16 +11421,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1604.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
-        },
-        {
           "cat": "Loja Física",
-          "pct": 24
+          "pct": 35
         },
         {
           "cat": "Abastecimento",
-          "pct": 24
+          "pct": 31
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 26
         }
       ],
       "top_elogios": [
@@ -10421,8 +11443,8 @@ const DATA = {
           "pct": 23
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 21
+          "cat": "Loja Física",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -10537,6 +11559,22 @@ const DATA = {
           "nps": 42.1,
           "n": 140
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 62,
+        "Loja Física": 40,
+        "Abastecimento": 39,
+        "Outros": 10,
+        "Atendimento": 9,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Atendimento": 104,
+        "Entrega & Logística": 87,
+        "Promoções & Fidelidade": 78,
+        "Loja Física": 46,
+        "Outros": 34,
+        "Abastecimento": 26
       }
     },
     {
@@ -10560,30 +11598,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2544.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 27
-        },
-        {
           "cat": "Atendimento",
-          "pct": 13
+          "pct": 19
+        },
+        {
+          "cat": "Outros",
+          "pct": 4
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 17
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
+          "cat": "Loja Física",
+          "pct": 16
         },
         {
           "cat": "Entrega & Logística",
           "pct": 23
         },
         {
-          "cat": "Loja Física",
-          "pct": 16
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -10698,6 +11736,22 @@ const DATA = {
           "nps": 53.9,
           "n": 191
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 70,
+        "Abastecimento": 47,
+        "Atendimento": 23,
+        "Loja Física": 23,
+        "Outros": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 121,
+        "Entrega & Logística": 90,
+        "Loja Física": 63,
+        "Atendimento": 40,
+        "Abastecimento": 36,
+        "Outros": 33
       }
     },
     {
@@ -10721,19 +11775,23 @@ const DATA = {
       "avaliacoes_ponderadas": 2659.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 9
+        },
+        {
           "cat": "Promoções & Fidelidade",
           "pct": 38
         },
         {
           "cat": "Abastecimento",
           "pct": 34
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 12
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 33
@@ -10741,10 +11799,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 24
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 13
         }
       ],
       "temporal": [
@@ -10859,6 +11913,22 @@ const DATA = {
           "nps": 51.9,
           "n": 210
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 68,
+        "Abastecimento": 61,
+        "Loja Física": 26,
+        "Atendimento": 16,
+        "Entrega & Logística": 5,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 142,
+        "Entrega & Logística": 103,
+        "Loja Física": 58,
+        "Abastecimento": 50,
+        "Atendimento": 44,
+        "Outros": 37
       }
     },
     {
@@ -10882,30 +11952,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1767.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "cat": "Entrega & Logística",
+          "pct": 4
+        },
+        {
+          "cat": "Outros",
+          "pct": 4
         },
         {
           "cat": "Loja Física",
-          "pct": 25
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 22
+          "pct": 32
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
-        },
         {
           "cat": "Atendimento",
           "pct": 23
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Abastecimento",
+          "pct": 10
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -11020,6 +12090,22 @@ const DATA = {
           "nps": 45.3,
           "n": 150
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 60,
+        "Loja Física": 38,
+        "Abastecimento": 33,
+        "Atendimento": 8,
+        "Outros": 6,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 90,
+        "Atendimento": 82,
+        "Entrega & Logística": 65,
+        "Loja Física": 51,
+        "Outros": 39,
+        "Abastecimento": 37
       }
     },
     {
@@ -11044,15 +12130,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 51
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 27
+          "pct": 48
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 19
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 31
         }
       ],
       "top_elogios": [
@@ -11061,12 +12147,12 @@ const DATA = {
           "pct": 33
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
+          "cat": "Loja Física",
+          "pct": 15
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Abastecimento",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -11181,6 +12267,22 @@ const DATA = {
           "nps": 42.3,
           "n": 239
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 100,
+        "Abastecimento": 52,
+        "Loja Física": 27,
+        "Outros": 7,
+        "Entrega & Logística": 5,
+        "Atendimento": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 139,
+        "Entrega & Logística": 69,
+        "Atendimento": 65,
+        "Loja Física": 61,
+        "Outros": 41,
+        "Abastecimento": 40
       }
     },
     {
@@ -11204,30 +12306,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1335.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
+          "cat": "Loja Física",
+          "pct": 26
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 7
         },
         {
           "cat": "Abastecimento",
-          "pct": 36
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
+          "pct": 40
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 13
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 31
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -11342,6 +12444,22 @@ const DATA = {
           "nps": 52.0,
           "n": 98
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 36,
+        "Abastecimento": 34,
+        "Loja Física": 14,
+        "Atendimento": 5,
+        "Outros": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 62,
+        "Entrega & Logística": 33,
+        "Atendimento": 31,
+        "Loja Física": 28,
+        "Abastecimento": 25,
+        "Outros": 18
       }
     },
     {
@@ -11365,30 +12483,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2329.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Atendimento",
+          "pct": 7
         },
         {
           "cat": "Abastecimento",
-          "pct": 35
+          "pct": 42
         },
         {
-          "cat": "Loja Física",
-          "pct": 9
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
+          "cat": "Outros",
+          "pct": 13
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
+        {
           "cat": "Promoções & Fidelidade",
           "pct": 35
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 14
         }
       ],
       "temporal": [
@@ -11503,6 +12621,22 @@ const DATA = {
           "nps": 51.2,
           "n": 205
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 75,
+        "Abastecimento": 60,
+        "Loja Física": 15,
+        "Outros": 11,
+        "Atendimento": 6,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 130,
+        "Entrega & Logística": 72,
+        "Loja Física": 54,
+        "Outros": 49,
+        "Abastecimento": 40,
+        "Atendimento": 30
       }
     },
     {
@@ -11526,12 +12660,12 @@ const DATA = {
       "avaliacoes_ponderadas": 2458.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
+          "cat": "Atendimento",
+          "pct": 11
         },
         {
           "cat": "Abastecimento",
-          "pct": 34
+          "pct": 41
         },
         {
           "cat": "Loja Física",
@@ -11540,16 +12674,16 @@ const DATA = {
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
+          "cat": "Outros",
+          "pct": 12
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Loja Física",
+          "pct": 14
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -11664,6 +12798,22 @@ const DATA = {
           "nps": 53.0,
           "n": 217
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 75,
+        "Abastecimento": 63,
+        "Loja Física": 29,
+        "Atendimento": 14,
+        "Outros": 2,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 142,
+        "Entrega & Logística": 89,
+        "Atendimento": 75,
+        "Loja Física": 68,
+        "Outros": 57,
+        "Abastecimento": 43
       }
     },
     {
@@ -11687,30 +12837,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2234.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 42
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 6
         },
         {
           "cat": "Loja Física",
-          "pct": 22
+          "pct": 24
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
         {
           "cat": "Atendimento",
           "pct": 24
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Promoções & Fidelidade",
+          "pct": 28
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -11825,6 +12975,22 @@ const DATA = {
           "nps": 46.5,
           "n": 202
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 79,
+        "Abastecimento": 44,
+        "Loja Física": 41,
+        "Outros": 10,
+        "Atendimento": 9,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 123,
+        "Atendimento": 107,
+        "Entrega & Logística": 81,
+        "Loja Física": 54,
+        "Outros": 40,
+        "Abastecimento": 32
       }
     },
     {
@@ -11848,30 +13014,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2739.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 51
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 26
+          "cat": "Entrega & Logística",
+          "pct": 5
         },
         {
           "cat": "Atendimento",
-          "pct": 8
+          "pct": 9
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 44
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 27
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
+        },
+        {
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -11986,6 +13152,22 @@ const DATA = {
           "nps": 44.5,
           "n": 283
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 115,
+        "Abastecimento": 59,
+        "Atendimento": 18,
+        "Loja Física": 17,
+        "Entrega & Logística": 10,
+        "Outros": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 168,
+        "Entrega & Logística": 149,
+        "Atendimento": 79,
+        "Loja Física": 63,
+        "Outros": 57,
+        "Abastecimento": 41
       }
     },
     {
@@ -12009,16 +13191,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2551.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
+          "cat": "Entrega & Logística",
+          "pct": 6
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 7
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 12
+          "pct": 36
         }
       ],
       "top_elogios": [
@@ -12027,12 +13209,12 @@ const DATA = {
           "pct": 36
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
-          "cat": "Atendimento",
-          "pct": 12
+          "cat": "Entrega & Logística",
+          "pct": 22
         }
       ],
       "temporal": [
@@ -12147,6 +13329,22 @@ const DATA = {
           "nps": 57.2,
           "n": 180
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 52,
+        "Abastecimento": 43,
+        "Loja Física": 17,
+        "Atendimento": 14,
+        "Outros": 8,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 128,
+        "Entrega & Logística": 80,
+        "Atendimento": 42,
+        "Loja Física": 39,
+        "Outros": 35,
+        "Abastecimento": 35
       }
     },
     {
@@ -12170,30 +13368,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1521.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
+          "cat": "Atendimento",
+          "pct": 10
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 45
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 20
         }
       ],
       "top_elogios": [
         {
+          "cat": "Abastecimento",
+          "pct": 12
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
           "cat": "Promoções & Fidelidade",
           "pct": 33
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 18
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 13
         }
       ],
       "temporal": [
@@ -12308,6 +13506,22 @@ const DATA = {
           "nps": 53.4,
           "n": 133
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 52,
+        "Abastecimento": 37,
+        "Loja Física": 18,
+        "Outros": 9,
+        "Atendimento": 7,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 81,
+        "Entrega & Logística": 44,
+        "Loja Física": 31,
+        "Abastecimento": 30,
+        "Atendimento": 29,
+        "Outros": 29
       }
     },
     {
@@ -12331,30 +13545,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1735.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 36
+          "pct": 37
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 14
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
+          "cat": "Outros",
+          "pct": 11
         },
         {
           "cat": "Entrega & Logística",
           "pct": 23
         },
         {
-          "cat": "Atendimento",
-          "pct": 15
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "temporal": [
@@ -12469,6 +13683,22 @@ const DATA = {
           "nps": 51.4,
           "n": 107
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 35,
+        "Abastecimento": 30,
+        "Loja Física": 13,
+        "Atendimento": 9,
+        "Outros": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 72,
+        "Entrega & Logística": 55,
+        "Atendimento": 35,
+        "Loja Física": 28,
+        "Outros": 27,
+        "Abastecimento": 19
       }
     },
     {
@@ -12492,30 +13722,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2596.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
+          "cat": "Loja Física",
+          "pct": 22
         },
         {
           "cat": "Abastecimento",
           "pct": 38
         },
         {
-          "cat": "Loja Física",
-          "pct": 18
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 22
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -12630,6 +13860,22 @@ const DATA = {
           "nps": 50.8,
           "n": 183
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 63,
+        "Abastecimento": 63,
+        "Loja Física": 30,
+        "Atendimento": 5,
+        "Outros": 4,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 120,
+        "Entrega & Logística": 87,
+        "Loja Física": 58,
+        "Abastecimento": 49,
+        "Outros": 44,
+        "Atendimento": 41
       }
     },
     {
@@ -12653,30 +13899,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1549.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 6
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "pct": 37
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 12
+          "pct": 37
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 34
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
           "cat": "Entrega & Logística",
           "pct": 25
         },
         {
-          "cat": "Loja Física",
-          "pct": 12
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "temporal": [
@@ -12791,6 +14037,22 @@ const DATA = {
           "nps": 50.0,
           "n": 124
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 44,
+        "Abastecimento": 30,
+        "Loja Física": 12,
+        "Atendimento": 8,
+        "Entrega & Logística": 4,
+        "Outros": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 80,
+        "Entrega & Logística": 59,
+        "Loja Física": 28,
+        "Atendimento": 27,
+        "Abastecimento": 25,
+        "Outros": 15
       }
     },
     {
@@ -12814,30 +14076,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2791.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 25
+          "cat": "Entrega & Logística",
+          "pct": 3
         },
         {
           "cat": "Loja Física",
-          "pct": 21
+          "pct": 24
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 6
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
         {
           "cat": "Atendimento",
           "pct": 21
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Outros",
+          "pct": 11
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -12952,6 +14214,22 @@ const DATA = {
           "nps": 53.3,
           "n": 229
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 77,
+        "Abastecimento": 47,
+        "Loja Física": 40,
+        "Atendimento": 11,
+        "Outros": 8,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 152,
+        "Atendimento": 114,
+        "Entrega & Logística": 97,
+        "Loja Física": 75,
+        "Outros": 61,
+        "Abastecimento": 42
       }
     },
     {
@@ -12975,30 +14253,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2602.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 30
+          "pct": 40
         },
-        {
-          "cat": "Loja Física",
-          "pct": 15
-        }
-      ],
-      "top_elogios": [
         {
           "cat": "Promoções & Fidelidade",
           "pct": 37
         },
         {
-          "cat": "Entrega & Logística",
+          "cat": "Loja Física",
           "pct": 17
-        },
+        }
+      ],
+      "top_elogios": [
         {
           "cat": "Abastecimento",
           "pct": 13
+        },
+        {
+          "cat": "Outros",
+          "pct": 13
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 37
         }
       ],
       "temporal": [
@@ -13113,6 +14391,22 @@ const DATA = {
           "nps": 51.6,
           "n": 225
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 81,
+        "Abastecimento": 55,
+        "Loja Física": 28,
+        "Atendimento": 8,
+        "Entrega & Logística": 5,
+        "Outros": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 144,
+        "Entrega & Logística": 68,
+        "Abastecimento": 52,
+        "Outros": 50,
+        "Loja Física": 50,
+        "Atendimento": 28
       }
     },
     {
@@ -13136,30 +14430,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1886.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
+          "cat": "Loja Física",
+          "pct": 23
         },
         {
           "cat": "Abastecimento",
-          "pct": 36
+          "pct": 38
         },
         {
-          "cat": "Loja Física",
-          "pct": 15
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
           "cat": "Loja Física",
           "pct": 18
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         }
       ],
       "temporal": [
@@ -13274,6 +14568,22 @@ const DATA = {
           "nps": 48.8,
           "n": 125
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 46,
+        "Abastecimento": 40,
+        "Loja Física": 17,
+        "Entrega & Logística": 4,
+        "Outros": 2,
+        "Atendimento": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 79,
+        "Entrega & Logística": 49,
+        "Loja Física": 46,
+        "Atendimento": 41,
+        "Abastecimento": 24,
+        "Outros": 19
       }
     },
     {
@@ -13297,30 +14607,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2121.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 12
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 56
+          "pct": 52
         },
         {
           "cat": "Abastecimento",
-          "pct": 23
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 8
+          "pct": 30
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 35
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
           "cat": "Loja Física",
           "pct": 17
+        },
+        {
+          "cat": "Outros",
+          "pct": 13
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "temporal": [
@@ -13435,6 +14745,22 @@ const DATA = {
           "nps": 42.3,
           "n": 182
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 74,
+        "Abastecimento": 30,
+        "Atendimento": 10,
+        "Loja Física": 7,
+        "Entrega & Logística": 5,
+        "Outros": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 108,
+        "Entrega & Logística": 58,
+        "Loja Física": 52,
+        "Outros": 39,
+        "Abastecimento": 26,
+        "Atendimento": 23
       }
     },
     {
@@ -13458,19 +14784,23 @@ const DATA = {
       "avaliacoes_ponderadas": 1853.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 39
+          "cat": "Loja Física",
+          "pct": 27
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
+          "pct": 39
         },
         {
-          "cat": "Loja Física",
-          "pct": 18
+          "cat": "Atendimento",
+          "pct": 6
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 13
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 30
@@ -13478,10 +14808,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 13
         }
       ],
       "temporal": [
@@ -13596,6 +14922,22 @@ const DATA = {
           "nps": 52.7,
           "n": 129
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 47,
+        "Abastecimento": 37,
+        "Loja Física": 21,
+        "Atendimento": 8,
+        "Outros": 4,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 82,
+        "Entrega & Logística": 59,
+        "Atendimento": 35,
+        "Abastecimento": 34,
+        "Loja Física": 33,
+        "Outros": 27
       }
     },
     {
@@ -13619,30 +14961,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2966.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 34
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 32
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 21
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 40
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         }
       ],
       "temporal": [
@@ -13757,6 +15099,22 @@ const DATA = {
           "nps": 58.0,
           "n": 231
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 71,
+        "Abastecimento": 68,
+        "Loja Física": 33,
+        "Atendimento": 23,
+        "Outros": 11,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 160,
+        "Entrega & Logística": 109,
+        "Loja Física": 85,
+        "Atendimento": 81,
+        "Abastecimento": 67,
+        "Outros": 51
       }
     },
     {
@@ -13780,16 +15138,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2530.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 9
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 47
+          "pct": 46
         },
         {
           "cat": "Abastecimento",
-          "pct": 25
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 12
+          "pct": 30
         }
       ],
       "top_elogios": [
@@ -13798,12 +15156,12 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
+          "cat": "Outros",
+          "pct": 12
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
+          "cat": "Loja Física",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -13918,6 +15276,22 @@ const DATA = {
           "nps": 39.7,
           "n": 234
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 99,
+        "Abastecimento": 52,
+        "Loja Física": 26,
+        "Atendimento": 20,
+        "Outros": 9,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Atendimento": 158,
+        "Promoções & Fidelidade": 135,
+        "Entrega & Logística": 93,
+        "Loja Física": 66,
+        "Outros": 64,
+        "Abastecimento": 27
       }
     },
     {
@@ -13941,30 +15315,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3517.0,
       "top_problemas": [
         {
+          "cat": "Outros",
+          "pct": 4
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 50
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 20
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
+          "pct": 41
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 34
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 15
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -14079,6 +15453,22 @@ const DATA = {
           "nps": 50.0,
           "n": 340
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 126,
+        "Abastecimento": 51,
+        "Loja Física": 38,
+        "Atendimento": 19,
+        "Outros": 11,
+        "Entrega & Logística": 8
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 214,
+        "Entrega & Logística": 109,
+        "Atendimento": 94,
+        "Loja Física": 81,
+        "Abastecimento": 68,
+        "Outros": 58
       }
     },
     {
@@ -14103,29 +15493,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 48
+          "pct": 46
         },
         {
           "cat": "Abastecimento",
-          "pct": 34
+          "pct": 38
         },
         {
           "cat": "Loja Física",
-          "pct": 13
+          "pct": 14
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         }
       ],
       "temporal": [
@@ -14240,6 +15630,22 @@ const DATA = {
           "nps": 41.7,
           "n": 163
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 69,
+        "Abastecimento": 48,
+        "Loja Física": 19,
+        "Atendimento": 5,
+        "Outros": 1,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 94,
+        "Entrega & Logística": 62,
+        "Loja Física": 49,
+        "Atendimento": 39,
+        "Outros": 36,
+        "Abastecimento": 25
       }
     },
     {
@@ -14263,30 +15669,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1780.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 9
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "pct": 52
         },
         {
           "cat": "Abastecimento",
-          "pct": 24
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 8
+          "pct": 26
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Entrega & Logística",
           "pct": 23
         },
         {
-          "cat": "Atendimento",
-          "pct": 15
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         }
       ],
       "temporal": [
@@ -14401,6 +15807,22 @@ const DATA = {
           "nps": 41.4,
           "n": 145
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 57,
+        "Abastecimento": 26,
+        "Loja Física": 9,
+        "Atendimento": 9,
+        "Outros": 4,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 88,
+        "Entrega & Logística": 66,
+        "Atendimento": 42,
+        "Loja Física": 33,
+        "Abastecimento": 29,
+        "Outros": 27
       }
     },
     {
@@ -14424,30 +15846,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2263.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 47
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 23
-        },
-        {
           "cat": "Atendimento",
-          "pct": 13
+          "pct": 8
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 41
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 18
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -14562,6 +15984,22 @@ const DATA = {
           "nps": 49.7,
           "n": 165
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 58,
+        "Abastecimento": 29,
+        "Atendimento": 16,
+        "Loja Física": 15,
+        "Entrega & Logística": 3,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 107,
+        "Entrega & Logística": 65,
+        "Loja Física": 51,
+        "Atendimento": 47,
+        "Abastecimento": 36,
+        "Outros": 24
       }
     },
     {
@@ -14585,22 +16023,22 @@ const DATA = {
       "avaliacoes_ponderadas": 2727.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "cat": "Abastecimento",
+          "pct": 42
         },
         {
-          "cat": "Abastecimento",
-          "pct": 30
+          "cat": "Atendimento",
+          "pct": 6
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 18
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
           "cat": "Entrega & Logística",
@@ -14723,6 +16161,22 @@ const DATA = {
           "nps": 50.0,
           "n": 190
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 71,
+        "Abastecimento": 54,
+        "Loja Física": 29,
+        "Atendimento": 12,
+        "Outros": 9,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 119,
+        "Entrega & Logística": 104,
+        "Loja Física": 64,
+        "Abastecimento": 51,
+        "Atendimento": 48,
+        "Outros": 47
       }
     },
     {
@@ -14746,30 +16200,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1820.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 32
+          "cat": "Outros",
+          "pct": 7
         },
         {
           "cat": "Atendimento",
           "pct": 9
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 36
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
         {
           "cat": "Loja Física",
           "pct": 18
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Promoções & Fidelidade",
+          "pct": 36
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -14884,6 +16338,22 @@ const DATA = {
           "nps": 54.5,
           "n": 154
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 52,
+        "Abastecimento": 37,
+        "Atendimento": 10,
+        "Loja Física": 9,
+        "Outros": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 102,
+        "Loja Física": 51,
+        "Entrega & Logística": 50,
+        "Atendimento": 38,
+        "Abastecimento": 22,
+        "Outros": 21
       }
     },
     {
@@ -14907,16 +16377,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1238.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
+          "cat": "Loja Física",
+          "pct": 33
         },
         {
-          "cat": "Loja Física",
+          "cat": "Promoções & Fidelidade",
           "pct": 28
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
+          "pct": 28
         }
       ],
       "top_elogios": [
@@ -14925,8 +16395,8 @@ const DATA = {
           "pct": 30
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
+          "cat": "Outros",
+          "pct": 9
         },
         {
           "cat": "Atendimento",
@@ -15045,6 +16515,22 @@ const DATA = {
           "nps": 51.4,
           "n": 72
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 23,
+        "Loja Física": 21,
+        "Abastecimento": 20,
+        "Atendimento": 4,
+        "Entrega & Logística": 4,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Entrega & Logística": 58,
+        "Promoções & Fidelidade": 49,
+        "Atendimento": 31,
+        "Loja Física": 23,
+        "Outros": 18,
+        "Abastecimento": 15
       }
     },
     {
@@ -15068,30 +16554,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2299.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 27
+          "cat": "Atendimento",
+          "pct": 11
         },
         {
           "cat": "Loja Física",
-          "pct": 22
+          "pct": 29
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "temporal": [
@@ -15206,6 +16692,22 @@ const DATA = {
           "nps": 54.6,
           "n": 152
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 45,
+        "Abastecimento": 33,
+        "Loja Física": 27,
+        "Atendimento": 10,
+        "Outros": 4,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 107,
+        "Entrega & Logística": 69,
+        "Loja Física": 56,
+        "Atendimento": 54,
+        "Outros": 41,
+        "Abastecimento": 31
       }
     },
     {
@@ -15229,16 +16731,16 @@ const DATA = {
       "avaliacoes_ponderadas": 882.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 39
+          "cat": "Loja Física",
+          "pct": 26
         },
         {
-          "cat": "Loja Física",
-          "pct": 28
+          "cat": "Promoções & Fidelidade",
+          "pct": 38
         },
         {
           "cat": "Abastecimento",
-          "pct": 25
+          "pct": 31
         }
       ],
       "top_elogios": [
@@ -15251,8 +16753,8 @@ const DATA = {
           "pct": 25
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 17
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -15367,6 +16869,22 @@ const DATA = {
           "nps": 26.8,
           "n": 56
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 26,
+        "Loja Física": 19,
+        "Abastecimento": 17,
+        "Atendimento": 3,
+        "Outros": 1,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Atendimento": 56,
+        "Entrega & Logística": 44,
+        "Promoções & Fidelidade": 30,
+        "Loja Física": 18,
+        "Outros": 18,
+        "Abastecimento": 10
       }
     },
     {
@@ -15390,30 +16908,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1615.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "cat": "Abastecimento",
+          "pct": 43
         },
         {
-          "cat": "Abastecimento",
-          "pct": 33
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 15
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
+          "cat": "Outros",
+          "pct": 15
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Outros",
-          "pct": 15
         }
       ],
       "temporal": [
@@ -15528,6 +17046,22 @@ const DATA = {
           "nps": 48.7,
           "n": 115
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 43,
+        "Abastecimento": 31,
+        "Loja Física": 11,
+        "Entrega & Logística": 4,
+        "Outros": 3,
+        "Atendimento": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 72,
+        "Entrega & Logística": 55,
+        "Outros": 37,
+        "Abastecimento": 28,
+        "Loja Física": 27,
+        "Atendimento": 27
       }
     },
     {
@@ -15551,30 +17085,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1466.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Outros",
+          "pct": 8
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
+          "pct": 48
         },
         {
-          "cat": "Loja Física",
-          "pct": 9
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Entrega & Logística",
           "pct": 25
         },
         {
-          "cat": "Outros",
-          "pct": 12
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -15689,6 +17223,22 @@ const DATA = {
           "nps": 46.8,
           "n": 109
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 46,
+        "Abastecimento": 32,
+        "Loja Física": 9,
+        "Outros": 7,
+        "Entrega & Logística": 6,
+        "Atendimento": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 63,
+        "Entrega & Logística": 48,
+        "Outros": 23,
+        "Loja Física": 23,
+        "Atendimento": 21,
+        "Abastecimento": 16
       }
     },
     {
@@ -15712,16 +17262,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1174.0,
       "top_problemas": [
         {
+          "cat": "Loja Física",
+          "pct": 27
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "pct": 35
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 22
+          "pct": 31
         }
       ],
       "top_elogios": [
@@ -15730,12 +17280,12 @@ const DATA = {
           "pct": 25
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Outros",
+          "pct": 13
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -15850,6 +17400,22 @@ const DATA = {
           "nps": 42.3,
           "n": 97
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 37,
+        "Abastecimento": 26,
+        "Loja Física": 20,
+        "Atendimento": 4,
+        "Outros": 4,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Atendimento": 73,
+        "Entrega & Logística": 63,
+        "Promoções & Fidelidade": 60,
+        "Outros": 40,
+        "Loja Física": 32,
+        "Abastecimento": 29
       }
     },
     {
@@ -15873,30 +17439,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1623.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 54
+          "cat": "Entrega & Logística",
+          "pct": 6
         },
         {
-          "cat": "Abastecimento",
-          "pct": 29
+          "cat": "Promoções & Fidelidade",
+          "pct": 50
         },
         {
           "cat": "Atendimento",
-          "pct": 7
+          "pct": 6
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
-        },
         {
           "cat": "Atendimento",
           "pct": 23
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Outros",
+          "pct": 10
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         }
       ],
       "temporal": [
@@ -16011,6 +17577,22 @@ const DATA = {
           "nps": 40.1,
           "n": 137
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 57,
+        "Abastecimento": 31,
+        "Atendimento": 7,
+        "Loja Física": 5,
+        "Entrega & Logística": 4,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 80,
+        "Atendimento": 64,
+        "Entrega & Logística": 58,
+        "Loja Física": 29,
+        "Outros": 28,
+        "Abastecimento": 21
       }
     },
     {
@@ -16034,16 +17616,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1078.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 42
+          "cat": "Abastecimento",
+          "pct": 57
         },
         {
-          "cat": "Abastecimento",
-          "pct": 37
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         },
         {
           "cat": "Loja Física",
-          "pct": 10
+          "pct": 9
         }
       ],
       "top_elogios": [
@@ -16052,12 +17634,12 @@ const DATA = {
           "pct": 32
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 21
-        },
-        {
           "cat": "Atendimento",
           "pct": 18
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -16172,6 +17754,22 @@ const DATA = {
           "nps": 50.6,
           "n": 87
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 33,
+        "Abastecimento": 29,
+        "Loja Física": 8,
+        "Atendimento": 4,
+        "Entrega & Logística": 3,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 54,
+        "Entrega & Logística": 36,
+        "Atendimento": 31,
+        "Loja Física": 23,
+        "Outros": 17,
+        "Abastecimento": 8
       }
     },
     {
@@ -16195,30 +17793,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2229.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
+          "pct": 42
         },
         {
-          "cat": "Loja Física",
-          "pct": 8
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
+          "cat": "Loja Física",
+          "pct": 16
         },
         {
           "cat": "Atendimento",
           "pct": 20
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Promoções & Fidelidade",
+          "pct": 28
         }
       ],
       "temporal": [
@@ -16333,6 +17931,22 @@ const DATA = {
           "nps": 47.6,
           "n": 168
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 65,
+        "Abastecimento": 37,
+        "Loja Física": 11,
+        "Outros": 9,
+        "Atendimento": 9,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 103,
+        "Atendimento": 73,
+        "Entrega & Logística": 70,
+        "Loja Física": 58,
+        "Outros": 35,
+        "Abastecimento": 31
       }
     },
     {
@@ -16356,16 +17970,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2415.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 10
+        },
+        {
           "cat": "Abastecimento",
-          "pct": 42
+          "pct": 46
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 12
+          "pct": 30
         }
       ],
       "top_elogios": [
@@ -16374,12 +17988,12 @@ const DATA = {
           "pct": 33
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
-        },
-        {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 22
         }
       ],
       "temporal": [
@@ -16494,6 +18108,22 @@ const DATA = {
           "nps": 61.3,
           "n": 199
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 65,
+        "Promoções & Fidelidade": 56,
+        "Loja Física": 18,
+        "Atendimento": 9,
+        "Outros": 5,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 143,
+        "Entrega & Logística": 93,
+        "Loja Física": 63,
+        "Atendimento": 52,
+        "Outros": 39,
+        "Abastecimento": 37
       }
     },
     {
@@ -16518,18 +18148,22 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "pct": 42
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 42
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 10
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 10
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 33
@@ -16537,10 +18171,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 24
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 14
         }
       ],
       "temporal": [
@@ -16655,6 +18285,22 @@ const DATA = {
           "nps": 52.5,
           "n": 204
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 68,
+        "Abastecimento": 43,
+        "Loja Física": 20,
+        "Outros": 8,
+        "Atendimento": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 136,
+        "Entrega & Logística": 97,
+        "Loja Física": 57,
+        "Abastecimento": 42,
+        "Outros": 41,
+        "Atendimento": 37
       }
     },
     {
@@ -16678,30 +18324,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1556.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 48
+          "cat": "Abastecimento",
+          "pct": 47
         },
         {
-          "cat": "Abastecimento",
-          "pct": 36
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         },
         {
           "cat": "Loja Física",
-          "pct": 11
+          "pct": 16
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Entrega & Logística",
-          "pct": 25
-        },
         {
           "cat": "Atendimento",
           "pct": 24
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
+          "cat": "Entrega & Logística",
+          "pct": 25
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -16816,6 +18462,21 @@ const DATA = {
           "nps": 45.2,
           "n": 126
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 49,
+        "Abastecimento": 37,
+        "Loja Física": 11,
+        "Outros": 4,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Entrega & Logística": 79,
+        "Atendimento": 78,
+        "Promoções & Fidelidade": 77,
+        "Loja Física": 33,
+        "Abastecimento": 28,
+        "Outros": 24
       }
     },
     {
@@ -16840,29 +18501,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 41
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 36
+          "pct": 42
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 18
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 32
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 17
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 32
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 17
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -16977,6 +18638,22 @@ const DATA = {
           "nps": 47.2,
           "n": 89
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 31,
+        "Abastecimento": 27,
+        "Loja Física": 9,
+        "Outros": 3,
+        "Atendimento": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 58,
+        "Entrega & Logística": 40,
+        "Loja Física": 31,
+        "Atendimento": 20,
+        "Abastecimento": 17,
+        "Outros": 14
       }
     },
     {
@@ -17000,30 +18677,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1548.0,
       "top_problemas": [
         {
+          "cat": "Entrega & Logística",
+          "pct": 5
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 10
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 49
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 24
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 43
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Atendimento",
+          "pct": 23
         },
         {
           "cat": "Entrega & Logística",
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -17138,6 +18815,22 @@ const DATA = {
           "nps": 43.2,
           "n": 162
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 66,
+        "Abastecimento": 32,
+        "Loja Física": 15,
+        "Atendimento": 10,
+        "Outros": 7,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 96,
+        "Entrega & Logística": 83,
+        "Atendimento": 80,
+        "Loja Física": 36,
+        "Outros": 34,
+        "Abastecimento": 22
       }
     },
     {
@@ -17161,16 +18854,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2074.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 47
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 36
+          "pct": 41
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 20
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "top_elogios": [
@@ -17179,12 +18872,12 @@ const DATA = {
           "pct": 37
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
-        },
-        {
           "cat": "Loja Física",
           "pct": 14
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 22
         }
       ],
       "temporal": [
@@ -17299,6 +18992,22 @@ const DATA = {
           "nps": 57.4,
           "n": 183
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 58,
+        "Abastecimento": 44,
+        "Loja Física": 15,
+        "Atendimento": 3,
+        "Entrega & Logística": 2,
+        "Outros": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 125,
+        "Entrega & Logística": 76,
+        "Loja Física": 48,
+        "Atendimento": 40,
+        "Abastecimento": 27,
+        "Outros": 24
       }
     },
     {
@@ -17322,16 +19031,16 @@ const DATA = {
       "avaliacoes_ponderadas": 3594.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Outros",
+          "pct": 3
         },
         {
-          "cat": "Abastecimento",
-          "pct": 29
+          "cat": "Promoções & Fidelidade",
+          "pct": 43
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 18
         }
       ],
       "top_elogios": [
@@ -17340,12 +19049,12 @@ const DATA = {
           "pct": 35
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -17460,6 +19169,22 @@ const DATA = {
           "nps": 56.0,
           "n": 343
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 106,
+        "Abastecimento": 70,
+        "Loja Física": 39,
+        "Atendimento": 10,
+        "Outros": 9,
+        "Entrega & Logística": 8
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 237,
+        "Entrega & Logística": 122,
+        "Loja Física": 104,
+        "Atendimento": 73,
+        "Outros": 67,
+        "Abastecimento": 66
       }
     },
     {
@@ -17484,29 +19209,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 51
+          "pct": 50
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 5
         },
         {
           "cat": "Abastecimento",
-          "pct": 21
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
+          "pct": 28
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Atendimento",
           "pct": 19
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -17621,6 +19346,22 @@ const DATA = {
           "nps": 44.5,
           "n": 211
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 85,
+        "Abastecimento": 35,
+        "Loja Física": 25,
+        "Outros": 11,
+        "Entrega & Logística": 6,
+        "Atendimento": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 126,
+        "Entrega & Logística": 83,
+        "Atendimento": 82,
+        "Loja Física": 57,
+        "Abastecimento": 42,
+        "Outros": 33
       }
     },
     {
@@ -17644,16 +19385,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1751.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Abastecimento",
-          "pct": 33
+          "pct": 45
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 17
         }
       ],
       "top_elogios": [
@@ -17666,8 +19407,8 @@ const DATA = {
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 13
+          "cat": "Loja Física",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -17782,6 +19523,22 @@ const DATA = {
           "nps": 60.4,
           "n": 144
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 43,
+        "Abastecimento": 38,
+        "Loja Física": 17,
+        "Atendimento": 9,
+        "Outros": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 101,
+        "Entrega & Logística": 67,
+        "Atendimento": 36,
+        "Loja Física": 35,
+        "Outros": 23,
+        "Abastecimento": 23
       }
     },
     {
@@ -17805,22 +19562,22 @@ const DATA = {
       "avaliacoes_ponderadas": 1931.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 47
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 22
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Loja Física",
-          "pct": 18
+          "pct": 20
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 15
         },
         {
           "cat": "Atendimento",
@@ -17943,6 +19700,22 @@ const DATA = {
           "nps": 46.0,
           "n": 161
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 65,
+        "Abastecimento": 30,
+        "Loja Física": 25,
+        "Atendimento": 9,
+        "Outros": 8,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 96,
+        "Atendimento": 94,
+        "Entrega & Logística": 83,
+        "Outros": 58,
+        "Loja Física": 43,
+        "Abastecimento": 18
       }
     },
     {
@@ -17967,29 +19740,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Abastecimento",
-          "pct": 39
-        },
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
+          "pct": 46
         },
         {
           "cat": "Loja Física",
-          "pct": 17
+          "pct": 22
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 24
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 25
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -18104,6 +19877,22 @@ const DATA = {
           "nps": 58.4,
           "n": 113
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 38,
+        "Promoções & Fidelidade": 36,
+        "Loja Física": 17,
+        "Outros": 3,
+        "Atendimento": 2,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 77,
+        "Entrega & Logística": 65,
+        "Atendimento": 37,
+        "Loja Física": 31,
+        "Abastecimento": 23,
+        "Outros": 23
       }
     },
     {
@@ -18128,15 +19917,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 47
+          "pct": 42
         },
         {
-          "cat": "Abastecimento",
-          "pct": 28
+          "cat": "Atendimento",
+          "pct": 6
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 18
         }
       ],
       "top_elogios": [
@@ -18149,8 +19938,8 @@ const DATA = {
           "pct": 21
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -18265,6 +20054,22 @@ const DATA = {
           "nps": 55.3,
           "n": 253
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 80,
+        "Abastecimento": 47,
+        "Loja Física": 26,
+        "Atendimento": 8,
+        "Outros": 5,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 173,
+        "Entrega & Logística": 103,
+        "Atendimento": 71,
+        "Loja Física": 63,
+        "Outros": 45,
+        "Abastecimento": 41
       }
     },
     {
@@ -18288,30 +20093,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2277.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 42
+          "cat": "Loja Física",
+          "pct": 36
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 30
         },
         {
-          "cat": "Loja Física",
-          "pct": 21
+          "cat": "Promoções & Fidelidade",
+          "pct": 28
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
+          "cat": "Loja Física",
+          "pct": 18
         },
         {
           "cat": "Entrega & Logística",
           "pct": 24
         },
         {
-          "cat": "Loja Física",
-          "pct": 18
+          "cat": "Abastecimento",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -18426,6 +20231,22 @@ const DATA = {
           "nps": 51.8,
           "n": 170
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 63,
+        "Abastecimento": 44,
+        "Loja Física": 31,
+        "Outros": 7,
+        "Atendimento": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 107,
+        "Entrega & Logística": 93,
+        "Loja Física": 68,
+        "Atendimento": 39,
+        "Outros": 39,
+        "Abastecimento": 38
       }
     },
     {
@@ -18450,25 +20271,25 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 54
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 20
+          "pct": 41
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 18
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 31
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
+          "cat": "Atendimento",
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 11
         },
         {
           "cat": "Entrega & Logística",
@@ -18587,6 +20408,22 @@ const DATA = {
           "nps": 34.0,
           "n": 106
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 54,
+        "Abastecimento": 20,
+        "Loja Física": 12,
+        "Atendimento": 8,
+        "Outros": 5,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 52,
+        "Atendimento": 52,
+        "Entrega & Logística": 48,
+        "Loja Física": 25,
+        "Outros": 23,
+        "Abastecimento": 17
       }
     },
     {
@@ -18611,15 +20448,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 54
+          "pct": 49
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 36
         },
         {
           "cat": "Loja Física",
-          "pct": 8
+          "pct": 10
         }
       ],
       "top_elogios": [
@@ -18748,6 +20585,22 @@ const DATA = {
           "nps": 51.9,
           "n": 320
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 110,
+        "Abastecimento": 59,
+        "Loja Física": 17,
+        "Outros": 10,
+        "Atendimento": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 210,
+        "Entrega & Logística": 142,
+        "Loja Física": 88,
+        "Outros": 59,
+        "Abastecimento": 53,
+        "Atendimento": 49
       }
     },
     {
@@ -18771,26 +20624,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1822.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Atendimento",
+          "pct": 13
         },
         {
           "cat": "Abastecimento",
-          "pct": 39
+          "pct": 51
         },
         {
-          "cat": "Atendimento",
-          "pct": 9
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 33
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         },
         {
           "cat": "Loja Física",
@@ -18909,6 +20762,21 @@ const DATA = {
           "nps": 53.6,
           "n": 125
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 42,
+        "Abastecimento": 38,
+        "Atendimento": 9,
+        "Outros": 6,
+        "Loja Física": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 83,
+        "Entrega & Logística": 50,
+        "Loja Física": 37,
+        "Abastecimento": 30,
+        "Outros": 25,
+        "Atendimento": 24
       }
     },
     {
@@ -18932,16 +20800,16 @@ const DATA = {
       "avaliacoes_ponderadas": 3262.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Atendimento",
+          "pct": 13
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
+          "pct": 42
         },
         {
-          "cat": "Loja Física",
-          "pct": 13
+          "cat": "Promoções & Fidelidade",
+          "pct": 27
         }
       ],
       "top_elogios": [
@@ -18950,12 +20818,12 @@ const DATA = {
           "pct": 34
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
-        },
-        {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -19070,6 +20938,22 @@ const DATA = {
           "nps": 59.1,
           "n": 269
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 89,
+        "Abastecimento": 62,
+        "Loja Física": 27,
+        "Atendimento": 12,
+        "Outros": 9,
+        "Entrega & Logística": 7
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 180,
+        "Entrega & Logística": 115,
+        "Loja Física": 80,
+        "Atendimento": 56,
+        "Abastecimento": 49,
+        "Outros": 48
       }
     },
     {
@@ -19093,16 +20977,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1040.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 50
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 24
-        },
-        {
           "cat": "Loja Física",
-          "pct": 17
+          "pct": 22
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 40
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 6
         }
       ],
       "top_elogios": [
@@ -19115,8 +20999,8 @@ const DATA = {
           "pct": 27
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 19
+          "cat": "Outros",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -19231,6 +21115,22 @@ const DATA = {
           "nps": 36.5,
           "n": 96
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 41,
+        "Abastecimento": 20,
+        "Loja Física": 14,
+        "Atendimento": 4,
+        "Entrega & Logística": 2,
+        "Outros": 1
+      },
+      "elog_counts": {
+        "Atendimento": 86,
+        "Entrega & Logística": 76,
+        "Promoções & Fidelidade": 55,
+        "Loja Física": 28,
+        "Outros": 22,
+        "Abastecimento": 17
       }
     },
     {
@@ -19255,15 +21155,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 57
+          "pct": 51
         },
         {
           "cat": "Abastecimento",
-          "pct": 23
+          "pct": 32
         },
         {
           "cat": "Loja Física",
-          "pct": 10
+          "pct": 13
         }
       ],
       "top_elogios": [
@@ -19272,12 +21172,12 @@ const DATA = {
           "pct": 42
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 15
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Loja Física",
-          "pct": 14
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -19392,6 +21292,22 @@ const DATA = {
           "nps": 53.4,
           "n": 322
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 112,
+        "Abastecimento": 45,
+        "Loja Física": 20,
+        "Entrega & Logística": 8,
+        "Outros": 6,
+        "Atendimento": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 210,
+        "Entrega & Logística": 75,
+        "Loja Física": 68,
+        "Outros": 57,
+        "Abastecimento": 46,
+        "Atendimento": 41
       }
     },
     {
@@ -19415,30 +21331,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1279.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "cat": "Outros",
+          "pct": 7
         },
         {
-          "cat": "Abastecimento",
-          "pct": 24
+          "cat": "Promoções & Fidelidade",
+          "pct": 43
         },
         {
           "cat": "Loja Física",
-          "pct": 11
+          "pct": 20
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Atendimento",
           "pct": 19
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 21
         }
       ],
       "temporal": [
@@ -19553,6 +21469,21 @@ const DATA = {
           "nps": 45.4,
           "n": 130
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 51,
+        "Abastecimento": 23,
+        "Loja Física": 11,
+        "Atendimento": 6,
+        "Outros": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 79,
+        "Entrega & Logística": 58,
+        "Atendimento": 51,
+        "Outros": 33,
+        "Loja Física": 32,
+        "Abastecimento": 17
       }
     },
     {
@@ -19576,30 +21507,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2491.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Entrega & Logística",
+          "pct": 5
         },
         {
           "cat": "Loja Física",
-          "pct": 24
+          "pct": 30
         },
         {
-          "cat": "Abastecimento",
-          "pct": 21
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 25
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -19714,6 +21645,22 @@ const DATA = {
           "nps": 54.3,
           "n": 175
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 58,
+        "Loja Física": 32,
+        "Abastecimento": 28,
+        "Outros": 6,
+        "Entrega & Logística": 6,
+        "Atendimento": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 117,
+        "Entrega & Logística": 97,
+        "Atendimento": 60,
+        "Loja Física": 43,
+        "Abastecimento": 35,
+        "Outros": 33
       }
     },
     {
@@ -19737,30 +21684,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1661.0,
       "top_problemas": [
         {
+          "cat": "Entrega & Logística",
+          "pct": 6
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 50
+          "pct": 43
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 10
+          "pct": 43
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
-        },
         {
           "cat": "Atendimento",
           "pct": 21
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -19875,6 +21822,22 @@ const DATA = {
           "nps": 43.2,
           "n": 132
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 54,
+        "Abastecimento": 32,
+        "Loja Física": 11,
+        "Entrega & Logística": 5,
+        "Outros": 3,
+        "Atendimento": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 78,
+        "Atendimento": 63,
+        "Entrega & Logística": 58,
+        "Loja Física": 42,
+        "Outros": 36,
+        "Abastecimento": 20
       }
     },
     {
@@ -19898,26 +21861,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1232.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Abastecimento",
+          "pct": 48
         },
         {
-          "cat": "Abastecimento",
-          "pct": 30
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         },
         {
           "cat": "Loja Física",
-          "pct": 9
+          "pct": 12
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
+          "cat": "Entrega & Logística",
           "pct": 26
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 26
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Loja Física",
@@ -20036,6 +21999,22 @@ const DATA = {
           "nps": 48.1,
           "n": 77
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 29,
+        "Abastecimento": 20,
+        "Loja Física": 6,
+        "Outros": 5,
+        "Atendimento": 4,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 48,
+        "Entrega & Logística": 48,
+        "Loja Física": 28,
+        "Atendimento": 25,
+        "Abastecimento": 19,
+        "Outros": 14
       }
     },
     {
@@ -20059,26 +22038,26 @@ const DATA = {
       "avaliacoes_ponderadas": 2328.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "cat": "Entrega & Logística",
+          "pct": 4
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
+          "pct": 38
         },
         {
           "cat": "Loja Física",
-          "pct": 13
+          "pct": 18
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
-        },
-        {
           "cat": "Atendimento",
           "pct": 24
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         },
         {
           "cat": "Entrega & Logística",
@@ -20197,6 +22176,22 @@ const DATA = {
           "nps": 48.9,
           "n": 176
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 65,
+        "Abastecimento": 45,
+        "Loja Física": 19,
+        "Entrega & Logística": 7,
+        "Atendimento": 6,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 111,
+        "Atendimento": 107,
+        "Entrega & Logística": 96,
+        "Loja Física": 46,
+        "Outros": 45,
+        "Abastecimento": 42
       }
     },
     {
@@ -20221,15 +22216,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "pct": 43
         },
         {
           "cat": "Abastecimento",
-          "pct": 33
+          "pct": 39
         },
         {
           "cat": "Loja Física",
-          "pct": 8
+          "pct": 9
         }
       ],
       "top_elogios": [
@@ -20238,11 +22233,11 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Promoções & Fidelidade",
+          "cat": "Entrega & Logística",
           "pct": 25
         },
         {
-          "cat": "Entrega & Logística",
+          "cat": "Promoções & Fidelidade",
           "pct": 25
         }
       ],
@@ -20358,6 +22353,22 @@ const DATA = {
           "nps": 43.3,
           "n": 104
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 40,
+        "Abastecimento": 29,
+        "Loja Física": 7,
+        "Atendimento": 5,
+        "Outros": 4,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Atendimento": 76,
+        "Promoções & Fidelidade": 64,
+        "Entrega & Logística": 64,
+        "Loja Física": 26,
+        "Abastecimento": 18,
+        "Outros": 12
       }
     },
     {
@@ -20381,16 +22392,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2628.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 29
-        },
-        {
           "cat": "Loja Física",
-          "pct": 19
+          "pct": 27
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 6
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         }
       ],
       "top_elogios": [
@@ -20399,12 +22410,12 @@ const DATA = {
           "pct": 30
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 21
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -20519,6 +22530,22 @@ const DATA = {
           "nps": 48.3,
           "n": 176
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 63,
+        "Abastecimento": 46,
+        "Loja Física": 30,
+        "Atendimento": 10,
+        "Outros": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Atendimento": 161,
+        "Promoções & Fidelidade": 113,
+        "Entrega & Logística": 94,
+        "Loja Física": 71,
+        "Outros": 58,
+        "Abastecimento": 40
       }
     },
     {
@@ -20542,16 +22569,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2133.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Entrega & Logística",
+          "pct": 7
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
+          "pct": 37
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 17
         }
       ],
       "top_elogios": [
@@ -20560,12 +22587,12 @@ const DATA = {
           "pct": 28
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -20680,6 +22707,22 @@ const DATA = {
           "nps": 47.1,
           "n": 191
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 76,
+        "Abastecimento": 52,
+        "Loja Física": 27,
+        "Outros": 7,
+        "Atendimento": 7,
+        "Entrega & Logística": 7
+      },
+      "elog_counts": {
+        "Atendimento": 140,
+        "Promoções & Fidelidade": 115,
+        "Entrega & Logística": 96,
+        "Loja Física": 70,
+        "Outros": 57,
+        "Abastecimento": 30
       }
     },
     {
@@ -20703,19 +22746,23 @@ const DATA = {
       "avaliacoes_ponderadas": 1033.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 42
+          "cat": "Abastecimento",
+          "pct": 41
         },
         {
-          "cat": "Abastecimento",
-          "pct": 28
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         },
         {
           "cat": "Loja Física",
-          "pct": 17
+          "pct": 15
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 20
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 32
@@ -20723,10 +22770,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 20
         }
       ],
       "temporal": [
@@ -20841,6 +22884,22 @@ const DATA = {
           "nps": 52.9,
           "n": 87
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 29,
+        "Abastecimento": 19,
+        "Loja Física": 12,
+        "Outros": 5,
+        "Atendimento": 2,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 58,
+        "Entrega & Logística": 40,
+        "Loja Física": 36,
+        "Atendimento": 21,
+        "Abastecimento": 14,
+        "Outros": 13
       }
     },
     {
@@ -20865,29 +22924,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 47
+          "pct": 41
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 41
         },
         {
           "cat": "Atendimento",
-          "pct": 10
+          "pct": 6
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Entrega & Logística",
           "pct": 25
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -21002,6 +23061,22 @@ const DATA = {
           "nps": 51.6,
           "n": 155
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 54,
+        "Abastecimento": 34,
+        "Atendimento": 12,
+        "Loja Física": 11,
+        "Outros": 4,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 101,
+        "Entrega & Logística": 78,
+        "Atendimento": 52,
+        "Outros": 38,
+        "Loja Física": 27,
+        "Abastecimento": 21
       }
     },
     {
@@ -21025,16 +23100,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1677.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "cat": "Atendimento",
+          "pct": 10
         },
         {
           "cat": "Abastecimento",
-          "pct": 32
+          "pct": 48
         },
         {
-          "cat": "Loja Física",
-          "pct": 6
+          "cat": "Promoções & Fidelidade",
+          "pct": 26
         }
       ],
       "top_elogios": [
@@ -21047,8 +23122,8 @@ const DATA = {
           "pct": 25
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -21163,6 +23238,22 @@ const DATA = {
           "nps": 56.6,
           "n": 129
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 45,
+        "Abastecimento": 32,
+        "Loja Física": 6,
+        "Atendimento": 6,
+        "Entrega & Logística": 5,
+        "Outros": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 84,
+        "Entrega & Logística": 60,
+        "Atendimento": 33,
+        "Loja Física": 31,
+        "Abastecimento": 18,
+        "Outros": 11
       }
     },
     {
@@ -21186,16 +23277,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2022.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "cat": "Loja Física",
+          "pct": 20
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
+          "pct": 39
         },
         {
-          "cat": "Loja Física",
-          "pct": 14
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "top_elogios": [
@@ -21204,8 +23295,8 @@ const DATA = {
           "pct": 26
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
+          "cat": "Loja Física",
+          "pct": 14
         },
         {
           "cat": "Atendimento",
@@ -21324,6 +23415,21 @@ const DATA = {
           "nps": 46.2,
           "n": 158
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 65,
+        "Abastecimento": 43,
+        "Loja Física": 20,
+        "Outros": 8,
+        "Atendimento": 7
+      },
+      "elog_counts": {
+        "Entrega & Logística": 97,
+        "Promoções & Fidelidade": 93,
+        "Atendimento": 65,
+        "Loja Física": 54,
+        "Outros": 37,
+        "Abastecimento": 31
       }
     },
     {
@@ -21348,29 +23454,25 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Abastecimento",
-          "pct": 46
+          "pct": 50
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 43
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 8
+          "pct": 41
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
+          "cat": "Loja Física",
+          "pct": 19
         },
         {
           "cat": "Atendimento",
           "pct": 23
         },
         {
-          "cat": "Loja Física",
-          "pct": 19
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "temporal": [
@@ -21480,6 +23582,20 @@ const DATA = {
           "nps": 47.9,
           "n": 48
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 17,
+        "Promoções & Fidelidade": 16,
+        "Loja Física": 3,
+        "Outros": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 32,
+        "Atendimento": 25,
+        "Loja Física": 21,
+        "Entrega & Logística": 14,
+        "Outros": 11,
+        "Abastecimento": 5
       }
     },
     {
@@ -21503,30 +23619,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2341.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "cat": "Atendimento",
+          "pct": 7
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 43
         },
         {
-          "cat": "Loja Física",
-          "pct": 13
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Outros",
+          "pct": 11
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 32
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 15
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -21641,6 +23757,22 @@ const DATA = {
           "nps": 57.0,
           "n": 151
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 46,
+        "Abastecimento": 29,
+        "Loja Física": 13,
+        "Atendimento": 6,
+        "Outros": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 105,
+        "Entrega & Logística": 66,
+        "Atendimento": 49,
+        "Loja Física": 46,
+        "Outros": 37,
+        "Abastecimento": 25
       }
     },
     {
@@ -21665,15 +23797,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 61
+          "pct": 54
         },
         {
-          "cat": "Abastecimento",
-          "pct": 15
+          "cat": "Atendimento",
+          "pct": 8
         },
         {
           "cat": "Loja Física",
-          "pct": 11
+          "pct": 17
         }
       ],
       "top_elogios": [
@@ -21682,12 +23814,12 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
-        },
-        {
           "cat": "Entrega & Logística",
           "pct": 23
+        },
+        {
+          "cat": "Outros",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -21802,6 +23934,22 @@ const DATA = {
           "nps": 30.3,
           "n": 122
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 59,
+        "Abastecimento": 14,
+        "Loja Física": 11,
+        "Atendimento": 7,
+        "Outros": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Atendimento": 77,
+        "Promoções & Fidelidade": 63,
+        "Entrega & Logística": 60,
+        "Outros": 24,
+        "Loja Física": 22,
+        "Abastecimento": 17
       }
     },
     {
@@ -21825,30 +23973,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1583.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 8
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "pct": 44
         },
         {
           "cat": "Abastecimento",
           "pct": 33
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 14
         }
       ],
       "top_elogios": [
         {
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 10
+        },
+        {
           "cat": "Promoções & Fidelidade",
           "pct": 29
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 16
         }
       ],
       "temporal": [
@@ -21963,6 +24111,22 @@ const DATA = {
           "nps": 48.1,
           "n": 104
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 37,
+        "Abastecimento": 29,
+        "Loja Física": 12,
+        "Atendimento": 7,
+        "Outros": 1,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 67,
+        "Entrega & Logística": 48,
+        "Atendimento": 38,
+        "Outros": 29,
+        "Loja Física": 29,
+        "Abastecimento": 23
       }
     },
     {
@@ -21986,16 +24150,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1916.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 31
-        },
-        {
           "cat": "Loja Física",
-          "pct": 21
+          "pct": 20
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 38
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 5
         }
       ],
       "top_elogios": [
@@ -22004,12 +24168,12 @@ const DATA = {
           "pct": 37
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -22124,6 +24288,22 @@ const DATA = {
           "nps": 63.9,
           "n": 166
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 39,
+        "Abastecimento": 33,
+        "Loja Física": 23,
+        "Atendimento": 5,
+        "Outros": 4,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 127,
+        "Entrega & Logística": 60,
+        "Loja Física": 55,
+        "Atendimento": 38,
+        "Outros": 33,
+        "Abastecimento": 29
       }
     },
     {
@@ -22147,26 +24327,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1918.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 39
+          "cat": "Loja Física",
+          "pct": 29
         },
         {
           "cat": "Abastecimento",
           "pct": 34
         },
         {
-          "cat": "Loja Física",
-          "pct": 18
+          "cat": "Atendimento",
+          "pct": 5
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 22
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Loja Física",
+          "pct": 16
         },
         {
           "cat": "Atendimento",
@@ -22285,6 +24465,21 @@ const DATA = {
           "nps": 48.9,
           "n": 135
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 52,
+        "Abastecimento": 45,
+        "Loja Física": 24,
+        "Outros": 7,
+        "Atendimento": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 83,
+        "Entrega & Logística": 80,
+        "Atendimento": 79,
+        "Loja Física": 63,
+        "Abastecimento": 44,
+        "Outros": 37
       }
     },
     {
@@ -22309,18 +24504,22 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 60
+          "pct": 57
         },
         {
           "cat": "Abastecimento",
-          "pct": 20
+          "pct": 30
         },
         {
           "cat": "Loja Física",
-          "pct": 9
+          "pct": 11
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 17
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 33
@@ -22328,10 +24527,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 17
         }
       ],
       "temporal": [
@@ -22446,6 +24641,22 @@ const DATA = {
           "nps": 42.2,
           "n": 206
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 88,
+        "Abastecimento": 29,
+        "Loja Física": 13,
+        "Atendimento": 9,
+        "Outros": 6,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 118,
+        "Entrega & Logística": 78,
+        "Loja Física": 63,
+        "Atendimento": 44,
+        "Abastecimento": 32,
+        "Outros": 27
       }
     },
     {
@@ -22470,22 +24681,18 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 48
+          "pct": 46
         },
         {
           "cat": "Abastecimento",
-          "pct": 34
+          "pct": 41
         },
         {
-          "cat": "Loja Física",
-          "pct": 7
+          "cat": "Atendimento",
+          "pct": 5
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 27
@@ -22493,6 +24700,10 @@ const DATA = {
         {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         }
       ],
       "temporal": [
@@ -22607,6 +24818,22 @@ const DATA = {
           "nps": 52.2,
           "n": 178
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 57,
+        "Abastecimento": 41,
+        "Loja Física": 8,
+        "Outros": 6,
+        "Atendimento": 5,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 121,
+        "Entrega & Logística": 111,
+        "Loja Física": 61,
+        "Atendimento": 48,
+        "Outros": 37,
+        "Abastecimento": 33
       }
     },
     {
@@ -22630,30 +24857,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1901.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 14
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 47
+          "pct": 35
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 12
+          "pct": 35
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Atendimento",
+          "pct": 19
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 32
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 19
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -22768,6 +24995,22 @@ const DATA = {
           "nps": 54.5,
           "n": 154
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 52,
+        "Abastecimento": 34,
+        "Loja Física": 13,
+        "Atendimento": 7,
+        "Entrega & Logística": 3,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 102,
+        "Entrega & Logística": 62,
+        "Atendimento": 61,
+        "Loja Física": 40,
+        "Outros": 31,
+        "Abastecimento": 23
       }
     },
     {
@@ -22792,18 +25035,22 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 52
+          "pct": 49
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
+          "pct": 35
         },
         {
           "cat": "Loja Física",
-          "pct": 8
+          "pct": 7
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Outros",
+          "pct": 14
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 35
@@ -22811,10 +25058,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 23
-        },
-        {
-          "cat": "Outros",
-          "pct": 14
         }
       ],
       "temporal": [
@@ -22929,6 +25172,22 @@ const DATA = {
           "nps": 48.4,
           "n": 126
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 44,
+        "Abastecimento": 25,
+        "Loja Física": 7,
+        "Outros": 3,
+        "Atendimento": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 82,
+        "Entrega & Logística": 55,
+        "Outros": 33,
+        "Loja Física": 24,
+        "Atendimento": 23,
+        "Abastecimento": 20
       }
     },
     {
@@ -22952,30 +25211,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1839.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 35
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 35
+          "pct": 48
         },
         {
-          "cat": "Loja Física",
-          "pct": 14
+          "cat": "Atendimento",
+          "pct": 6
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         }
       ],
       "top_elogios": [
         {
+          "cat": "Abastecimento",
+          "pct": 12
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
           "cat": "Promoções & Fidelidade",
           "pct": 28
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 14
         }
       ],
       "temporal": [
@@ -23090,6 +25349,22 @@ const DATA = {
           "nps": 57.9,
           "n": 126
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 39,
+        "Abastecimento": 39,
+        "Loja Física": 15,
+        "Atendimento": 8,
+        "Outros": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 87,
+        "Entrega & Logística": 63,
+        "Atendimento": 44,
+        "Loja Física": 39,
+        "Outros": 37,
+        "Abastecimento": 37
       }
     },
     {
@@ -23113,30 +25388,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2986.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 46
         },
         {
-          "cat": "Loja Física",
-          "pct": 10
+          "cat": "Atendimento",
+          "pct": 6
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         }
       ],
       "temporal": [
@@ -23251,6 +25526,22 @@ const DATA = {
           "nps": 53.8,
           "n": 210
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 75,
+        "Abastecimento": 44,
+        "Loja Física": 15,
+        "Atendimento": 12,
+        "Entrega & Logística": 5,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 135,
+        "Entrega & Logística": 91,
+        "Loja Física": 70,
+        "Atendimento": 49,
+        "Outros": 48,
+        "Abastecimento": 38
       }
     },
     {
@@ -23275,15 +25566,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 51
+          "pct": 40
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 40
         },
         {
           "cat": "Loja Física",
-          "pct": 8
+          "pct": 13
         }
       ],
       "top_elogios": [
@@ -23296,8 +25587,8 @@ const DATA = {
           "pct": 23
         },
         {
-          "cat": "Loja Física",
-          "pct": 12
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -23412,6 +25703,22 @@ const DATA = {
           "nps": 54.6,
           "n": 196
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 68,
+        "Abastecimento": 39,
+        "Loja Física": 11,
+        "Atendimento": 8,
+        "Outros": 5,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 128,
+        "Entrega & Logística": 82,
+        "Loja Física": 42,
+        "Atendimento": 40,
+        "Outros": 36,
+        "Abastecimento": 29
       }
     },
     {
@@ -23435,23 +25742,19 @@ const DATA = {
       "avaliacoes_ponderadas": 1782.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 35
+          "cat": "Entrega & Logística",
+          "pct": 6
         },
         {
           "cat": "Atendimento",
-          "pct": 9
+          "pct": 8
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 42
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 25
@@ -23459,6 +25762,10 @@ const DATA = {
         {
           "cat": "Atendimento",
           "pct": 20
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 15
         }
       ],
       "temporal": [
@@ -23573,6 +25880,22 @@ const DATA = {
           "nps": 48.9,
           "n": 137
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 49,
+        "Abastecimento": 39,
+        "Atendimento": 10,
+        "Entrega & Logística": 5,
+        "Loja Física": 4,
+        "Outros": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 88,
+        "Entrega & Logística": 88,
+        "Atendimento": 72,
+        "Loja Física": 53,
+        "Outros": 35,
+        "Abastecimento": 17
       }
     },
     {
@@ -23596,16 +25919,16 @@ const DATA = {
       "avaliacoes_ponderadas": 664.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 32
+          "pct": 47
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 18
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         }
       ],
       "top_elogios": [
@@ -23614,12 +25937,12 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 23
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 18
+          "cat": "Entrega & Logística",
+          "pct": 23
         }
       ],
       "temporal": [
@@ -23734,6 +26057,21 @@ const DATA = {
           "nps": 37.5,
           "n": 32
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 15,
+        "Abastecimento": 11,
+        "Loja Física": 4,
+        "Entrega & Logística": 2,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Atendimento": 27,
+        "Entrega & Logística": 22,
+        "Promoções & Fidelidade": 17,
+        "Loja Física": 12,
+        "Abastecimento": 10,
+        "Outros": 6
       }
     },
     {
@@ -23757,16 +26095,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1601.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Abastecimento",
+          "pct": 44
         },
         {
-          "cat": "Abastecimento",
-          "pct": 36
+          "cat": "Promoções & Fidelidade",
+          "pct": 41
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 10
         }
       ],
       "top_elogios": [
@@ -23779,8 +26117,8 @@ const DATA = {
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 13
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -23895,6 +26233,22 @@ const DATA = {
           "nps": 57.1,
           "n": 112
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 32,
+        "Abastecimento": 27,
+        "Loja Física": 9,
+        "Atendimento": 5,
+        "Outros": 1,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 80,
+        "Entrega & Logística": 54,
+        "Atendimento": 29,
+        "Loja Física": 27,
+        "Abastecimento": 21,
+        "Outros": 18
       }
     },
     {
@@ -23918,16 +26272,16 @@ const DATA = {
       "avaliacoes_ponderadas": 3142.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
+          "cat": "Abastecimento",
+          "pct": 45
         },
         {
-          "cat": "Abastecimento",
-          "pct": 31
+          "cat": "Promoções & Fidelidade",
+          "pct": 37
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 15
         }
       ],
       "top_elogios": [
@@ -23936,12 +26290,12 @@ const DATA = {
           "pct": 33
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Atendimento",
-          "pct": 12
+          "cat": "Entrega & Logística",
+          "pct": 23
         }
       ],
       "temporal": [
@@ -24056,6 +26410,22 @@ const DATA = {
           "nps": 56.9,
           "n": 211
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 67,
+        "Abastecimento": 42,
+        "Loja Física": 17,
+        "Atendimento": 7,
+        "Entrega & Logística": 2,
+        "Outros": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 144,
+        "Entrega & Logística": 101,
+        "Atendimento": 55,
+        "Loja Física": 52,
+        "Outros": 49,
+        "Abastecimento": 41
       }
     },
     {
@@ -24079,30 +26449,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1555.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 35
+          "cat": "Loja Física",
+          "pct": 25
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
+          "pct": 48
         },
         {
-          "cat": "Loja Física",
-          "pct": 24
+          "cat": "Promoções & Fidelidade",
+          "pct": 25
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
+          "cat": "Loja Física",
+          "pct": 19
         },
         {
           "cat": "Atendimento",
           "pct": 22
         },
         {
-          "cat": "Loja Física",
-          "pct": 19
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -24217,6 +26587,22 @@ const DATA = {
           "nps": 56.1,
           "n": 114
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 38,
+        "Abastecimento": 33,
+        "Loja Física": 26,
+        "Outros": 8,
+        "Atendimento": 2,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 76,
+        "Atendimento": 69,
+        "Loja Física": 58,
+        "Entrega & Logística": 43,
+        "Outros": 34,
+        "Abastecimento": 29
       }
     },
     {
@@ -24241,18 +26627,22 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 42
+          "pct": 41
         },
         {
           "cat": "Abastecimento",
-          "pct": 33
+          "pct": 37
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 13
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 32
@@ -24260,10 +26650,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 16
         }
       ],
       "temporal": [
@@ -24378,6 +26764,22 @@ const DATA = {
           "nps": 54.8,
           "n": 157
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 49,
+        "Abastecimento": 39,
+        "Loja Física": 14,
+        "Atendimento": 7,
+        "Entrega & Logística": 6,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 108,
+        "Entrega & Logística": 73,
+        "Atendimento": 53,
+        "Loja Física": 39,
+        "Abastecimento": 36,
+        "Outros": 30
       }
     },
     {
@@ -24401,30 +26803,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1960.0,
       "top_problemas": [
         {
-          "cat": "Abastecimento",
-          "pct": 32
+          "cat": "Outros",
+          "pct": 8
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Atendimento",
+          "pct": 14
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 20
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Outros",
+          "pct": 14
         },
         {
           "cat": "Entrega & Logística",
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Loja Física",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -24539,6 +26941,22 @@ const DATA = {
           "nps": 68.6,
           "n": 102
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 24,
+        "Promoções & Fidelidade": 20,
+        "Loja Física": 12,
+        "Atendimento": 10,
+        "Outros": 5,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 82,
+        "Entrega & Logística": 75,
+        "Atendimento": 48,
+        "Outros": 42,
+        "Loja Física": 38,
+        "Abastecimento": 22
       }
     },
     {
@@ -24562,30 +26980,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2046.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "cat": "Outros",
+          "pct": 5
         },
         {
           "cat": "Abastecimento",
-          "pct": 26
+          "pct": 40
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 19
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
-        },
         {
           "cat": "Atendimento",
           "pct": 22
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Abastecimento",
+          "pct": 10
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -24700,6 +27118,22 @@ const DATA = {
           "nps": 48.0,
           "n": 171
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 70,
+        "Abastecimento": 41,
+        "Loja Física": 22,
+        "Entrega & Logística": 9,
+        "Outros": 8,
+        "Atendimento": 7
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 101,
+        "Atendimento": 90,
+        "Entrega & Logística": 85,
+        "Loja Física": 56,
+        "Abastecimento": 41,
+        "Outros": 33
       }
     },
     {
@@ -24723,16 +27157,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2584.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Atendimento",
+          "pct": 11
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
+          "pct": 43
         },
         {
-          "cat": "Loja Física",
-          "pct": 12
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "top_elogios": [
@@ -24741,12 +27175,12 @@ const DATA = {
           "pct": 36
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 16
+          "cat": "Entrega & Logística",
+          "pct": 23
         }
       ],
       "temporal": [
@@ -24861,6 +27295,22 @@ const DATA = {
           "nps": 41.9,
           "n": 160
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 69,
+        "Abastecimento": 50,
+        "Loja Física": 19,
+        "Atendimento": 17,
+        "Outros": 4,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Atendimento": 213,
+        "Entrega & Logística": 136,
+        "Promoções & Fidelidade": 91,
+        "Outros": 65,
+        "Loja Física": 50,
+        "Abastecimento": 29
       }
     },
     {
@@ -24884,30 +27334,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2818.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 47
+          "cat": "Entrega & Logística",
+          "pct": 4
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
+          "pct": 50
         },
         {
           "cat": "Atendimento",
-          "pct": 10
+          "pct": 7
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 15
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 33
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -25022,6 +27472,22 @@ const DATA = {
           "nps": 59.8,
           "n": 256
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 82,
+        "Abastecimento": 46,
+        "Atendimento": 18,
+        "Loja Física": 12,
+        "Outros": 10,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 174,
+        "Entrega & Logística": 117,
+        "Loja Física": 79,
+        "Atendimento": 59,
+        "Outros": 56,
+        "Abastecimento": 47
       }
     },
     {
@@ -25045,19 +27511,23 @@ const DATA = {
       "avaliacoes_ponderadas": 3315.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 48
+          "cat": "Entrega & Logística",
+          "pct": 4
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 8
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 38
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 12
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 34
@@ -25065,10 +27535,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 12
         }
       ],
       "temporal": [
@@ -25183,6 +27649,22 @@ const DATA = {
           "nps": 61.2,
           "n": 273
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 82,
+        "Abastecimento": 46,
+        "Loja Física": 19,
+        "Atendimento": 10,
+        "Outros": 8,
+        "Entrega & Logística": 7
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 191,
+        "Entrega & Logística": 124,
+        "Abastecimento": 67,
+        "Loja Física": 64,
+        "Atendimento": 56,
+        "Outros": 52
       }
     },
     {
@@ -25206,30 +27688,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1555.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 48
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 36
+          "pct": 46
         },
         {
-          "cat": "Loja Física",
-          "pct": 8
+          "cat": "Promoções & Fidelidade",
+          "pct": 43
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -25344,6 +27822,22 @@ const DATA = {
           "nps": 52.2,
           "n": 113
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 38,
+        "Abastecimento": 29,
+        "Loja Física": 6,
+        "Outros": 4,
+        "Atendimento": 2,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 75,
+        "Entrega & Logística": 50,
+        "Loja Física": 34,
+        "Atendimento": 31,
+        "Outros": 27,
+        "Abastecimento": 17
       }
     },
     {
@@ -25367,30 +27861,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2524.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Entrega & Logística",
+          "pct": 5
         },
         {
           "cat": "Abastecimento",
-          "pct": 37
+          "pct": 48
         },
         {
-          "cat": "Loja Física",
-          "pct": 10
+          "cat": "Promoções & Fidelidade",
+          "pct": 36
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -25505,6 +27999,22 @@ const DATA = {
           "nps": 56.4,
           "n": 163
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 49,
+        "Abastecimento": 42,
+        "Loja Física": 11,
+        "Entrega & Logística": 4,
+        "Outros": 4,
+        "Atendimento": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 114,
+        "Entrega & Logística": 83,
+        "Loja Física": 59,
+        "Atendimento": 50,
+        "Outros": 45,
+        "Abastecimento": 40
       }
     },
     {
@@ -25528,19 +28038,23 @@ const DATA = {
       "avaliacoes_ponderadas": 2788.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
+          "cat": "Abastecimento",
+          "pct": 45
         },
         {
-          "cat": "Abastecimento",
-          "pct": 38
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 15
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 18
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 32
@@ -25548,10 +28062,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 18
         }
       ],
       "temporal": [
@@ -25666,6 +28176,22 @@ const DATA = {
           "nps": 61.8,
           "n": 191
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 51,
+        "Abastecimento": 50,
+        "Loja Física": 19,
+        "Outros": 6,
+        "Atendimento": 4,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 140,
+        "Entrega & Logística": 97,
+        "Loja Física": 79,
+        "Atendimento": 47,
+        "Abastecimento": 40,
+        "Outros": 38
       }
     },
     {
@@ -25689,16 +28215,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1925.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Abastecimento",
+          "pct": 44
         },
         {
-          "cat": "Abastecimento",
-          "pct": 32
+          "cat": "Promoções & Fidelidade",
+          "pct": 38
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 15
         }
       ],
       "top_elogios": [
@@ -25707,12 +28233,12 @@ const DATA = {
           "pct": 38
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 22
         }
       ],
       "temporal": [
@@ -25827,6 +28353,22 @@ const DATA = {
           "nps": 62.9,
           "n": 151
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 41,
+        "Abastecimento": 31,
+        "Loja Física": 13,
+        "Entrega & Logística": 4,
+        "Atendimento": 4,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 110,
+        "Entrega & Logística": 65,
+        "Loja Física": 46,
+        "Atendimento": 31,
+        "Abastecimento": 23,
+        "Outros": 17
       }
     },
     {
@@ -25850,30 +28392,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1729.0,
       "top_problemas": [
         {
+          "cat": "Loja Física",
+          "pct": 24
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "pct": 41
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 17
+          "pct": 29
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 15
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 38
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 15
+          "cat": "Loja Física",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -25988,6 +28530,21 @@ const DATA = {
           "nps": 56.5,
           "n": 161
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 53,
+        "Abastecimento": 33,
+        "Loja Física": 20,
+        "Outros": 8,
+        "Entrega & Logística": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 108,
+        "Entrega & Logística": 49,
+        "Abastecimento": 43,
+        "Atendimento": 33,
+        "Loja Física": 32,
+        "Outros": 23
       }
     },
     {
@@ -26011,30 +28568,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3287.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 52
+          "cat": "Atendimento",
+          "pct": 7
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
+          "pct": 41
         },
         {
-          "cat": "Loja Física",
-          "pct": 11
+          "cat": "Promoções & Fidelidade",
+          "pct": 38
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Entrega & Logística",
           "pct": 24
         },
         {
-          "cat": "Loja Física",
-          "pct": 14
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -26149,6 +28706,22 @@ const DATA = {
           "nps": 57.1,
           "n": 238
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 76,
+        "Abastecimento": 40,
+        "Loja Física": 16,
+        "Atendimento": 8,
+        "Outros": 4,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 162,
+        "Entrega & Logística": 118,
+        "Loja Física": 70,
+        "Outros": 54,
+        "Atendimento": 49,
+        "Abastecimento": 49
       }
     },
     {
@@ -26172,16 +28745,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2493.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
+          "cat": "Entrega & Logística",
+          "pct": 4
         },
         {
           "cat": "Abastecimento",
-          "pct": 32
+          "pct": 43
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 17
         }
       ],
       "top_elogios": [
@@ -26194,8 +28767,8 @@ const DATA = {
           "pct": 25
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 20
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -26310,6 +28883,22 @@ const DATA = {
           "nps": 56.2,
           "n": 194
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 61,
+        "Abastecimento": 47,
+        "Loja Física": 24,
+        "Atendimento": 7,
+        "Entrega & Logística": 6,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Atendimento": 199,
+        "Entrega & Logística": 164,
+        "Promoções & Fidelidade": 133,
+        "Loja Física": 65,
+        "Outros": 64,
+        "Abastecimento": 26
       }
     },
     {
@@ -26333,30 +28922,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3029.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "cat": "Abastecimento",
+          "pct": 45
         },
         {
-          "cat": "Abastecimento",
-          "pct": 34
+          "cat": "Promoções & Fidelidade",
+          "pct": 39
         },
         {
           "cat": "Loja Física",
-          "pct": 10
+          "pct": 12
         }
       ],
       "top_elogios": [
         {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
+        {
           "cat": "Promoções & Fidelidade",
           "pct": 34
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 14
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -26471,6 +29060,22 @@ const DATA = {
           "nps": 62.3,
           "n": 260
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 71,
+        "Abastecimento": 56,
+        "Loja Física": 16,
+        "Atendimento": 10,
+        "Outros": 8,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 189,
+        "Entrega & Logística": 109,
+        "Loja Física": 81,
+        "Outros": 63,
+        "Abastecimento": 60,
+        "Atendimento": 57
       }
     },
     {
@@ -26494,30 +29099,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1420.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 12
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "pct": 38
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 12
+          "pct": 35
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
         {
           "cat": "Atendimento",
           "pct": 21
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Loja Física",
+          "pct": 16
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -26632,6 +29237,22 @@ const DATA = {
           "nps": 58.0,
           "n": 112
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 32,
+        "Abastecimento": 23,
+        "Atendimento": 9,
+        "Outros": 5,
+        "Loja Física": 5,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 80,
+        "Atendimento": 61,
+        "Entrega & Logística": 55,
+        "Loja Física": 46,
+        "Abastecimento": 26,
+        "Outros": 22
       }
     },
     {
@@ -26655,30 +29276,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3232.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 30
+          "cat": "Outros",
+          "pct": 4
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 23
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 6
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
+          "cat": "Atendimento",
+          "pct": 24
         },
         {
           "cat": "Entrega & Logística",
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -26793,6 +29414,22 @@ const DATA = {
           "nps": 59.8,
           "n": 264
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 80,
+        "Abastecimento": 56,
+        "Loja Física": 28,
+        "Outros": 12,
+        "Atendimento": 9,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 184,
+        "Entrega & Logística": 180,
+        "Atendimento": 177,
+        "Outros": 84,
+        "Loja Física": 82,
+        "Abastecimento": 43
       }
     },
     {
@@ -26816,22 +29453,22 @@ const DATA = {
       "avaliacoes_ponderadas": 1330.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 35
-        },
-        {
           "cat": "Loja Física",
-          "pct": 33
+          "pct": 45
         },
         {
           "cat": "Abastecimento",
+          "pct": 26
+        },
+        {
+          "cat": "Promoções & Fidelidade",
           "pct": 24
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
+          "cat": "Abastecimento",
+          "pct": 14
         },
         {
           "cat": "Loja Física",
@@ -26954,6 +29591,22 @@ const DATA = {
           "nps": 58.9,
           "n": 95
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 30,
+        "Loja Física": 28,
+        "Abastecimento": 20,
+        "Outros": 4,
+        "Entrega & Logística": 2,
+        "Atendimento": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 65,
+        "Loja Física": 53,
+        "Atendimento": 47,
+        "Entrega & Logística": 46,
+        "Abastecimento": 39,
+        "Outros": 25
       }
     },
     {
@@ -26977,16 +29630,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1808.0,
       "top_problemas": [
         {
-          "cat": "Abastecimento",
-          "pct": 32
-        },
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
-        {
           "cat": "Loja Física",
-          "pct": 24
+          "pct": 34
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 41
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 4
         }
       ],
       "top_elogios": [
@@ -26999,8 +29652,8 @@ const DATA = {
           "pct": 22
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 13
+          "cat": "Loja Física",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -27115,6 +29768,22 @@ const DATA = {
           "nps": 58.2,
           "n": 110
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 39,
+        "Promoções & Fidelidade": 33,
+        "Loja Física": 29,
+        "Atendimento": 8,
+        "Outros": 8,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Atendimento": 267,
+        "Entrega & Logística": 129,
+        "Promoções & Fidelidade": 77,
+        "Loja Física": 52,
+        "Outros": 39,
+        "Abastecimento": 24
       }
     },
     {
@@ -27139,15 +29808,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Abastecimento",
-          "pct": 45
+          "pct": 52
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
+          "cat": "Atendimento",
+          "pct": 8
         },
         {
           "cat": "Loja Física",
-          "pct": 13
+          "pct": 15
         }
       ],
       "top_elogios": [
@@ -27160,8 +29829,8 @@ const DATA = {
           "pct": 26
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 22
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -27276,6 +29945,22 @@ const DATA = {
           "nps": 65.1,
           "n": 86
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 34,
+        "Promoções & Fidelidade": 21,
+        "Loja Física": 10,
+        "Atendimento": 6,
+        "Outros": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Atendimento": 84,
+        "Entrega & Logística": 76,
+        "Promoções & Fidelidade": 65,
+        "Loja Física": 40,
+        "Outros": 16,
+        "Abastecimento": 11
       }
     },
     {
@@ -27300,15 +29985,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 49
+          "pct": 39
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
+          "pct": 39
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 17
         }
       ],
       "top_elogios": [
@@ -27321,8 +30006,8 @@ const DATA = {
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Abastecimento",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -27437,6 +30122,21 @@ const DATA = {
           "nps": 59.3,
           "n": 118
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 34,
+        "Abastecimento": 20,
+        "Loja Física": 10,
+        "Atendimento": 4,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 84,
+        "Entrega & Logística": 59,
+        "Atendimento": 36,
+        "Loja Física": 31,
+        "Abastecimento": 24,
+        "Outros": 17
       }
     },
     {
@@ -27460,26 +30160,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1848.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 39
+          "pct": 48
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 18
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 34
-        },
-        {
           "cat": "Entrega & Logística",
           "pct": 25
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         },
         {
           "cat": "Loja Física",
@@ -27598,6 +30298,21 @@ const DATA = {
           "nps": 65.2,
           "n": 115
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 27,
+        "Abastecimento": 26,
+        "Loja Física": 11,
+        "Outros": 2,
+        "Atendimento": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 88,
+        "Entrega & Logística": 66,
+        "Loja Física": 36,
+        "Outros": 27,
+        "Abastecimento": 22,
+        "Atendimento": 22
       }
     },
     {
@@ -27621,16 +30336,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2398.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
+          "pct": 43
         },
         {
-          "cat": "Atendimento",
-          "pct": 9
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "top_elogios": [
@@ -27639,12 +30354,12 @@ const DATA = {
           "pct": 30
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 22
+          "cat": "Outros",
+          "pct": 12
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -27759,6 +30474,22 @@ const DATA = {
           "nps": 46.7,
           "n": 180
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 79,
+        "Abastecimento": 45,
+        "Atendimento": 14,
+        "Loja Física": 13,
+        "Outros": 6,
+        "Entrega & Logística": 5
+      },
+      "elog_counts": {
+        "Atendimento": 138,
+        "Promoções & Fidelidade": 101,
+        "Entrega & Logística": 77,
+        "Outros": 53,
+        "Loja Física": 50,
+        "Abastecimento": 41
       }
     },
     {
@@ -27783,29 +30514,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 47
+          "pct": 41
         },
         {
           "cat": "Abastecimento",
-          "pct": 31
+          "pct": 38
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 16
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
+          "cat": "Loja Física",
+          "pct": 15
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Entrega & Logística",
           "pct": 22
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
         }
       ],
       "temporal": [
@@ -27920,6 +30651,22 @@ const DATA = {
           "nps": 57.8,
           "n": 232
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 72,
+        "Abastecimento": 48,
+        "Loja Física": 21,
+        "Outros": 6,
+        "Atendimento": 6,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 160,
+        "Entrega & Logística": 117,
+        "Loja Física": 81,
+        "Atendimento": 76,
+        "Abastecimento": 53,
+        "Outros": 46
       }
     },
     {
@@ -27943,16 +30690,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1642.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "cat": "Abastecimento",
+          "pct": 46
         },
         {
-          "cat": "Abastecimento",
-          "pct": 38
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         },
         {
           "cat": "Loja Física",
-          "pct": 11
+          "pct": 15
         }
       ],
       "top_elogios": [
@@ -27961,12 +30708,12 @@ const DATA = {
           "pct": 28
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Outros",
+          "pct": 10
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -28081,6 +30828,21 @@ const DATA = {
           "nps": 60.6,
           "n": 104
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 29,
+        "Abastecimento": 27,
+        "Loja Física": 8,
+        "Atendimento": 5,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Entrega & Logística": 77,
+        "Promoções & Fidelidade": 75,
+        "Atendimento": 44,
+        "Loja Física": 35,
+        "Outros": 27,
+        "Abastecimento": 19
       }
     },
     {
@@ -28105,21 +30867,17 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Abastecimento",
-          "pct": 42
+          "pct": 50
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 9
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
           "cat": "Entrega & Logística",
@@ -28242,6 +31000,22 @@ const DATA = {
           "nps": 61.3,
           "n": 93
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 28,
+        "Promoções & Fidelidade": 24,
+        "Loja Física": 6,
+        "Outros": 4,
+        "Entrega & Logística": 3,
+        "Atendimento": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 69,
+        "Entrega & Logística": 60,
+        "Loja Física": 33,
+        "Atendimento": 32,
+        "Abastecimento": 28,
+        "Outros": 18
       }
     },
     {
@@ -28265,30 +31039,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1634.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 43
+          "cat": "Abastecimento",
+          "pct": 44
         },
         {
-          "cat": "Abastecimento",
-          "pct": 34
+          "cat": "Promoções & Fidelidade",
+          "pct": 37
         },
         {
           "cat": "Loja Física",
-          "pct": 7
+          "pct": 10
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
+          "cat": "Loja Física",
+          "pct": 17
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Entrega & Logística",
           "pct": 21
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 17
         }
       ],
       "temporal": [
@@ -28403,6 +31177,22 @@ const DATA = {
           "nps": 58.4,
           "n": 125
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 37,
+        "Abastecimento": 30,
+        "Loja Física": 6,
+        "Atendimento": 6,
+        "Entrega & Logística": 5,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 88,
+        "Entrega & Logística": 64,
+        "Loja Física": 51,
+        "Atendimento": 36,
+        "Abastecimento": 31,
+        "Outros": 28
       }
     },
     {
@@ -28426,16 +31216,16 @@ const DATA = {
       "avaliacoes_ponderadas": 3540.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 10
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "pct": 51
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 12
+          "pct": 32
         }
       ],
       "top_elogios": [
@@ -28444,12 +31234,12 @@ const DATA = {
           "pct": 40
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 12
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 15
+          "cat": "Entrega & Logística",
+          "pct": 23
         }
       ],
       "temporal": [
@@ -28564,6 +31354,22 @@ const DATA = {
           "nps": 38.0,
           "n": 287
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 125,
+        "Abastecimento": 64,
+        "Atendimento": 28,
+        "Loja Física": 9,
+        "Entrega & Logística": 6,
+        "Outros": 5
+      },
+      "elog_counts": {
+        "Atendimento": 421,
+        "Entrega & Logística": 238,
+        "Promoções & Fidelidade": 162,
+        "Outros": 132,
+        "Loja Física": 65,
+        "Abastecimento": 39
       }
     },
     {
@@ -28587,30 +31393,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3209.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 9
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "pct": 36
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
+          "pct": 36
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 22
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -28725,6 +31531,22 @@ const DATA = {
           "nps": 60.1,
           "n": 198
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 59,
+        "Abastecimento": 35,
+        "Loja Física": 20,
+        "Atendimento": 12,
+        "Outros": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 139,
+        "Entrega & Logística": 104,
+        "Loja Física": 76,
+        "Outros": 54,
+        "Atendimento": 53,
+        "Abastecimento": 44
       }
     },
     {
@@ -28749,29 +31571,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 55
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 22
+          "pct": 50
         },
         {
           "cat": "Loja Física",
-          "pct": 10
+          "pct": 18
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 25
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
+          "cat": "Atendimento",
+          "pct": 22
         },
         {
           "cat": "Entrega & Logística",
           "pct": 23
         },
         {
-          "cat": "Atendimento",
-          "pct": 22
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -28886,6 +31708,22 @@ const DATA = {
           "nps": 47.6,
           "n": 189
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 71,
+        "Abastecimento": 29,
+        "Loja Física": 13,
+        "Atendimento": 9,
+        "Outros": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 118,
+        "Entrega & Logística": 108,
+        "Atendimento": 104,
+        "Loja Física": 52,
+        "Outros": 49,
+        "Abastecimento": 41
       }
     },
     {
@@ -28909,16 +31747,16 @@ const DATA = {
       "avaliacoes_ponderadas": 3465.0,
       "top_problemas": [
         {
+          "cat": "Entrega & Logística",
+          "pct": 7
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 54
+          "pct": 44
         },
         {
-          "cat": "Abastecimento",
-          "pct": 20
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 9
+          "cat": "Atendimento",
+          "pct": 7
         }
       ],
       "top_elogios": [
@@ -28927,12 +31765,12 @@ const DATA = {
           "pct": 37
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 24
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
-          "cat": "Loja Física",
-          "pct": 12
+          "cat": "Entrega & Logística",
+          "pct": 24
         }
       ],
       "temporal": [
@@ -29047,6 +31885,22 @@ const DATA = {
           "nps": 58.4,
           "n": 269
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 87,
+        "Abastecimento": 32,
+        "Loja Física": 15,
+        "Atendimento": 13,
+        "Entrega & Logística": 7,
+        "Outros": 6
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 182,
+        "Entrega & Logística": 118,
+        "Loja Física": 57,
+        "Abastecimento": 51,
+        "Atendimento": 44,
+        "Outros": 40
       }
     },
     {
@@ -29070,30 +31924,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2224.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 34
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 29
+          "cat": "Atendimento",
+          "pct": 14
         },
         {
           "cat": "Loja Física",
-          "pct": 16
+          "pct": 21
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 37
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
           "cat": "Outros",
           "pct": 13
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "temporal": [
@@ -29208,6 +32062,22 @@ const DATA = {
           "nps": 69.1,
           "n": 139
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 33,
+        "Abastecimento": 28,
+        "Loja Física": 16,
+        "Atendimento": 14,
+        "Entrega & Logística": 5,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 106,
+        "Entrega & Logística": 66,
+        "Outros": 44,
+        "Loja Física": 42,
+        "Abastecimento": 39,
+        "Atendimento": 36
       }
     },
     {
@@ -29231,22 +32101,22 @@ const DATA = {
       "avaliacoes_ponderadas": 2668.0,
       "top_problemas": [
         {
+          "cat": "Outros",
+          "pct": 6
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 10
+        },
+        {
           "cat": "Abastecimento",
-          "pct": 44
-        },
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 16
+          "pct": 43
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Entrega & Logística",
@@ -29369,6 +32239,22 @@ const DATA = {
           "nps": 72.7,
           "n": 143
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 44,
+        "Promoções & Fidelidade": 28,
+        "Loja Física": 16,
+        "Atendimento": 6,
+        "Outros": 4,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 115,
+        "Entrega & Logística": 89,
+        "Loja Física": 55,
+        "Atendimento": 50,
+        "Outros": 41,
+        "Abastecimento": 40
       }
     },
     {
@@ -29393,15 +32279,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 57
+          "pct": 50
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
+          "pct": 29
         },
         {
           "cat": "Loja Física",
-          "pct": 9
+          "pct": 14
         }
       ],
       "top_elogios": [
@@ -29410,8 +32296,8 @@ const DATA = {
           "pct": 35
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
           "cat": "Atendimento",
@@ -29530,6 +32416,21 @@ const DATA = {
           "nps": 54.8,
           "n": 104
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 33,
+        "Abastecimento": 16,
+        "Loja Física": 5,
+        "Outros": 2,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 71,
+        "Entrega & Logística": 41,
+        "Atendimento": 34,
+        "Abastecimento": 21,
+        "Loja Física": 19,
+        "Outros": 15
       }
     },
     {
@@ -29553,30 +32454,30 @@ const DATA = {
       "avaliacoes_ponderadas": 3889.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
+          "cat": "Abastecimento",
+          "pct": 41
         },
         {
-          "cat": "Abastecimento",
-          "pct": 30
+          "cat": "Promoções & Fidelidade",
+          "pct": 37
         },
         {
           "cat": "Loja Física",
-          "pct": 11
+          "pct": 15
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Abastecimento",
+          "pct": 13
         },
         {
           "cat": "Loja Física",
           "pct": 14
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "temporal": [
@@ -29691,6 +32592,22 @@ const DATA = {
           "nps": 61.8,
           "n": 249
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 70,
+        "Abastecimento": 43,
+        "Loja Física": 16,
+        "Atendimento": 8,
+        "Entrega & Logística": 5,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 179,
+        "Entrega & Logística": 124,
+        "Loja Física": 82,
+        "Atendimento": 78,
+        "Abastecimento": 75,
+        "Outros": 56
       }
     },
     {
@@ -29714,30 +32631,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1194.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 47
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 32
+          "pct": 42
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 19
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 35
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Abastecimento",
+          "pct": 12
         },
         {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         }
       ],
       "temporal": [
@@ -29852,6 +32769,20 @@ const DATA = {
           "nps": 58.0,
           "n": 88
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 28,
+        "Abastecimento": 19,
+        "Loja Física": 8,
+        "Atendimento": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 60,
+        "Entrega & Logística": 37,
+        "Loja Física": 31,
+        "Atendimento": 24,
+        "Abastecimento": 23,
+        "Outros": 18
       }
     },
     {
@@ -29875,30 +32806,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1479.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 52
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 30
+          "pct": 50
         },
         {
-          "cat": "Loja Física",
-          "pct": 8
+          "cat": "Promoções & Fidelidade",
+          "pct": 43
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 13
         },
         {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 23
         }
       ],
       "temporal": [
@@ -30013,6 +32940,22 @@ const DATA = {
           "nps": 49.1,
           "n": 106
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 41,
+        "Abastecimento": 24,
+        "Loja Física": 6,
+        "Outros": 3,
+        "Atendimento": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 65,
+        "Entrega & Logística": 54,
+        "Loja Física": 37,
+        "Outros": 31,
+        "Atendimento": 23,
+        "Abastecimento": 22
       }
     },
     {
@@ -30036,16 +32979,16 @@ const DATA = {
       "avaliacoes_ponderadas": 676.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 11
+        },
+        {
           "cat": "Abastecimento",
           "pct": 48
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 8
+          "pct": 26
         }
       ],
       "top_elogios": [
@@ -30054,12 +32997,12 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
-        },
-        {
           "cat": "Entrega & Logística",
           "pct": 19
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 26
         }
       ],
       "temporal": [
@@ -30119,6 +33062,22 @@ const DATA = {
           "nps": 66.7,
           "n": 57
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 19,
+        "Promoções & Fidelidade": 12,
+        "Loja Física": 3,
+        "Atendimento": 3,
+        "Outros": 2,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Atendimento": 50,
+        "Promoções & Fidelidade": 45,
+        "Entrega & Logística": 33,
+        "Outros": 15,
+        "Loja Física": 14,
+        "Abastecimento": 13
       }
     },
     {
@@ -30143,11 +33102,11 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Abastecimento",
-          "pct": 41
+          "pct": 52
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "pct": 31
         },
         {
           "cat": "Loja Física",
@@ -30156,16 +33115,16 @@ const DATA = {
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 22
+          "cat": "Abastecimento",
+          "pct": 9
         },
         {
           "cat": "Atendimento",
           "pct": 18
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 22
         }
       ],
       "temporal": [
@@ -30280,6 +33239,22 @@ const DATA = {
           "nps": 66.3,
           "n": 184
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 46,
+        "Promoções & Fidelidade": 45,
+        "Loja Física": 12,
+        "Entrega & Logística": 4,
+        "Atendimento": 3,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 139,
+        "Entrega & Logística": 107,
+        "Atendimento": 90,
+        "Loja Física": 65,
+        "Outros": 49,
+        "Abastecimento": 46
       }
     },
     {
@@ -30304,15 +33279,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 45
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 27
+          "pct": 43
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 18
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 32
         }
       ],
       "top_elogios": [
@@ -30321,12 +33296,12 @@ const DATA = {
           "pct": 26
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
-        },
-        {
           "cat": "Atendimento",
           "pct": 21
+        },
+        {
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -30441,6 +33416,22 @@ const DATA = {
           "nps": 60.4,
           "n": 227
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 61,
+        "Abastecimento": 37,
+        "Loja Física": 20,
+        "Outros": 10,
+        "Atendimento": 5,
+        "Entrega & Logística": 4
+      },
+      "elog_counts": {
+        "Entrega & Logística": 178,
+        "Promoções & Fidelidade": 166,
+        "Atendimento": 141,
+        "Loja Física": 87,
+        "Outros": 70,
+        "Abastecimento": 45
       }
     },
     {
@@ -30465,15 +33456,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "pct": 56
         },
         {
           "cat": "Loja Física",
-          "pct": 21
+          "pct": 12
         },
         {
           "cat": "Abastecimento",
-          "pct": 15
+          "pct": 20
         }
       ],
       "top_elogios": [
@@ -30482,12 +33473,12 @@ const DATA = {
           "pct": 33
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Loja Física",
+          "pct": 13
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 17
+          "cat": "Entrega & Logística",
+          "pct": 20
         }
       ],
       "temporal": [
@@ -30602,6 +33593,22 @@ const DATA = {
           "nps": 26.3,
           "n": 57
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 28,
+        "Loja Física": 11,
+        "Abastecimento": 8,
+        "Entrega & Logística": 4,
+        "Atendimento": 1,
+        "Outros": 1
+      },
+      "elog_counts": {
+        "Atendimento": 56,
+        "Entrega & Logística": 34,
+        "Promoções & Fidelidade": 29,
+        "Loja Física": 23,
+        "Outros": 16,
+        "Abastecimento": 14
       }
     },
     {
@@ -30626,25 +33633,25 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 50
+          "pct": 41
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
+          "pct": 37
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 14
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 34
+          "cat": "Abastecimento",
+          "pct": 10
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         },
         {
           "cat": "Loja Física",
@@ -30763,6 +33770,22 @@ const DATA = {
           "nps": 62.7,
           "n": 228
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 64,
+        "Abastecimento": 34,
+        "Loja Física": 16,
+        "Outros": 6,
+        "Entrega & Logística": 4,
+        "Atendimento": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 164,
+        "Entrega & Logística": 94,
+        "Loja Física": 65,
+        "Atendimento": 63,
+        "Abastecimento": 50,
+        "Outros": 45
       }
     },
     {
@@ -30786,30 +33809,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2572.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 7
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 51
+          "pct": 39
         },
         {
           "cat": "Abastecimento",
-          "pct": 25
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 36
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 25
         },
         {
-          "cat": "Loja Física",
-          "pct": 13
+          "cat": "Abastecimento",
+          "pct": 10
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "temporal": [
@@ -30924,6 +33947,22 @@ const DATA = {
           "nps": 57.5,
           "n": 174
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 57,
+        "Abastecimento": 28,
+        "Loja Física": 12,
+        "Atendimento": 6,
+        "Entrega & Logística": 5,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 117,
+        "Entrega & Logística": 97,
+        "Loja Física": 52,
+        "Atendimento": 49,
+        "Abastecimento": 39,
+        "Outros": 37
       }
     },
     {
@@ -30947,26 +33986,26 @@ const DATA = {
       "avaliacoes_ponderadas": 2839.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 41
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 32
+          "cat": "Atendimento",
+          "pct": 12
         },
         {
           "cat": "Loja Física",
-          "pct": 17
+          "pct": 20
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 39
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
-        },
-        {
           "cat": "Atendimento",
           "pct": 24
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Entrega & Logística",
@@ -31085,6 +34124,22 @@ const DATA = {
           "nps": 63.4,
           "n": 238
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 60,
+        "Abastecimento": 47,
+        "Loja Física": 25,
+        "Atendimento": 10,
+        "Outros": 3,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 178,
+        "Atendimento": 162,
+        "Entrega & Logística": 138,
+        "Outros": 78,
+        "Loja Física": 70,
+        "Abastecimento": 47
       }
     },
     {
@@ -31108,19 +34163,23 @@ const DATA = {
       "avaliacoes_ponderadas": 1243.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 42
+          "cat": "Loja Física",
+          "pct": 35
         },
         {
           "cat": "Abastecimento",
-          "pct": 23
+          "pct": 32
         },
         {
-          "cat": "Loja Física",
+          "cat": "Promoções & Fidelidade",
           "pct": 21
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Outros",
+          "pct": 15
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 30
@@ -31128,10 +34187,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 20
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 16
         }
       ],
       "temporal": [
@@ -31246,6 +34301,22 @@ const DATA = {
           "nps": 66.1,
           "n": 112
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 31,
+        "Abastecimento": 17,
+        "Loja Física": 15,
+        "Entrega & Logística": 5,
+        "Outros": 3,
+        "Atendimento": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 81,
+        "Entrega & Logística": 55,
+        "Atendimento": 45,
+        "Outros": 41,
+        "Loja Física": 32,
+        "Abastecimento": 19
       }
     },
     {
@@ -31270,15 +34341,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 54
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 18
+          "pct": 46
         },
         {
           "cat": "Loja Física",
-          "pct": 13
+          "pct": 18
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 26
         }
       ],
       "top_elogios": [
@@ -31287,8 +34358,8 @@ const DATA = {
           "pct": 33
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 20
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Entrega & Logística",
@@ -31407,6 +34478,22 @@ const DATA = {
           "nps": 42.6,
           "n": 129
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 56,
+        "Abastecimento": 19,
+        "Loja Física": 13,
+        "Outros": 6,
+        "Atendimento": 6,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Atendimento": 119,
+        "Promoções & Fidelidade": 73,
+        "Entrega & Logística": 70,
+        "Outros": 44,
+        "Loja Física": 37,
+        "Abastecimento": 17
       }
     },
     {
@@ -31430,30 +34517,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2657.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 42
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 31
+          "pct": 45
         },
         {
-          "cat": "Loja Física",
-          "pct": 13
+          "cat": "Promoções & Fidelidade",
+          "pct": 37
+        },
+        {
+          "cat": "Atendimento",
+          "pct": 4
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Outros",
+          "pct": 15
         },
         {
           "cat": "Atendimento",
           "pct": 20
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 13
         }
       ],
       "temporal": [
@@ -31568,6 +34655,22 @@ const DATA = {
           "nps": 45.4,
           "n": 163
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 64,
+        "Abastecimento": 47,
+        "Loja Física": 20,
+        "Outros": 10,
+        "Atendimento": 7,
+        "Entrega & Logística": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 99,
+        "Entrega & Logística": 81,
+        "Atendimento": 79,
+        "Outros": 60,
+        "Loja Física": 52,
+        "Abastecimento": 31
       }
     },
     {
@@ -31591,30 +34694,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2312.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 12
+        },
+        {
           "cat": "Abastecimento",
-          "pct": 40
+          "pct": 55
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 37
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 11
+          "pct": 24
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 26
         },
         {
-          "cat": "Loja Física",
-          "pct": 14
+          "cat": "Outros",
+          "pct": 12
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -31729,6 +34832,22 @@ const DATA = {
           "nps": 68.2,
           "n": 132
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 36,
+        "Promoções & Fidelidade": 34,
+        "Atendimento": 10,
+        "Loja Física": 9,
+        "Outros": 1,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 98,
+        "Entrega & Logística": 82,
+        "Loja Física": 44,
+        "Outros": 38,
+        "Abastecimento": 31,
+        "Atendimento": 28
       }
     },
     {
@@ -31752,30 +34871,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2492.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 31
+          "pct": 40
         },
         {
-          "cat": "Loja Física",
-          "pct": 15
+          "cat": "Atendimento",
+          "pct": 6
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 26
-        },
         {
           "cat": "Atendimento",
           "pct": 25
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
+          "cat": "Outros",
+          "pct": 14
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 26
         }
       ],
       "temporal": [
@@ -31890,6 +35009,22 @@ const DATA = {
           "nps": 63.5,
           "n": 167
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 47,
+        "Abastecimento": 39,
+        "Loja Física": 19,
+        "Atendimento": 11,
+        "Entrega & Logística": 6,
+        "Outros": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 120,
+        "Atendimento": 113,
+        "Entrega & Logística": 80,
+        "Outros": 62,
+        "Loja Física": 50,
+        "Abastecimento": 31
       }
     },
     {
@@ -31914,29 +35049,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "pct": 37
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
+          "pct": 37
         },
         {
           "cat": "Loja Física",
-          "pct": 14
+          "pct": 17
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 36
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 18
-        },
-        {
           "cat": "Outros",
           "pct": 14
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 11
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 36
         }
       ],
       "temporal": [
@@ -32051,6 +35186,21 @@ const DATA = {
           "nps": 61.6,
           "n": 138
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 42,
+        "Abastecimento": 22,
+        "Loja Física": 11,
+        "Atendimento": 3,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 96,
+        "Entrega & Logística": 48,
+        "Outros": 36,
+        "Atendimento": 30,
+        "Abastecimento": 29,
+        "Loja Física": 27
       }
     },
     {
@@ -32074,16 +35224,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1757.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 48
+          "cat": "Abastecimento",
+          "pct": 43
         },
         {
-          "cat": "Abastecimento",
-          "pct": 34
+          "cat": "Promoções & Fidelidade",
+          "pct": 41
         },
         {
           "cat": "Loja Física",
-          "pct": 9
+          "pct": 8
         }
       ],
       "top_elogios": [
@@ -32092,12 +35242,12 @@ const DATA = {
           "pct": 36
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
-        },
-        {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
         }
       ],
       "temporal": [
@@ -32212,6 +35362,22 @@ const DATA = {
           "nps": 63.1,
           "n": 157
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 43,
+        "Abastecimento": 31,
+        "Loja Física": 8,
+        "Atendimento": 3,
+        "Entrega & Logística": 3,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 114,
+        "Entrega & Logística": 62,
+        "Loja Física": 49,
+        "Outros": 37,
+        "Abastecimento": 29,
+        "Atendimento": 27
       }
     },
     {
@@ -32235,16 +35401,16 @@ const DATA = {
       "avaliacoes_ponderadas": 3241.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 42
+          "cat": "Atendimento",
+          "pct": 12
         },
         {
           "cat": "Abastecimento",
-          "pct": 32
+          "pct": 43
         },
         {
-          "cat": "Loja Física",
-          "pct": 10
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         }
       ],
       "top_elogios": [
@@ -32257,8 +35423,8 @@ const DATA = {
           "pct": 25
         },
         {
-          "cat": "Loja Física",
-          "pct": 12
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -32373,6 +35539,22 @@ const DATA = {
           "nps": 72.1,
           "n": 229
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 47,
+        "Abastecimento": 36,
+        "Loja Física": 11,
+        "Atendimento": 8,
+        "Entrega & Logística": 5,
+        "Outros": 4
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 182,
+        "Entrega & Logística": 118,
+        "Loja Física": 57,
+        "Abastecimento": 42,
+        "Atendimento": 41,
+        "Outros": 37
       }
     },
     {
@@ -32396,16 +35578,16 @@ const DATA = {
       "avaliacoes_ponderadas": 3132.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 38
+          "cat": "Atendimento",
+          "pct": 9
         },
         {
           "cat": "Abastecimento",
-          "pct": 34
+          "pct": 47
         },
         {
           "cat": "Loja Física",
-          "pct": 17
+          "pct": 22
         }
       ],
       "top_elogios": [
@@ -32414,8 +35596,8 @@ const DATA = {
           "pct": 39
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 17
+          "cat": "Abastecimento",
+          "pct": 11
         },
         {
           "cat": "Loja Física",
@@ -32534,6 +35716,22 @@ const DATA = {
           "nps": 74.9,
           "n": 227
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 48,
+        "Abastecimento": 43,
+        "Loja Física": 21,
+        "Atendimento": 9,
+        "Outros": 4,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 179,
+        "Entrega & Logística": 80,
+        "Loja Física": 61,
+        "Abastecimento": 51,
+        "Outros": 45,
+        "Atendimento": 42
       }
     },
     {
@@ -32557,16 +35755,16 @@ const DATA = {
       "avaliacoes_ponderadas": 3306.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 9
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 50
+          "pct": 42
         },
         {
           "cat": "Abastecimento",
-          "pct": 28
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 40
         }
       ],
       "top_elogios": [
@@ -32575,12 +35773,12 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 25
+          "cat": "Outros",
+          "pct": 13
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 16
+          "cat": "Entrega & Logística",
+          "pct": 25
         }
       ],
       "temporal": [
@@ -32695,6 +35893,22 @@ const DATA = {
           "nps": 49.8,
           "n": 235
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 84,
+        "Abastecimento": 47,
+        "Loja Física": 18,
+        "Atendimento": 14,
+        "Outros": 3,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Atendimento": 265,
+        "Entrega & Logística": 234,
+        "Promoções & Fidelidade": 151,
+        "Outros": 122,
+        "Abastecimento": 78,
+        "Loja Física": 77
       }
     },
     {
@@ -32718,30 +35932,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2059.0,
       "top_problemas": [
         {
+          "cat": "Loja Física",
+          "pct": 23
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 37
+          "pct": 36
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 20
+          "pct": 32
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
-        },
         {
           "cat": "Atendimento",
           "pct": 24
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 20
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
+        },
+        {
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -32856,6 +36070,22 @@ const DATA = {
           "nps": 67.1,
           "n": 207
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 49,
+        "Abastecimento": 40,
+        "Loja Física": 27,
+        "Atendimento": 11,
+        "Outros": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 158,
+        "Atendimento": 128,
+        "Entrega & Logística": 107,
+        "Loja Física": 59,
+        "Outros": 54,
+        "Abastecimento": 37
       }
     },
     {
@@ -32879,16 +36109,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1147.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "cat": "Abastecimento",
+          "pct": 50
         },
         {
-          "cat": "Abastecimento",
-          "pct": 39
+          "cat": "Promoções & Fidelidade",
+          "pct": 31
         },
         {
           "cat": "Loja Física",
-          "pct": 11
+          "pct": 12
         }
       ],
       "top_elogios": [
@@ -32897,12 +36127,12 @@ const DATA = {
           "pct": 26
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 11
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -33017,6 +36247,21 @@ const DATA = {
           "nps": 56.7,
           "n": 67
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 21,
+        "Abastecimento": 18,
+        "Loja Física": 5,
+        "Outros": 1,
+        "Atendimento": 1
+      },
+      "elog_counts": {
+        "Atendimento": 51,
+        "Promoções & Fidelidade": 46,
+        "Entrega & Logística": 37,
+        "Loja Física": 24,
+        "Outros": 22,
+        "Abastecimento": 16
       }
     },
     {
@@ -33040,16 +36285,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2574.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 46
+          "cat": "Abastecimento",
+          "pct": 51
         },
         {
-          "cat": "Abastecimento",
+          "cat": "Promoções & Fidelidade",
           "pct": 29
         },
         {
           "cat": "Loja Física",
-          "pct": 12
+          "pct": 14
         }
       ],
       "top_elogios": [
@@ -33058,12 +36303,12 @@ const DATA = {
           "pct": 35
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
-        },
-        {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 22
         }
       ],
       "temporal": [
@@ -33178,6 +36423,22 @@ const DATA = {
           "nps": 69.3,
           "n": 189
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 48,
+        "Abastecimento": 30,
+        "Loja Física": 13,
+        "Atendimento": 7,
+        "Outros": 5,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 141,
+        "Entrega & Logística": 87,
+        "Loja Física": 63,
+        "Atendimento": 46,
+        "Abastecimento": 35,
+        "Outros": 27
       }
     },
     {
@@ -33201,30 +36462,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2799.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 18
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 45
+          "pct": 39
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 13
+          "pct": 29
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 25
+          "cat": "Atendimento",
+          "pct": 24
         },
         {
           "cat": "Entrega & Logística",
           "pct": 24
         },
         {
-          "cat": "Atendimento",
-          "pct": 24
+          "cat": "Outros",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -33339,6 +36600,22 @@ const DATA = {
           "nps": 60.7,
           "n": 206
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 59,
+        "Abastecimento": 35,
+        "Loja Física": 17,
+        "Atendimento": 14,
+        "Outros": 5,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 147,
+        "Entrega & Logística": 144,
+        "Atendimento": 144,
+        "Loja Física": 62,
+        "Outros": 55,
+        "Abastecimento": 42
       }
     },
     {
@@ -33362,30 +36639,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1883.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 39
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 27
+          "pct": 40
         },
         {
           "cat": "Loja Física",
-          "pct": 19
+          "pct": 16
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 24
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Loja Física",
+          "pct": 17
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 35
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 18
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 17
+          "cat": "Abastecimento",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -33500,6 +36777,22 @@ const DATA = {
           "nps": 73.3,
           "n": 120
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 26,
+        "Abastecimento": 18,
+        "Loja Física": 13,
+        "Outros": 5,
+        "Entrega & Logística": 3,
+        "Atendimento": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 94,
+        "Entrega & Logística": 50,
+        "Loja Física": 45,
+        "Atendimento": 38,
+        "Abastecimento": 28,
+        "Outros": 17
       }
     },
     {
@@ -33524,15 +36817,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "pct": 44
         },
         {
           "cat": "Abastecimento",
-          "pct": 25
+          "pct": 44
         },
         {
           "cat": "Loja Física",
-          "pct": 15
+          "pct": 12
         }
       ],
       "top_elogios": [
@@ -33545,8 +36838,8 @@ const DATA = {
           "pct": 28
         },
         {
-          "cat": "Atendimento",
-          "pct": 15
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -33661,6 +36954,21 @@ const DATA = {
           "nps": 56.2,
           "n": 89
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 28,
+        "Abastecimento": 13,
+        "Loja Física": 8,
+        "Outros": 2,
+        "Atendimento": 2
+      },
+      "elog_counts": {
+        "Entrega & Logística": 65,
+        "Promoções & Fidelidade": 61,
+        "Atendimento": 32,
+        "Loja Física": 23,
+        "Outros": 21,
+        "Abastecimento": 18
       }
     },
     {
@@ -33684,26 +36992,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1222.0,
       "top_problemas": [
         {
+          "cat": "Loja Física",
+          "pct": 22
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "pct": 39
         },
         {
           "cat": "Abastecimento",
           "pct": 30
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 20
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 34
-        },
-        {
           "cat": "Entrega & Logística",
           "pct": 26
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 34
         },
         {
           "cat": "Loja Física",
@@ -33822,6 +37130,21 @@ const DATA = {
           "nps": 68.5,
           "n": 92
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 20,
+        "Abastecimento": 15,
+        "Loja Física": 10,
+        "Outros": 4,
+        "Atendimento": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 72,
+        "Entrega & Logística": 55,
+        "Loja Física": 29,
+        "Atendimento": 25,
+        "Abastecimento": 16,
+        "Outros": 16
       }
     },
     {
@@ -33845,16 +37168,12 @@ const DATA = {
       "avaliacoes_ponderadas": 1107.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 37
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 37
+          "pct": 41
         },
         {
-          "cat": "Atendimento",
-          "pct": 12
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
         }
       ],
       "top_elogios": [
@@ -33867,8 +37186,8 @@ const DATA = {
           "pct": 24
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 19
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -33983,6 +37302,22 @@ const DATA = {
           "nps": 58.3,
           "n": 60
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 18,
+        "Abastecimento": 18,
+        "Atendimento": 6,
+        "Outros": 3,
+        "Loja Física": 3,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Atendimento": 62,
+        "Entrega & Logística": 52,
+        "Promoções & Fidelidade": 42,
+        "Outros": 23,
+        "Loja Física": 23,
+        "Abastecimento": 18
       }
     },
     {
@@ -34006,30 +37341,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1712.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 11
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 55
+          "pct": 41
         },
         {
           "cat": "Abastecimento",
-          "pct": 22
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 8
+          "pct": 37
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 26
         },
         {
-          "cat": "Loja Física",
-          "pct": 13
+          "cat": "Abastecimento",
+          "pct": 10
+        },
+        {
+          "cat": "Outros",
+          "pct": 11
         }
       ],
       "temporal": [
@@ -34144,6 +37479,22 @@ const DATA = {
           "nps": 58.6,
           "n": 128
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 42,
+        "Abastecimento": 17,
+        "Loja Física": 6,
+        "Atendimento": 6,
+        "Outros": 4,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 86,
+        "Entrega & Logística": 75,
+        "Loja Física": 37,
+        "Atendimento": 34,
+        "Outros": 31,
+        "Abastecimento": 28
       }
     },
     {
@@ -34167,16 +37518,16 @@ const DATA = {
       "avaliacoes_ponderadas": 2943.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
-        },
-        {
-          "cat": "Abastecimento",
-          "pct": 20
+          "cat": "Outros",
+          "pct": 6
         },
         {
           "cat": "Loja Física",
-          "pct": 19
+          "pct": 21
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 40
         }
       ],
       "top_elogios": [
@@ -34185,12 +37536,12 @@ const DATA = {
           "pct": 32
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 22
+          "cat": "Loja Física",
+          "pct": 14
         },
         {
-          "cat": "Atendimento",
-          "pct": 14
+          "cat": "Entrega & Logística",
+          "pct": 22
         }
       ],
       "temporal": [
@@ -34305,6 +37656,22 @@ const DATA = {
           "nps": 65.2,
           "n": 247
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 65,
+        "Abastecimento": 26,
+        "Loja Física": 25,
+        "Outros": 9,
+        "Atendimento": 7,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 182,
+        "Entrega & Logística": 129,
+        "Atendimento": 83,
+        "Loja Física": 81,
+        "Outros": 53,
+        "Abastecimento": 47
       }
     },
     {
@@ -34328,30 +37695,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2890.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 48
+          "cat": "Atendimento",
+          "pct": 10
         },
         {
           "cat": "Abastecimento",
-          "pct": 27
+          "pct": 35
         },
         {
-          "cat": "Loja Física",
-          "pct": 10
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Atendimento",
+          "pct": 26
+        },
         {
           "cat": "Entrega & Logística",
           "pct": 30
         },
         {
-          "cat": "Atendimento",
-          "pct": 27
-        },
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 19
+          "cat": "Outros",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -34466,6 +37833,22 @@ const DATA = {
           "nps": 60.6,
           "n": 180
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 54,
+        "Abastecimento": 30,
+        "Loja Física": 11,
+        "Outros": 8,
+        "Atendimento": 8,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Entrega & Logística": 202,
+        "Atendimento": 177,
+        "Promoções & Fidelidade": 126,
+        "Loja Física": 70,
+        "Outros": 59,
+        "Abastecimento": 33
       }
     },
     {
@@ -34490,15 +37873,11 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 53
+          "pct": 46
         },
         {
           "cat": "Abastecimento",
-          "pct": 33
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 4
+          "pct": 42
         }
       ],
       "top_elogios": [
@@ -34507,12 +37886,12 @@ const DATA = {
           "pct": 28
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
-        },
-        {
           "cat": "Atendimento",
           "pct": 19
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 8
         }
       ],
       "temporal": [
@@ -34627,6 +38006,21 @@ const DATA = {
           "nps": 62.1,
           "n": 95
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 24,
+        "Abastecimento": 15,
+        "Atendimento": 2,
+        "Loja Física": 2,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Entrega & Logística": 73,
+        "Promoções & Fidelidade": 71,
+        "Atendimento": 50,
+        "Loja Física": 26,
+        "Abastecimento": 22,
+        "Outros": 19
       }
     },
     {
@@ -34650,30 +38044,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1610.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 45
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 31
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
-        }
-      ],
-      "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 19
+          "pct": 48
         },
         {
           "cat": "Loja Física",
           "pct": 17
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 22
+        }
+      ],
+      "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 13
+        },
+        {
+          "cat": "Loja Física",
+          "pct": 17
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 28
         }
       ],
       "temporal": [
@@ -34788,6 +38182,22 @@ const DATA = {
           "nps": 67.0,
           "n": 103
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 29,
+        "Abastecimento": 20,
+        "Loja Física": 7,
+        "Outros": 5,
+        "Atendimento": 3,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 74,
+        "Entrega & Logística": 49,
+        "Loja Física": 44,
+        "Atendimento": 38,
+        "Abastecimento": 34,
+        "Outros": 24
       }
     },
     {
@@ -34812,29 +38222,29 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 50
+          "pct": 49
         },
         {
-          "cat": "Abastecimento",
-          "pct": 21
+          "cat": "Atendimento",
+          "pct": 6
         },
         {
           "cat": "Loja Física",
-          "pct": 17
+          "pct": 19
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Entrega & Logística",
-          "pct": 31
-        },
         {
           "cat": "Atendimento",
           "pct": 29
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 18
+          "cat": "Entrega & Logística",
+          "pct": 31
+        },
+        {
+          "cat": "Outros",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -34949,6 +38359,22 @@ const DATA = {
           "nps": 52.9,
           "n": 174
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 59,
+        "Abastecimento": 25,
+        "Loja Física": 20,
+        "Atendimento": 11,
+        "Outros": 2,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Entrega & Logística": 199,
+        "Atendimento": 186,
+        "Promoções & Fidelidade": 115,
+        "Loja Física": 60,
+        "Outros": 55,
+        "Abastecimento": 32
       }
     },
     {
@@ -34973,15 +38399,15 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 56
+          "pct": 43
         },
         {
           "cat": "Abastecimento",
-          "pct": 25
+          "pct": 33
         },
         {
           "cat": "Loja Física",
-          "pct": 10
+          "pct": 14
         }
       ],
       "top_elogios": [
@@ -34990,12 +38416,12 @@ const DATA = {
           "pct": 41
         },
         {
-          "cat": "Entrega & Logística",
-          "pct": 21
+          "cat": "Outros",
+          "pct": 10
         },
         {
-          "cat": "Loja Física",
-          "pct": 11
+          "cat": "Entrega & Logística",
+          "pct": 21
         }
       ],
       "temporal": [
@@ -35110,6 +38536,22 @@ const DATA = {
           "nps": 66.1,
           "n": 127
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 34,
+        "Abastecimento": 15,
+        "Loja Física": 6,
+        "Outros": 3,
+        "Entrega & Logística": 2,
+        "Atendimento": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 93,
+        "Entrega & Logística": 47,
+        "Loja Física": 26,
+        "Outros": 23,
+        "Atendimento": 21,
+        "Abastecimento": 17
       }
     },
     {
@@ -35133,30 +38575,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1715.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "cat": "Loja Física",
+          "pct": 24
         },
         {
           "cat": "Abastecimento",
-          "pct": 34
+          "pct": 43
         },
         {
-          "cat": "Loja Física",
-          "pct": 11
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 30
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 22
+          "cat": "Outros",
+          "pct": 14
         },
         {
           "cat": "Loja Física",
           "pct": 16
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 30
         }
       ],
       "temporal": [
@@ -35271,6 +38713,22 @@ const DATA = {
           "nps": 71.3,
           "n": 108
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 25,
+        "Abastecimento": 21,
+        "Loja Física": 7,
+        "Outros": 6,
+        "Atendimento": 2,
+        "Entrega & Logística": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 83,
+        "Entrega & Logística": 59,
+        "Loja Física": 44,
+        "Outros": 39,
+        "Abastecimento": 25,
+        "Atendimento": 23
       }
     },
     {
@@ -35295,29 +38753,25 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Abastecimento",
-          "pct": 47
+          "pct": 58
         },
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 31
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 10
+          "pct": 25
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
-        },
-        {
-          "cat": "Entrega & Logística",
-          "pct": 23
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Loja Física",
           "pct": 15
+        },
+        {
+          "cat": "Entrega & Logística",
+          "pct": 23
         }
       ],
       "temporal": [
@@ -35432,6 +38886,22 @@ const DATA = {
           "nps": 74.2,
           "n": 93
         }
+      },
+      "prob_counts": {
+        "Abastecimento": 27,
+        "Promoções & Fidelidade": 18,
+        "Loja Física": 6,
+        "Atendimento": 3,
+        "Outros": 2,
+        "Entrega & Logística": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 75,
+        "Entrega & Logística": 63,
+        "Loja Física": 40,
+        "Atendimento": 39,
+        "Outros": 33,
+        "Abastecimento": 25
       }
     },
     {
@@ -35455,30 +38925,30 @@ const DATA = {
       "avaliacoes_ponderadas": 2863.0,
       "top_problemas": [
         {
+          "cat": "Atendimento",
+          "pct": 12
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 51
+          "pct": 42
         },
         {
           "cat": "Abastecimento",
-          "pct": 29
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 9
+          "pct": 42
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 32
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 27
         },
         {
-          "cat": "Loja Física",
-          "pct": 13
+          "cat": "Promoções & Fidelidade",
+          "pct": 32
+        },
+        {
+          "cat": "Abastecimento",
+          "pct": 9
         }
       ],
       "temporal": [
@@ -35593,6 +39063,22 @@ const DATA = {
           "nps": 71.4,
           "n": 245
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 53,
+        "Abastecimento": 30,
+        "Atendimento": 9,
+        "Loja Física": 5,
+        "Entrega & Logística": 3,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 192,
+        "Entrega & Logística": 159,
+        "Loja Física": 76,
+        "Atendimento": 69,
+        "Abastecimento": 52,
+        "Outros": 49
       }
     },
     {
@@ -35616,30 +39102,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1657.0,
       "top_problemas": [
         {
+          "cat": "Loja Física",
+          "pct": 24
+        },
+        {
           "cat": "Promoções & Fidelidade",
-          "pct": 40
+          "pct": 33
         },
         {
           "cat": "Abastecimento",
-          "pct": 32
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 29
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 27
+          "cat": "Abastecimento",
+          "pct": 11
+        },
+        {
+          "cat": "Outros",
+          "pct": 12
         },
         {
           "cat": "Entrega & Logística",
           "pct": 25
-        },
-        {
-          "cat": "Atendimento",
-          "pct": 15
         }
       ],
       "temporal": [
@@ -35754,6 +39240,22 @@ const DATA = {
           "nps": 68.4,
           "n": 95
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 23,
+        "Abastecimento": 18,
+        "Loja Física": 6,
+        "Atendimento": 4,
+        "Entrega & Logística": 3,
+        "Outros": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 72,
+        "Entrega & Logística": 66,
+        "Atendimento": 40,
+        "Outros": 32,
+        "Abastecimento": 30,
+        "Loja Física": 28
       }
     },
     {
@@ -35778,18 +39280,18 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 57
+          "pct": 56
         },
         {
           "cat": "Abastecimento",
-          "pct": 24
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 7
+          "pct": 30
         }
       ],
       "top_elogios": [
+        {
+          "cat": "Abastecimento",
+          "pct": 12
+        },
         {
           "cat": "Promoções & Fidelidade",
           "pct": 34
@@ -35797,10 +39299,6 @@ const DATA = {
         {
           "cat": "Entrega & Logística",
           "pct": 24
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 15
         }
       ],
       "temporal": [
@@ -35915,6 +39413,22 @@ const DATA = {
           "nps": 65.2,
           "n": 184
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 49,
+        "Abastecimento": 21,
+        "Loja Física": 6,
+        "Outros": 4,
+        "Entrega & Logística": 3,
+        "Atendimento": 3
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 135,
+        "Entrega & Logística": 94,
+        "Loja Física": 58,
+        "Abastecimento": 46,
+        "Atendimento": 39,
+        "Outros": 27
       }
     },
     {
@@ -35938,30 +39452,30 @@ const DATA = {
       "avaliacoes_ponderadas": 1665.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
+          "cat": "Atendimento",
+          "pct": 14
         },
         {
           "cat": "Loja Física",
-          "pct": 18
+          "pct": 29
         },
         {
-          "cat": "Abastecimento",
-          "pct": 13
+          "cat": "Promoções & Fidelidade",
+          "pct": 24
         }
       ],
       "top_elogios": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
+          "cat": "Atendimento",
+          "pct": 19
         },
         {
           "cat": "Entrega & Logística",
           "pct": 23
         },
         {
-          "cat": "Atendimento",
-          "pct": 19
+          "cat": "Loja Física",
+          "pct": 14
         }
       ],
       "temporal": [
@@ -36076,6 +39590,22 @@ const DATA = {
           "nps": 70.7,
           "n": 92
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 22,
+        "Loja Física": 8,
+        "Abastecimento": 6,
+        "Atendimento": 4,
+        "Entrega & Logística": 3,
+        "Outros": 2
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 70,
+        "Entrega & Logística": 56,
+        "Atendimento": 48,
+        "Loja Física": 34,
+        "Outros": 21,
+        "Abastecimento": 18
       }
     },
     {
@@ -36099,16 +39629,16 @@ const DATA = {
       "avaliacoes_ponderadas": 1232.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 49
+          "cat": "Loja Física",
+          "pct": 33
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
+          "pct": 40
         },
         {
-          "cat": "Loja Física",
-          "pct": 17
+          "cat": "Promoções & Fidelidade",
+          "pct": 27
         }
       ],
       "top_elogios": [
@@ -36117,12 +39647,12 @@ const DATA = {
           "pct": 29
         },
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 24
-        },
-        {
           "cat": "Entrega & Logística",
           "pct": 22
+        },
+        {
+          "cat": "Outros",
+          "pct": 10
         }
       ],
       "temporal": [
@@ -36237,6 +39767,21 @@ const DATA = {
           "nps": 67.5,
           "n": 83
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 23,
+        "Abastecimento": 14,
+        "Loja Física": 8,
+        "Entrega & Logística": 1,
+        "Atendimento": 1
+      },
+      "elog_counts": {
+        "Atendimento": 71,
+        "Promoções & Fidelidade": 60,
+        "Entrega & Logística": 54,
+        "Loja Física": 26,
+        "Outros": 24,
+        "Abastecimento": 11
       }
     },
     {
@@ -36260,30 +39805,26 @@ const DATA = {
       "avaliacoes_ponderadas": 1931.0,
       "top_problemas": [
         {
-          "cat": "Promoções & Fidelidade",
-          "pct": 50
-        },
-        {
           "cat": "Abastecimento",
-          "pct": 33
+          "pct": 62
         },
         {
-          "cat": "Loja Física",
-          "pct": 9
+          "cat": "Promoções & Fidelidade",
+          "pct": 33
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 28
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 26
         },
         {
-          "cat": "Atendimento",
-          "pct": 15
+          "cat": "Loja Física",
+          "pct": 14
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 28
         }
       ],
       "temporal": [
@@ -36398,6 +39939,22 @@ const DATA = {
           "nps": 70.4,
           "n": 125
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 29,
+        "Abastecimento": 19,
+        "Loja Física": 5,
+        "Entrega & Logística": 3,
+        "Outros": 1,
+        "Atendimento": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 96,
+        "Entrega & Logística": 88,
+        "Atendimento": 52,
+        "Loja Física": 47,
+        "Outros": 30,
+        "Abastecimento": 28
       }
     },
     {
@@ -36422,29 +39979,25 @@ const DATA = {
       "top_problemas": [
         {
           "cat": "Promoções & Fidelidade",
-          "pct": 44
+          "pct": 50
         },
         {
           "cat": "Abastecimento",
-          "pct": 30
-        },
-        {
-          "cat": "Loja Física",
-          "pct": 11
+          "pct": 40
         }
       ],
       "top_elogios": [
-        {
-          "cat": "Promoções & Fidelidade",
-          "pct": 29
-        },
         {
           "cat": "Entrega & Logística",
           "pct": 27
         },
         {
-          "cat": "Atendimento",
-          "pct": 16
+          "cat": "Abastecimento",
+          "pct": 9
+        },
+        {
+          "cat": "Promoções & Fidelidade",
+          "pct": 29
         }
       ],
       "temporal": [
@@ -36559,6 +40112,22 @@ const DATA = {
           "nps": 77.0,
           "n": 74
         }
+      },
+      "prob_counts": {
+        "Promoções & Fidelidade": 12,
+        "Abastecimento": 8,
+        "Loja Física": 3,
+        "Entrega & Logística": 2,
+        "Atendimento": 1,
+        "Outros": 1
+      },
+      "elog_counts": {
+        "Promoções & Fidelidade": 62,
+        "Entrega & Logística": 57,
+        "Atendimento": 34,
+        "Loja Física": 26,
+        "Abastecimento": 20,
+        "Outros": 13
       }
     }
   ],

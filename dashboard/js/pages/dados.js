@@ -19,9 +19,6 @@ Swift.Pages.dados = (function () {
   function render() {
     const tc = C.getThemeColors();
     const lojas = U.getFilteredLojas();
-    const k = U.aggKpis(lojas);
-    renderQualidade(tc, lojas, k);
-    renderModelo(tc, lojas, k);
     renderTendencias(tc, lojas);
   }
 

@@ -260,7 +260,6 @@
         <div class="sub-tabs">
           <button class="sub-tab active" data-subtab="problemas">Problemas</button>
           <button class="sub-tab" data-subtab="elogios">Elogios</button>
-          <button class="sub-tab" data-subtab="divergencias">Divergências</button>
           <button class="sub-tab" data-subtab="nps-tema">NPS por Tema</button>
           <button class="sub-tab" data-subtab="linguagem">Linguagem</button>
         </div>
@@ -287,18 +286,6 @@
           </div>
         </div>
 
-        <!-- Divergências -->
-        <div class="subtab-content" id="subtab-divergencias">
-          <div class="kpi-grid kpi-grid-3">
-            <div class="kpi-card"><span class="kpi-label">Total Divergentes</span><span class="kpi-value" id="kpi-divergentes">--</span></div>
-            <div class="kpi-card kpi-negative"><span class="kpi-label">Promotores c/ Texto Negativo</span><span class="kpi-value" id="kpi-prom-neg">--</span></div>
-            <div class="kpi-card kpi-positive"><span class="kpi-label">Detratores c/ Texto Positivo</span><span class="kpi-value" id="kpi-det-pos">--</span></div>
-          </div>
-          <div class="divergencia-explain">
-            <strong>O que é uma divergência?</strong> Quando a nota NPS e o texto do comentário contradizem a mesma experiência. Ex: nota 9 (promotor) com texto negativo.
-          </div>
-        </div>
-
         <!-- NPS por Tema -->
         <div class="subtab-content" id="subtab-nps-tema">
           <div class="charts-row">
@@ -313,11 +300,8 @@
               <canvas id="chart-nps-tema-gestao"></canvas>
             </div>
           </div>
-          <div class="insight-box">
-            <h3>Interpretação</h3>
-            <p id="nps-tema-insight">Carregando...</p>
-          </div>
           <h3 class="examples-title" style="margin-top:24px">Piores Lojas por Tema</h3>
+          <p class="chart-desc" style="margin:-8px 0 12px">O "NPS por tema" é calculado só sobre os comentários daquela categoria — por isso temas de reclamação (ex.: Abastecimento) podem ficar negativos em lojas críticas.</p>
           <div class="nps-tema-lojas" id="nps-tema-lojas-grid"></div>
         </div>
 
@@ -362,11 +346,6 @@
         <p class="section-subtitle">NPS, sentimento, problemas e elogios — loja a loja</p>
 
         <div class="lojas-controls">
-          <div class="view-toggle">
-            <button class="view-toggle-btn active" data-view="tabela" aria-pressed="true">Tabela</button>
-            <button class="view-toggle-btn" data-view="mapa" aria-pressed="false">Mapa de Risco</button>
-          </div>
-
           <input type="text" id="search-loja" class="search-input" placeholder="Buscar loja..." aria-label="Buscar loja pelo nome">
         </div>
 
@@ -391,15 +370,6 @@
               </thead>
               <tbody id="tbody-lojas"></tbody>
             </table>
-          </div>
-        </div>
-
-        <!-- Risk matrix view -->
-        <div id="lojas-map-view">
-          <div class="chart-card chart-card-full">
-            <h3 class="chart-title">Matriz de Risco — NPS Tradicional × % Comentários Negativos</h3>
-            <p class="chart-desc">Cada ponto é uma loja. Lojas à esquerda com % negativo alto são as mais críticas.</p>
-            <canvas id="chart-risk-matrix"></canvas>
           </div>
         </div>
 
@@ -463,76 +433,11 @@
            ══════════════════════════════ -->
       <section class="page" id="page-dados" aria-labelledby="h-dados">
 
-        <h2 class="section-title" id="h-dados">Dados e Modelo</h2>
-        <p class="section-subtitle">Qualidade dos dados, transparência do modelo de IA, tendências e hipóteses</p>
-
-        <div class="sub-tabs">
-          <button class="sub-tab active" data-subtab="qualidade">Qualidade dos Dados</button>
-          <button class="sub-tab" data-subtab="modelo">Modelo Qualitativo</button>
-          <button class="sub-tab" data-subtab="tendencias">Tendências</button>
-        </div>
-
-        <!-- Qualidade -->
-        <div class="subtab-content active" id="subtab-qualidade">
-          <div class="qualidade-grid" id="qualidade-grid"></div>
-
-          <div class="chart-card chart-card-full">
-            <h3 class="chart-title">Distribuição de Confiança do Modelo</h3>
-            <p class="chart-desc">Percentual de comentários por faixa de confiança da classificação. Alta confiança = modelo mais seguro na reclassificação.</p>
-            <canvas id="chart-confianca-dist"></canvas>
-          </div>
-        </div>
-
-        <!-- Modelo Qualitativo -->
-        <div class="subtab-content" id="subtab-modelo">
-          <div class="kpi-grid kpi-grid-3">
-            <div class="kpi-card kpi-info"><span class="kpi-label">NPS Tradicional</span><span class="kpi-value" id="qual-nps-trad">--</span></div>
-            <div class="kpi-card kpi-neutral"><span class="kpi-label">NPS Textual</span><span class="kpi-value" id="qual-nps-textual">--</span></div>
-            <div class="kpi-card kpi-brand"><span class="kpi-label">NPS Híbrido</span><span class="kpi-value" id="qual-nps-hibrido">--</span></div>
-          </div>
-
-          <div class="insight-box">
-            <h3>Metodologia Corrigida</h3>
-            <p id="qual-metodologia">Carregando...</p>
-          </div>
-
-          <div class="charts-row" style="margin-top:24px">
-            <div class="chart-card">
-              <h3 class="chart-title">NPS Híbrido × Transações</h3>
-              <p class="chart-desc">Cada bolha é uma loja. Tamanho = volume de avaliações. Volume sozinho não explica satisfação.</p>
-              <canvas id="chart-nps-transacoes"></canvas>
-            </div>
-            <div class="chart-card">
-              <h3 class="chart-title">Diagnósticos de Classificação</h3>
-              <p class="chart-desc">Distribuição dos comentários por categoria diagnóstica do modelo.</p>
-              <canvas id="chart-diagnosticos"></canvas>
-            </div>
-          </div>
-
-          <div class="charts-row">
-            <div class="chart-card">
-              <h3 class="chart-title">Ranking de Prioridade</h3>
-              <div class="table-container">
-                <table class="lojas-table" aria-label="Ranking de prioridade">
-                  <thead><tr><th scope="col">Loja</th><th scope="col">Prioridade</th><th scope="col">NPS Híbrido</th><th scope="col">% Negativo</th></tr></thead>
-                  <tbody id="qual-top-prioridade"></tbody>
-                </table>
-              </div>
-            </div>
-            <div class="chart-card">
-              <h3 class="chart-title">Risco Oculto</h3>
-              <div class="table-container">
-                <table class="lojas-table" aria-label="Lojas com risco oculto">
-                  <thead><tr><th scope="col">Loja</th><th scope="col">NPS Trad</th><th scope="col">% Negativo</th><th scope="col">Severidade</th></tr></thead>
-                  <tbody id="qual-risco-oculto"></tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h2 class="section-title" id="h-dados">Tendências</h2>
+        <p class="section-subtitle">Lojas com tendência de deterioração ou melhora do sentimento ao longo do tempo (respeita os filtros).</p>
 
         <!-- Tendências -->
-        <div class="subtab-content" id="subtab-tendencias">
+        <div class="subtab-content active" id="subtab-tendencias">
           <div class="charts-row">
             <div class="chart-card">
               <h3 class="chart-title">Lojas com Tendência de Deterioração</h3>

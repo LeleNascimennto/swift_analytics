@@ -14,17 +14,16 @@ Swift.Pages.temas = (function () {
     const lojas = U.getFilteredLojas();
     renderProblemas(tc, lojas);
     renderElogios(tc, lojas);
-    renderDivergencias();
     renderNpsTema(tc, lojas);
     renderLinguagem(tc);
   }
 
   function renderProblemas(tc, lojas) {
-    const rk = U.aggRanking(lojas, 'top_problemas');
+    const rk = U.aggCounts(lojas, 'prob_counts');
     C.create('chart-ranking-problemas', {
       type: 'bar',
-      data: { labels: rk.categorias, datasets: [{ data: rk.pcts, backgroundColor: C.PROBLEM_COLORS, borderRadius: 6, borderSkipped: false }] },
-      options: hbarOpts(tc, '%')
+      data: { labels: rk.categorias, datasets: [{ data: rk.contagens, backgroundColor: C.PROBLEM_COLORS, borderRadius: 6, borderSkipped: false }] },
+      options: { ...hbarOpts(tc), plugins: { legend: { display: false }, tooltip: { ...C.defaultOptions().plugins.tooltip, callbacks: { label: ctx => U.fmtInt(ctx.parsed.x) + ' comentários' } } } }
     });
     // Evolução temporal dos problemas (visão global do período)
     const ev = DATA.evolucao_problemas;
@@ -37,11 +36,11 @@ Swift.Pages.temas = (function () {
   }
 
   function renderElogios(tc, lojas) {
-    const rk = U.aggRanking(lojas, 'top_elogios');
+    const rk = U.aggCounts(lojas, 'elog_counts');
     C.create('chart-ranking-elogios', {
       type: 'bar',
-      data: { labels: rk.categorias, datasets: [{ data: rk.pcts, backgroundColor: C.PRAISE_COLORS, borderRadius: 6, borderSkipped: false }] },
-      options: hbarOpts(tc, '%')
+      data: { labels: rk.categorias, datasets: [{ data: rk.contagens, backgroundColor: C.PRAISE_COLORS, borderRadius: 6, borderSkipped: false }] },
+      options: { ...hbarOpts(tc), plugins: { legend: { display: false }, tooltip: { ...C.defaultOptions().plugins.tooltip, callbacks: { label: ctx => U.fmtInt(ctx.parsed.x) + ' comentários' } } } }
     });
   }
 

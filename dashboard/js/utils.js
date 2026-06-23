@@ -85,6 +85,15 @@ Swift.Utils = (function () {
     return { categorias: arr.map(x => x[0]), pcts: arr.map(x => Math.round(100 * x[1] / tot)) };
   }
 
+  /* ranking por CONTAGENS brutas (prob_counts/elog_counts) — soma das lojas
+     filtradas; quando sem filtro, igual ao total global (consistente c/ evolução) */
+  function aggCounts(lojas, key, k = 6) {
+    const acc = {};
+    lojas.forEach(l => Object.entries(l[key] || {}).forEach(([cat, n]) => { acc[cat] = (acc[cat] || 0) + n; }));
+    const arr = Object.entries(acc).sort((a, b) => b[1] - a[1]).slice(0, k);
+    return { categorias: arr.map(x => x[0]), contagens: arr.map(x => x[1]) };
+  }
+
   /* temporal médio (pos/neg %) das lojas filtradas, ponderado por comentários */
   function aggTemporal(lojas) {
     const acc = {};
@@ -130,6 +139,6 @@ Swift.Utils = (function () {
   return {
     escapeHtml, fmt, fmtInt, fmtPct, colorForNPS, colorForPctNeg, signedDelta, deltaColor,
     labelForFlag, badgeClassForFlag,
-    getFilteredLojas, isFiltered, wmean, aggKpis, aggRanking, aggTemporal, aggNpsTema, pioresPorTema, aggPorRegiao
+    getFilteredLojas, isFiltered, wmean, aggKpis, aggRanking, aggCounts, aggTemporal, aggNpsTema, pioresPorTema, aggPorRegiao
   };
 })();
