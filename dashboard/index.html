@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="light">
 <head>
@@ -219,390 +218,37 @@
             <div class="gestao-header">
               <span class="badge badge-regular">Externo (Regular)</span>
               <span class="gestao-lojas" id="n-lojas-regular">-- lojas</span>
-=======
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Analytics — NPS & Sentimento</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
-</head>
-<body>
-    <!-- ═══ HEADER / NAVBAR ═══ -->
-    <header class="navbar">
-        <div class="navbar-left">
-            <div class="logo">
-                <span class="logo-text">Swift</span>
             </div>
-            <nav class="nav-tabs">
-                <button class="nav-tab active" data-page="overview">Visão Geral</button>
-                <button class="nav-tab" data-page="gestao">Gestão</button>
-                <button class="nav-tab" data-page="temas">Problemas & Elogios</button>
-                <button class="nav-tab" data-page="lojas">Lojas</button>
-                <button class="nav-tab" data-page="avancadas">Análises Avançadas</button>
-            </nav>
+            <div class="gestao-metrics" id="metrics-regular"></div>
+          </div>
+          <div class="kpi-card-large">
+            <div class="gestao-header">
+              <span class="badge badge-tocadora">Germinare (Tocadora)</span>
+              <span class="gestao-lojas" id="n-lojas-tocadora">-- lojas</span>
+            </div>
+            <div class="gestao-metrics" id="metrics-tocadora"></div>
+          </div>
         </div>
-        <div class="navbar-right">
-            <div class="filter-group">
-                <select id="filter-gerente" class="filter-select" aria-label="Filtrar por tipo de gestão">
-                    <option value="todos">Todos os Gerentes</option>
-                    <option value="regular">Externo (Regular)</option>
-                    <option value="tocadora">Germinare (Tocadora)</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <select id="filter-uf" class="filter-select" aria-label="Filtrar por UF">
-                    <option value="todas">Todas as UFs</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <select id="filter-loja" class="filter-select" aria-label="Filtrar por loja">
-                    <option value="todas">Todas as Lojas</option>
-                </select>
-            </div>
+
+        <div class="charts-row">
+          <div class="chart-card">
+            <h3 class="chart-title">Distribuição de Sentimento por Gestão</h3>
+            <canvas id="chart-gestao-sentimento"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3 class="chart-title">Top 5 Problemas por Tipo de Gestão</h3>
+            <canvas id="chart-gestao-problemas"></canvas>
+          </div>
         </div>
-    </header>
 
-    <!-- ═══ MAIN CONTENT ═══ -->
-    <main class="content">
+        <div class="chart-card chart-card-full" style="margin-bottom:24px">
+          <h3 class="chart-title">NPS Híbrido × % Negativo por Loja</h3>
+          <p class="chart-desc">Cada ponto é uma loja. Azul = Externo, Roxo = Germinare. Pontos à direita e abaixo são preferíveis.</p>
+          <canvas id="chart-gestao-scatter"></canvas>
+        </div>
 
-        <!-- ════════════ PÁGINA: VISÃO GERAL (Compilado Executivo - 3.4) ════════════ -->
-        <section class="page active" id="page-overview">
-            <!-- KPI Cards -->
-            <div class="kpi-grid">
-                <div class="kpi-card">
-                    <span class="kpi-label">NPS Tradicional</span>
-                    <span class="kpi-value" id="kpi-nps-trad">--</span>
-                </div>
-                <div class="kpi-card">
-                    <span class="kpi-label">NPS Ajustado</span>
-                    <span class="kpi-value" id="kpi-nps-ajust">--</span>
-                </div>
-                <div class="kpi-card kpi-positive">
-                    <span class="kpi-label">% Positivo</span>
-                    <span class="kpi-value" id="kpi-positivo">--</span>
-                </div>
-                <div class="kpi-card kpi-neutral">
-                    <span class="kpi-label">% Neutro</span>
-                    <span class="kpi-value" id="kpi-neutro">--</span>
-                </div>
-                <div class="kpi-card kpi-negative">
-                    <span class="kpi-label">% Negativo</span>
-                    <span class="kpi-value" id="kpi-negativo">--</span>
-                </div>
-                <div class="kpi-card">
-                    <span class="kpi-label">Lojas em Alerta</span>
-                    <span class="kpi-value" id="kpi-alertas">--</span>
-                </div>
->>>>>>> origin/main
-            </div>
-            <p class="section-subtitle">Base oficial: 227 lojas (169 REGULAR e 58 TOCADORA) · 116.605 comentários · Jan/2025 a Mai/2026 · 4 UFs</p>
+      </section>
 
-            <!-- Compilado Executivo -->
-            <div class="compilado-section">
-                <h2 class="section-title">Compilado Executivo do Sentimento</h2>
-                <p class="section-subtitle">Resumo compreensível para quem não é técnico — baseado na análise de <span id="total-comentarios">--</span> comentários</p>
-
-                <div class="compilado-grid">
-                    <!-- Fortalezas -->
-                    <div class="compilado-card compilado-positive">
-                        <h3>3 Maiores Fortalezas da Rede</h3>
-                        <div id="fortalezas-list"></div>
-                    </div>
-                    <!-- Pontos de Atenção -->
-                    <div class="compilado-card compilado-negative">
-                        <h3>3 Maiores Pontos de Atenção</h3>
-                        <div id="atencao-list"></div>
-                    </div>
-                </div>
-
-                <!-- Destaques por Região -->
-                <div class="compilado-card compilado-region">
-                    <h3>Destaques por Região</h3>
-                    <div id="destaques-regiao" class="region-grid"></div>
-                </div>
-            </div>
-
-            <!-- Charts Row -->
-            <div class="charts-row">
-                <div class="chart-card chart-card-wide">
-                    <h3 class="chart-title">Sentimento ao Longo do Tempo</h3>
-                    <canvas id="chart-sentimento-temporal"></canvas>
-                </div>
-                <div class="chart-card">
-                    <h3 class="chart-title">Distribuição de Sentimento</h3>
-                    <canvas id="chart-sentimento-donut"></canvas>
-                </div>
-            </div>
-
-            <!-- Insight Box -->
-            <div class="insight-box">
-                <h3>Insight Não Óbvio</h3>
-                <p id="insight-text">Carregando...</p>
-            </div>
-        </section>
-
-        <!-- ════════════ PÁGINA: GESTÃO (3.1) ════════════ -->
-        <section class="page" id="page-gestao">
-            <h2 class="section-title">Comparativo: Tocadora vs Regular</h2>
-            <p class="section-subtitle">Comparação em 4 dimensões: NPS, sentimento, categorias de problemas e conclusão estatística</p>
-
-            <!-- Dimensão 1 e 2: NPS -->
-            <div class="kpi-grid kpi-grid-2">
-                <div class="kpi-card-large">
-                    <div class="gestao-header">
-                        <span class="badge badge-regular">Regular</span>
-                        <span class="gestao-lojas" id="n-lojas-regular">-- lojas</span>
-                    </div>
-                    <div class="gestao-metrics" id="metrics-regular"></div>
-                </div>
-                <div class="kpi-card-large">
-                    <div class="gestao-header">
-                        <span class="badge badge-tocadora">Tocadora</span>
-                        <span class="gestao-lojas" id="n-lojas-tocadora">-- lojas</span>
-                    </div>
-                    <div class="gestao-metrics" id="metrics-tocadora"></div>
-                </div>
-            </div>
-
-            <!-- Dimensão 3: Sentimento -->
-            <div class="charts-row">
-                <div class="chart-card">
-                    <h3 class="chart-title">Distribuição de Sentimento por Gestão</h3>
-                    <canvas id="chart-gestao-sentimento"></canvas>
-                </div>
-                <!-- Dimensão 4: Categorias de problemas -->
-                <div class="chart-card">
-                    <h3 class="chart-title">Top 5 Problemas por Tipo de Gestão</h3>
-                    <canvas id="chart-gestao-problemas"></canvas>
-                </div>
-            </div>
-
-            <!-- Conclusão -->
-            <div class="conclusion-box" id="gestao-conclusao"></div>
-        </section>
-
-        <!-- ════════════ PÁGINA: TEMAS (3.2) ════════════ -->
-        <section class="page" id="page-temas">
-            <h2 class="section-title">Principais Problemas e Elogios</h2>
-            <p class="section-subtitle">Categorias + exemplos + evolução temporal</p>
-
-            <div class="sub-tabs">
-                <button class="sub-tab active" data-subtab="problemas">Problemas (Detratores + Neutros)</button>
-                <button class="sub-tab" data-subtab="elogios">Elogios (Promotores)</button>
-                <button class="sub-tab" data-subtab="divergencias">Divergências Nota × Texto</button>
-            </div>
-
-            <!-- Sub-tab: Problemas -->
-            <div class="subtab-content active" id="subtab-problemas">
-                <div class="charts-row">
-                    <div class="chart-card">
-                        <h3 class="chart-title">Top 5 Categorias de Problemas</h3>
-                        <canvas id="chart-ranking-problemas"></canvas>
-                    </div>
-                    <div class="chart-card">
-                        <h3 class="chart-title">Evolução Temporal — As categorias variam ao longo do ano?</h3>
-                        <canvas id="chart-evolucao-problemas"></canvas>
-                    </div>
-                </div>
-                <h3 class="examples-title">Exemplos Representativos (mín. 3 por categoria)</h3>
-                <div class="examples-section" id="exemplos-problemas"></div>
-            </div>
-
-            <!-- Sub-tab: Elogios -->
-            <div class="subtab-content" id="subtab-elogios">
-                <div class="charts-row">
-                    <div class="chart-card chart-card-full">
-                        <h3 class="chart-title">Top 5 Categorias de Elogios</h3>
-                        <canvas id="chart-ranking-elogios"></canvas>
-                    </div>
-                </div>
-                <h3 class="examples-title">Exemplos Representativos (mín. 3 por categoria)</h3>
-                <div class="examples-section" id="exemplos-elogios"></div>
-            </div>
-
-            <!-- Sub-tab: Divergências -->
-            <div class="subtab-content" id="subtab-divergencias">
-                <div class="kpi-grid kpi-grid-3">
-                    <div class="kpi-card">
-                        <span class="kpi-label">Total Divergentes</span>
-                        <span class="kpi-value" id="kpi-divergentes">--</span>
-                    </div>
-                    <div class="kpi-card kpi-negative">
-                        <span class="kpi-label">Promotores c/ Texto Negativo</span>
-                        <span class="kpi-value" id="kpi-prom-neg">--</span>
-                    </div>
-                    <div class="kpi-card kpi-positive">
-                        <span class="kpi-label">Detratores c/ Texto Positivo</span>
-                        <span class="kpi-value" id="kpi-det-pos">--</span>
-                    </div>
-                </div>
-                <div class="divergencia-explain">
-                    <p><strong>O que é uma divergência?</strong> Quando a nota NPS diz uma coisa e o texto do comentário diz outra. Ex: cliente deu nota 9 (promotor) mas escreveu uma reclamação.</p>
-                </div>
-                <h3 class="examples-title">Exemplos de Divergências</h3>
-                <div class="examples-section" id="exemplos-divergencias"></div>
-
-                <!-- Impacto do NPS Ajustado -->
-                <div class="impacto-section">
-                    <h3 class="section-title" style="margin-top:32px">Impacto do NPS Ajustado</h3>
-                    <p class="section-subtitle">Como o comentário muda o NPS: fórmula, validação e análise crítica</p>
-                    
-                    <div class="impacto-formula-box" id="impacto-formula"></div>
-                    
-                    <div class="kpi-grid kpi-grid-3" style="margin-top:16px">
-                        <div class="kpi-card">
-                            <span class="kpi-label">NPS Tradicional → Ajustado</span>
-                            <span class="kpi-value" id="kpi-nps-delta-global">--</span>
-                        </div>
-                        <div class="kpi-card kpi-negative">
-                            <span class="kpi-label">Lojas que Mudaram de Faixa</span>
-                            <span class="kpi-value" id="kpi-mudaram-faixa">--</span>
-                        </div>
-                        <div class="kpi-card">
-                            <span class="kpi-label">% Divergentes na Base</span>
-                            <span class="kpi-value" id="kpi-div-pct">--</span>
-                        </div>
-                    </div>
-
-                    <h4 style="margin-top:20px;font-size:14px;font-weight:600">Casos Mais Extremos</h4>
-                    <div class="table-container" style="margin-top:8px">
-                        <table class="data-table" id="tabela-impacto">
-                            <thead>
-                                <tr>
-                                    <th>Loja</th>
-                                    <th>NPS Trad</th>
-                                    <th>Faixa Antes</th>
-                                    <th>NPS Ajust</th>
-                                    <th>Faixa Depois</th>
-                                    <th>Delta</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tbody-impacto"></tbody>
-                        </table>
-                    </div>
-
-                    <div class="insight-box" style="margin-top:16px">
-                        <h3>Análise Crítica</h3>
-                        <p id="analise-critica-text">Carregando...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ════════════ PÁGINA: LOJAS (3.3) ════════════ -->
-        <section class="page" id="page-lojas">
-            <h2 class="section-title">Análise por Loja</h2>
-            <p class="section-subtitle">NPS, sentimento, problemas e elogios — loja a loja</p>
-
-            <div class="table-controls">
-                <input type="text" id="search-loja" class="search-input" placeholder="Buscar loja..." aria-label="Buscar loja pelo nome">
-                <select id="filter-alerta" class="filter-select" aria-label="Filtrar por status de alerta">
-                    <option value="todos">Todos os Alertas</option>
-                    <option value="ALERTA_QUEDA">Alertas de Queda</option>
-                    <option value="ALERTA_MELHORA">Alertas de Melhora</option>
-                    <option value="ESTAVEL">Estável</option>
-                </select>
-            </div>
-
-            <div class="table-container">
-                <table class="data-table" id="tabela-lojas">
-                    <thead>
-                        <tr>
-                            <th>Loja</th>
-                            <th>Gestão</th>
-                            <th>NPS Trad</th>
-                            <th>NPS Ajust</th>
-                            <th>Delta</th>
-                            <th>Sent. Médio</th>
-                            <th>% Pos</th>
-                            <th>% Neg</th>
-                            <th>Top 3 Problemas</th>
-                            <th>Top 3 Elogios</th>
-                            <th>Alerta</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbody-lojas"></tbody>
-                </table>
-            </div>
-
-            <!-- Detalhe da Loja (aparece ao clicar) -->
-            <div class="loja-detail-panel" id="loja-detail" style="display:none">
-                <div class="loja-detail-header">
-                    <h3 id="loja-detail-nome"></h3>
-                    <button class="btn-close" id="btn-close-detail">&times;</button>
-                </div>
-                <div class="loja-detail-body">
-                    <div class="loja-detail-kpis" id="loja-detail-kpis"></div>
-                    <div class="loja-detail-grid">
-                        <div class="loja-detail-card">
-                            <h4>Top 3 Problemas</h4>
-                            <div id="loja-detail-problemas"></div>
-                        </div>
-                        <div class="loja-detail-card">
-                            <h4>Top 3 Elogios</h4>
-                            <div id="loja-detail-elogios"></div>
-                        </div>
-                    </div>
-                    <div class="loja-detail-card">
-                        <h4>Comentários Representativos</h4>
-                        <div id="loja-detail-comentarios"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ════════════ PÁGINA: ANÁLISES AVANÇADAS ════════════ -->
-        <section class="page" id="page-avancadas">
-            <h2 class="section-title">Análises Avançadas</h2>
-            <p class="section-subtitle">Contribuições que vão além do pedido — tendências, co-ocorrência e segmentação</p>
-
-            <div class="sub-tabs">
-                <button class="sub-tab active" data-subtab="qualitativo">NPS Qualitativo</button>
-                <button class="sub-tab" data-subtab="nps-tema">NPS por Tema</button>
-                <button class="sub-tab" data-subtab="tendencias">Tendências por Loja</button>
-                <button class="sub-tab" data-subtab="coocorrencia">Co-ocorrência</button>
-                <button class="sub-tab" data-subtab="linguagem">Análise de Linguagem</button>
-            </div>
-
-            <!-- NPS Qualitativo Corrigido -->
-            <div class="subtab-content active" id="subtab-qualitativo">
-                <div class="kpi-grid kpi-grid-3">
-                    <div class="kpi-card">
-                        <span class="kpi-label">NPS Tradicional</span>
-                        <span class="kpi-value" id="qual-nps-trad">--</span>
-                    </div>
-                    <div class="kpi-card">
-                        <span class="kpi-label">NPS Textual</span>
-                        <span class="kpi-value" id="qual-nps-textual">--</span>
-                    </div>
-                    <div class="kpi-card">
-                        <span class="kpi-label">NPS Híbrido</span>
-                        <span class="kpi-value" id="qual-nps-hibrido">--</span>
-                    </div>
-                </div>
-
-                <div class="insight-box">
-                    <h3>Metodologia Corrigida</h3>
-                    <p id="qual-metodologia">Carregando...</p>
-                </div>
-
-                <div class="charts-row">
-                    <div class="chart-card">
-                        <h3 class="chart-title">NPS Híbrido × Transações</h3>
-                        <p class="chart-desc">Cada ponto representa uma loja. A leitura é descritiva: volume sozinho não explica satisfação.</p>
-                        <canvas id="chart-nps-transacoes"></canvas>
-                    </div>
-                    <div class="chart-card">
-                        <h3 class="chart-title">Matriz de Risco</h3>
-                        <p class="chart-desc">Eixo X = NPS tradicional. Eixo Y = % de comentários negativos.</p>
-                        <canvas id="chart-matriz-risco"></canvas>
-                    </div>
-                </div>
-
-<<<<<<< HEAD
       <!-- ══════════════════════════════
            PAGE 4: TEMAS & SENTIMENTOS
            ══════════════════════════════ -->
@@ -624,45 +270,14 @@
             <div class="chart-card">
               <h3 class="chart-title">Top 5 Categorias de Problemas</h3>
               <canvas id="chart-ranking-problemas"></canvas>
-=======
-                <div class="charts-row">
-                    <div class="chart-card">
-                        <h3 class="chart-title">Ranking de Prioridade</h3>
-                        <div class="table-container">
-                            <table class="lojas-table">
-                                <thead>
-                                    <tr>
-                                        <th>Loja</th>
-                                        <th>Prioridade</th>
-                                        <th>NPS Híbrido</th>
-                                        <th>% Negativo</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="qual-top-prioridade"></tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="chart-card">
-                        <h3 class="chart-title">Risco Oculto</h3>
-                        <div class="table-container">
-                            <table class="lojas-table">
-                                <thead>
-                                    <tr>
-                                        <th>Loja</th>
-                                        <th>NPS Trad</th>
-                                        <th>% Negativo</th>
-                                        <th>Severidade</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="qual-risco-oculto"></tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
->>>>>>> origin/main
             </div>
+            <div class="chart-card">
+              <h3 class="chart-title">Evolução Temporal dos Problemas</h3>
+              <canvas id="chart-evolucao-problemas"></canvas>
+            </div>
+          </div>
+        </div>
 
-<<<<<<< HEAD
         <!-- Elogios -->
         <div class="subtab-content" id="subtab-elogios">
           <div class="chart-card chart-card-full" style="margin-bottom:24px">
@@ -899,85 +514,6 @@
 <script src="js/pages/dados.js"></script>
 <script src="js/export.js"></script>
 <script src="js/app.js"></script>
-=======
-            <!-- NPS por Tema -->
-            <div class="subtab-content" id="subtab-nps-tema">
-                <div class="charts-row">
-                    <div class="chart-card">
-                        <h3 class="chart-title">NPS por Tema — Visão Geral</h3>
-                        <p class="chart-desc">NPS calculado pelo sentimento do texto dentro de cada categoria. Quanto menor, mais problemático o tema.</p>
-                        <canvas id="chart-nps-tema-global"></canvas>
-                    </div>
-                    <div class="chart-card">
-                        <h3 class="chart-title">NPS por Tema — Externo vs Germinare</h3>
-                        <p class="chart-desc">Comparação direta: onde cada gestão performa pior?</p>
-                        <canvas id="chart-nps-tema-gestao"></canvas>
-                    </div>
-                </div>
-                <div class="insight-box">
-                    <h3>Interpretação</h3>
-                    <p id="nps-tema-insight">Carregando...</p>
-                </div>
-                <h3 class="examples-title" style="margin-top:24px">Piores Lojas por Tema</h3>
-                <div class="nps-tema-lojas" id="nps-tema-lojas-grid"></div>
-            </div>
 
-            <!-- Tendências -->
-            <div class="subtab-content" id="subtab-tendencias">
-                <div class="charts-row">
-                    <div class="chart-card">
-                        <h3 class="chart-title">Lojas com Tendência de Deterioração</h3>
-                        <p class="chart-desc">Lojas cujo % de sentimento negativo cresceu nos últimos meses</p>
-                        <canvas id="chart-deterioracao"></canvas>
-                    </div>
-                    <div class="chart-card">
-                        <h3 class="chart-title">Lojas com Tendência de Melhora</h3>
-                        <p class="chart-desc">Lojas cujo sentimento positivo cresceu ao longo do período</p>
-                        <canvas id="chart-melhora"></canvas>
-                    </div>
-                </div>
-                <div class="insight-box">
-                    <h3>Predição de Risco</h3>
-                    <p id="predicao-risco">Carregando...</p>
-                </div>
-            </div>
-
-            <!-- Co-ocorrência -->
-            <div class="subtab-content" id="subtab-coocorrencia">
-                <div class="chart-card chart-card-full">
-                    <h3 class="chart-title">Co-ocorrência de Categorias</h3>
-                    <p class="chart-desc">Quais problemas tendem a aparecer juntos? Comentários que mencionam mais de um tema.</p>
-                    <canvas id="chart-coocorrencia"></canvas>
-                </div>
-                <div class="coocorrencia-insights" id="coocorrencia-insights"></div>
-            </div>
-
-            <!-- Linguagem -->
-            <div class="subtab-content" id="subtab-linguagem">
-                <div class="charts-row">
-                    <div class="chart-card">
-                        <h3 class="chart-title">Palavras Mais Frequentes — Externo</h3>
-                        <p class="chart-desc">Termos dominantes nos comentários de lojas com gestão externa</p>
-                        <div class="word-cloud" id="wordcloud-regular"></div>
-                    </div>
-                    <div class="chart-card">
-                        <h3 class="chart-title">Palavras Mais Frequentes — Germinare</h3>
-                        <p class="chart-desc">Termos dominantes nos comentários de lojas Germinare</p>
-                        <div class="word-cloud" id="wordcloud-tocadora"></div>
-                    </div>
-                </div>
-                <div class="insight-box">
-                    <h3>Diferenças de Linguagem</h3>
-                    <p id="linguagem-insight">Carregando...</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
->>>>>>> origin/main
-
-    <script src="js/data.js"></script>
-    <script src="js/qualitativo.js"></script>
-    <script src="js/app.js"></script>
 </body>
 </html>
