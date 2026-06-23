@@ -106,22 +106,22 @@ Swift.Utils = (function () {
       .map(o => ({ m: o.m, pos: +(o.pos / o.w).toFixed(1), neg: +(o.neg / o.w).toFixed(1) }));
   }
 
-  /* NPS por tema agregado das lojas filtradas (ponderado por n do tema) */
-  function aggNpsTema(lojas) {
+  /* % negativo por tema agregado das lojas filtradas (ponderado por n do tema) */
+  function aggTemaNeg(lojas) {
     const acc = {};
     lojas.forEach(l => Object.entries(l.nps_tema || {}).forEach(([tema, d]) => {
       (acc[tema] = acc[tema] || { num: 0, n: 0 });
-      acc[tema].num += d.nps * d.n; acc[tema].n += d.n;
+      acc[tema].num += d.neg * d.n; acc[tema].n += d.n;
     }));
-    return Object.entries(acc).map(([tema, o]) => ({ tema, nps: +(o.num / o.n).toFixed(1), n: o.n }))
-      .sort((a, b) => a.nps - b.nps);
+    return Object.entries(acc).map(([tema, o]) => ({ tema, neg: +(o.num / o.n).toFixed(1), n: o.n }))
+      .sort((a, b) => b.neg - a.neg);
   }
 
-  /* piores lojas por tema, dentro do conjunto filtrado */
+  /* piores lojas por tema (maior % negativo), dentro do conjunto filtrado */
   function pioresPorTema(lojas, tema, k = 3) {
     return lojas.filter(l => l.nps_tema && l.nps_tema[tema] && l.nps_tema[tema].n >= 15)
-      .map(l => ({ loja: l.nome, nps: l.nps_tema[tema].nps, n: l.nps_tema[tema].n }))
-      .sort((a, b) => a.nps - b.nps).slice(0, k);
+      .map(l => ({ loja: l.nome, neg: l.nps_tema[tema].neg, n: l.nps_tema[tema].n }))
+      .sort((a, b) => b.neg - a.neg).slice(0, k);
   }
 
   /* agrega por região (ou uf) a partir das lojas filtradas */
@@ -139,6 +139,6 @@ Swift.Utils = (function () {
   return {
     escapeHtml, fmt, fmtInt, fmtPct, colorForNPS, colorForPctNeg, signedDelta, deltaColor,
     labelForFlag, badgeClassForFlag,
-    getFilteredLojas, isFiltered, wmean, aggKpis, aggRanking, aggCounts, aggTemporal, aggNpsTema, pioresPorTema, aggPorRegiao
+    getFilteredLojas, isFiltered, wmean, aggKpis, aggRanking, aggCounts, aggTemporal, aggTemaNeg, pioresPorTema, aggPorRegiao
   };
 })();

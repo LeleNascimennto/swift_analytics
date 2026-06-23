@@ -260,7 +260,7 @@
         <div class="sub-tabs">
           <button class="sub-tab active" data-subtab="problemas">Problemas</button>
           <button class="sub-tab" data-subtab="elogios">Elogios</button>
-          <button class="sub-tab" data-subtab="nps-tema">NPS por Tema</button>
+          <button class="sub-tab" data-subtab="nps-tema">Sentimento por Tema</button>
           <button class="sub-tab" data-subtab="linguagem">Linguagem</button>
         </div>
 
@@ -290,18 +290,18 @@
         <div class="subtab-content" id="subtab-nps-tema">
           <div class="charts-row">
             <div class="chart-card">
-              <h3 class="chart-title">NPS por Tema — Visão Geral</h3>
-              <p class="chart-desc">NPS calculado pelo sentimento do texto por categoria. Menor = mais problemático.</p>
+              <h3 class="chart-title">% Negativo por Tema — Visão Geral</h3>
+              <p class="chart-desc">Percentual de comentários negativos em cada categoria. Maior = mais problemático.</p>
               <canvas id="chart-nps-tema-global"></canvas>
             </div>
             <div class="chart-card">
-              <h3 class="chart-title">NPS por Tema — Externo vs Germinare</h3>
-              <p class="chart-desc">Onde cada gestão performa pior?</p>
+              <h3 class="chart-title">% Negativo por Tema — Externo vs Germinare</h3>
+              <p class="chart-desc">Onde cada gestão tem mais reclamações por tema?</p>
               <canvas id="chart-nps-tema-gestao"></canvas>
             </div>
           </div>
           <h3 class="examples-title" style="margin-top:24px">Piores Lojas por Tema</h3>
-          <p class="chart-desc" style="margin:-8px 0 12px">O "NPS por tema" é calculado só sobre os comentários daquela categoria — por isso temas de reclamação (ex.: Abastecimento) podem ficar negativos em lojas críticas.</p>
+          <p class="chart-desc" style="margin:-8px 0 12px">Lojas com maior % de comentários negativos em cada tema (mín. 15 comentários no tema).</p>
           <div class="nps-tema-lojas" id="nps-tema-lojas-grid"></div>
         </div>
 
