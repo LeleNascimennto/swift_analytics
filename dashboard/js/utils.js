@@ -63,12 +63,22 @@ Swift.Utils = (function () {
     return 'var(--tx-secondary)';
   }
 
+  let _qualRegiaoMap = null;
+  function getQualRegiaoMap() {
+    if (!_qualRegiaoMap) {
+      _qualRegiaoMap = {};
+      (DATA.qualitativo?.scatter_transacoes || []).forEach(p => { _qualRegiaoMap[p.centro_nv2] = p.regiao; });
+    }
+    return _qualRegiaoMap;
+  }
+
   function getFilteredLojas() {
     const f = Swift.State.filters;
+    const qrm = getQualRegiaoMap();
     return (DATA.lojas || []).filter(l => {
-      if (f.gestao.length > 0 && !f.gestao.includes(l.flag))     return false;
-      if (f.uf.length > 0    && !f.uf.includes(l.uf))             return false;
-      if (f.regiao.length > 0 && !f.regiao.includes(l.regiao))   return false;
+      if (f.gestao.length > 0 && !f.gestao.includes(l.flag))              return false;
+      if (f.uf.length > 0    && !f.uf.includes(l.uf))                      return false;
+      if (f.regiao.length > 0 && !f.regiao.includes(qrm[l.nome]))          return false;
       if (f.loja.length > 0  && !f.loja.includes(l.nome))         return false;
       if (f.faixaNps.length > 0) {
         const nps = parseFloat(l.nps_trad);

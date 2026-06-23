@@ -74,4 +74,3 @@
 - Tentei ajustar a confiança do modelo e da intensidade dos comentários na análise.
 - Criação de análises por região e UF;
 - Separação entre NPS tradicional, NPS textual e NPS híbrido.
-
